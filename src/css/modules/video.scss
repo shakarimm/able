@@ -1,0 +1,52 @@
+@mixin video-module{
+	// VIDEO
+	.video{
+		$self: &;
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+		&__preview, &__play-btn{
+			transition: all 0.4s;
+		}
+		&__play-btn{
+			font-size: 4em;
+			width: 1.42em;
+			padding-bottom: 1em;
+			opacity: 0.5;
+			svg{
+				width: 100%;
+				height: 100%;
+			}
+			&, & svg{
+				left: 50%;
+				top: 50%;
+				position: absolute;
+				transform: translate(-50%, -50%);
+			}
+		}
+		&__title{
+			font-size: 2.7em;
+			font-weight: 500;
+		}
+		iframe{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100% !important;
+			height: 100% !important;
+		}
+		&:not(#{$self}--playing){
+			cursor: pointer;
+			&:hover{
+				#{$self}__play-btn{
+					opacity: 1;
+				}
+			}
+		}
+		&--playing &{
+			&__play-btn, &__preview{
+				opacity: 0;
+			}
+		}
+	}
+}

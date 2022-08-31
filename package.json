@@ -1,0 +1,41 @@
+{
+	"name": "@arkenstone-agency/hh-builder-page",
+	"version": "1.0.0",
+	"description": "",
+	"repository": "git://github.com/arkenstone-agency/hh-builder-page.git",
+	"main": "index.js",
+	"scripts": {
+		"dev": "gulp",
+		"build": "gulp build",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "VIPER-VLAD",
+	"license": "ISC",
+	"browserslist": [
+		"> 1%",
+		"not dead",
+		"ie 11"
+	],
+	"devDependencies": {
+		"browser-sync": "^2.26.7",
+		"core-js": "^3.4.2",
+		"gulp": "^4.0.2",
+		"gulp-rollup": "^2.17.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-svgstore": "^7.0.1",
+		"gulp-rename": "^2.0.0",
+		"gulp-svgmin": "^3.0.0",
+		"gulp-cheerio": "^1.0.0",
+		"gulp-replace": "^1.0.0",
+		"gulp-pug": "^4.0.1",
+		"gulp-class-prefix": "^1.0.1",
+		"gulp-html-prefix": "0.0.1",
+		"gulp-sass": "^4.1.0",
+		"gulp-autoprefixer": "^7.0.1",
+		"path": "^0.12.7",
+		"node-sass": "^5.0.0"
+	},
+	"dependencies": {
+		"gulp-html-prettify": "0.0.1"
+	}
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import "./../assets/vars";
+@import "./../assets/keyframes";
+
+// COMMON
+.wrapper{
+	font-family: $font_family;
+	color: $color_text;
+	font-weight: $font_weight;
+	font-size: 15px;
+	line-height: $line_height;
+	position: relative;
+	overflow: hidden;
+	margin: -20px 0 -40px -40px;
+	width: calc(100% + 80px);
+	img, svg{
+		max-width: 100%;
+		max-height: 100%;
+		vertical-align: middle;
+	}
+	a{
+		text-decoration: none;
+	}
+	*{
+		box-sizing: border-box;
+	}
+	.b-vacancy-desc{
+		padding: 0 !important;
+	}
+}
+.container{
+	padding: 0 35px;
+	margin: 0 auto;
+	width: 100%;
+}
+.section{
+	position: relative;
+	z-index: 1;
+	&--short{
+		&, &-pt{
+			padding-top: 5.8%;
+		}
+		&, &-pb{
+			padding-bottom: 5.8%;
+		}
+	}
+}
+.logo{
+	width: 95px;
+}
+.s-content{
+	&__text {
+		ul, ol{
+			margin: 0;
+			padding: 0;
+			padding-left: 1.7em;
+			list-style: none;
+			li{
+				position: relative;
+				&::before{
+					position: absolute;
+					left: -1.55em;
+					top: 0;
+					display: inline-block;
+				}
+				& + li{
+					margin-top: 0.8em;
+				}
+				p, b, strong {
+					margin: 0 !important;
+				}
+			}
+			& + p, & + strong, & + b{
+				margin-top: 1.3em;
+			}
+		}
+		ul{
+			li{
+				position: relative;
+				&::before{
+					left: -1.4em;
+					top: 0.35em;
+					width: 0.6em;
+					height: 0.6em;
+					background: $color_primary;
+					border-radius: 50%;
+					content: "";
+					display: inline-block;
+					position: absolute;
+				}
+			}
+		}
+		ol{
+			li{
+				counter-increment: li;
+				&::before{
+					content: counter(li) ".";
+				}
+			}
+		}
+		p, ul, ol{
+			margin-bottom: 0.7em;
+			margin-top: 0;
+		}
+		strong + ul, strong + ol, b + ul, b + ol{
+			margin-top: 1.3em;
+		}
+		ul + b, ul + strong,
+		ol + b, ol + strong{
+			margin-top: 2.6em;
+		}
+		b, strong{
+			display: inline-block;
+			color: $color_primary;
+			font-weight: 600;
+			margin-top: 2.6em;
+			&:first-child{
+				margin-top: 0 !important;
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+@mixin content-module{
+	// CONTENT
+	.content{
+		display: none;
+		opacity: 0;
+		width: 100%;
+		transition: opacity 0.4s;
+		&--active{
+			display: block;
+		}
+		&--opacity-1{
+			opacity: 1;
+		}
+	}
+}

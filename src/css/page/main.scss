@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import "./../assets/vars";
+@import "./../assets/keyframes";
+
+// COMMON
+.wrapper{
+	background: #fff;
+	font-family: $font_family;
+	color: $color_text;
+	font-weight: $font_weight;
+	font-size: 17px;
+	line-height: $line_height;
+	position: relative;
+	overflow: hidden;
+	img, svg{
+		max-width: 100%;
+		max-height: 100%;
+		vertical-align: middle;
+	}
+	a{
+		text-decoration: none;
+	}
+	button{
+		font-family: inherit;
+		font-size: inherit;
+		line-height: inherit;
+	}
+	*{
+		box-sizing: border-box;
+	}
+}
+.container{
+	max-width: 1130px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+}
+.default-slider{
+	width: 100%;
+}
+.section{
+	position: relative;
+	&--long{
+		&, &-pt{
+			padding-top: 8.8%;
+		}
+		&, &-pb{
+			padding-bottom: 8.8%;
+		}
+	}
+	&--medium{
+		&, &-pt{
+			padding-top: 5.6%;
+		}
+		&, &-pb{
+			padding-bottom: 5.6%;
+		}
+	}
+	&--short{
+		&, &-pt{
+			padding-top: 2.4%;
+		}
+		&, &-pb{
+			padding-bottom: 2.4%;
+		}
+	}
+}
+.text{
+	line-height: 1.5;
+}

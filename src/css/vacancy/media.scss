@@ -1,0 +1,40 @@
+@import "./../assets/vars";
+@import "./../assets/keyframes";
+
+// BREAKPOINT TABLET
+@media (max-width: $ss_tablet) {
+
+}
+
+// BREAKPOINT SM TABLET
+@media (max-width: $ss_sm_tablet) {
+	.wrapper{
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+	}
+	.container{
+		padding: 0 15px;
+	}
+}
+
+// BREAKPOINT PHONE
+@media (max-width: $ss_phone) {
+	.wrapper{
+		font-size: 14px;
+	}
+	.s-content{
+		ul, ol{
+			& + p, & + strong, & + b{
+				margin-top: 1.5em;
+			}
+			li{
+				& + li{
+					margin-top: 0.6em;
+				}
+			}
+		}
+		strong + ul, strong + ol, b + ul, b + ol{
+			margin-top: 0.8em;
+		}
+	}
+}

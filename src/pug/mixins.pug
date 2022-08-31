@@ -1,0 +1,22 @@
+mixin icon(id, className)
+	svg(xmlns:xlink="http://www.w3.org/1999/xlink" class=className)
+		use(xlink:href="#tmpl-hh__icon-" + id href="#tmpl-hh__icon-" + id)
+
+mixin video(video, thumbnail, source="youtube")
+	.video(data-video-id=video data-video-source=source)
+		img.video__preview(src=thumbnail)
+		.video__play-btn
+			+icon('play-btn')
+
+mixin modal(id, withCloseBtn=true)
+	.modal(id=id)
+		.modal__window
+			if withCloseBtn
+				button.modal__close-btn(type="button")
+			block
+
+mixin nav-btn
+	.nav-btn
+		.nav-btn__line
+		.nav-btn__line
+		.nav-btn__line
