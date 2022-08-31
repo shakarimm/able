@@ -4,7 +4,8 @@ mixin icon(id, className)
 
 mixin video(video, thumbnail, source="youtube")
 	.video(data-video-id=video data-video-source=source)
-		img.video__preview(src=thumbnail)
+		.video__preview-wrapper
+			img.video__preview(src=thumbnail)
 		.video__play-btn
 			+icon('play-btn')
 
@@ -20,3 +21,19 @@ mixin nav-btn
 		.nav-btn__line
 		.nav-btn__line
 		.nav-btn__line
+
+mixin stat-card(title, text)
+	.stat-card
+		.stat-card__title!=title 
+		.stat-card__text!=text 
+
+mixin titled-text-card(title, text)
+	.titled-text-card
+		.titled-text-card__title.title.title--mini!=title 
+		.titled-text-card__text!=text
+
+mixin learning-card(imgSrc, title)
+	.learning-card
+		.learning-card__img-wrapper 
+			img.learning-card__img(src=imgSrc)
+		.learning-card__title.title.title--mini!=title

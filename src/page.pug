@@ -1,6 +1,167 @@
 extends ./pug/layout
 
 block content
-	<!-- START * -->
+	<!-- START HEADER -->
+	.header
+		.container
+			.header__inner
+				a.header__logo.content-tab(href="#about")
+					img.header__logo-img(src="images/logo.svg")
+				.header__nav.nav
+					a.nav__item.content-tab(href="#courses") Курсы
+					a.nav__item.content-tab(href="#navigation") Навигация
+					a.nav__item.content-tab(href="#career") Преподаватель
+					a.nav__item.content-tab(href="#students") Студенты
+					a.nav__item.content-tab(href="#students") Для компаний
+					a.nav__item.content-tab(href="#students") О нас
+				a.header__btn.btn.btn--transparent Бесплатная консультация
+				+nav-btn
+	<!-- END HEADER -->
 
-	<!-- END * -->
+	<!-- START CONTENT HOME -->
+	.content.content--active.content--opacity-1.content__about
+		<!-- START SECTION FIRST-SCREEN -->
+		.section.s-first-screen
+			.container 
+				.s-first-screen__inner 
+					.s-first-screen__content
+						.s-first-screen__title Учитесь онлайн <br><span>с гарантией трудоустройства</span>
+						.s-first-screen__subtitle Стройте карьеру в IT с практикующими специалистами
+						.s-first-screen__directions
+							.s-first-screen__directions-title Наши направления:
+							.s-first-screen__directions-items
+								.s-first-screen__directions-item Data Science
+								.s-first-screen__directions-item Бизнес Аналитика
+								.s-first-screen__directions-item Веб-разработка
+								.s-first-screen__directions-item Android-разработка
+						.s-first-screen__text 
+							p Нужна помощь в подборе правильного курса для вас? Пройди тест и пойми, что тебе подходит
+						a.s-first-screen__btn.btn.btn--blue ПРОЙТИ ТЕСТ
+					.s-first-screen__img-wrapper 
+						img.s-first-screen__img(src="images/fs.jpg")
+		<!-- END SECTION FIRST-SCREEN -->
+
+		<!-- START SECTION STATS -->
+		.section.s-stats.section--medium-pt 
+			.container 
+				.title.title--mb-long ABLE в цифрах
+				.s-stats__cards 
+					+stat-card("<span class='countup' 	data-value='500'>0</span>+", "учеников")
+					+stat-card("<span class='countup' data-value='80'>0</span>%", "работающих студентов, после окончания курса")
+					+stat-card("<span class='countup' data-value='4,85'>0</span>", "оценка курса от студентов")
+		<!-- END SECTION STATS -->
+
+		<!-- START SECTION SYSTEM -->
+		.section.s-system.section--long
+			.container 
+				.title.title--mb-long Cистемный подход к обучению
+				.s-system__cards 
+					+titled-text-card("Видеоуроки", "Смотреть видеоуроки можно в любое время, доступ к учебным материалам предоставляется бессрочно")
+					+titled-text-card("практика", "80% обучения нацелена на практику для качественного усвоения материала и подкрепления теории")
+					+titled-text-card("наставничество", "Созвоны с преподавателями и их поддержка на протяжении всего обучения, офлайн воркшопы, нетворкинг с другими студентами и круглосуточный чат в мессенджерах для обсуждения заданий и обмена опытом значительно облегчит ваше обучение")
+					+titled-text-card("Трудоустройство", "С 2022 года мы внедрили 100% гарантию на трудоустройство для студентов на курсах Data Science, Android-разработка, Бизнес-аналитика. По окончанию их, мы начинаем курирование вашего трудоустройства в течение полгода ")
+		<!-- END SECTION SYSTEM -->
+
+		<!-- START SECTION LEARNING -->
+		.section.s-learning 
+			.container 
+				.title.title--mb-long Обучение ориентированное на карьеру
+				.s-learning__inner 
+					+learning-card("images/learning-card/1.jpg", "Онлайн")
+					+learning-card("images/learning-card/2.jpg", "Живое наставничество")
+					+learning-card("images/learning-card/3.jpg", "Нетворкинг")
+		<!-- END SECTION LEARNING -->
+
+		<!-- START SECTION FOUNDERS -->
+		.section.s-founders.section--long 
+			.s-founders__img-wrapper
+				img.s-founders__img(src="images/founders.jpg")
+				.container 
+					.s-founders__title.title.title--white Основатели Академии ABLE 
+		<!-- END SECTION FOUNDERS -->
+
+		<!-- START SECTION VIDEO -->
+		.section.s-video.section--medium-pt
+			.container
+				+video("onYbuQrqiJk", "/images/video-bg.jpg")
+		<!-- END SECTION VIDEO -->
+
+		<!-- START SECTION COMPANIES -->
+		.section.s-companies.section--medium
+			.container 
+				.title.title--mb-long Наши студенты наняты компаниями:
+			.swiper-container.company-slider
+				.swiper-wrapper 
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/1.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/2.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/3.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/4.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/5.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/6.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/7.png")
+			.company-slider__pagination
+		<!-- END SECTION COMPANIES -->
+
+		<!-- START SECTION BANNER -->
+		.section.s-banner
+			.container 
+				.s-banner__inner 
+					.s-banner__title.title Станьте специалистом в iT. <br>Работа гарантирована!
+					.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+		<!-- END SECTION BANNER -->
+
+	<!-- END CONTENT HOME -->
+
+	<!-- START FOOTER -->
+	.footer 
+		.container 
+			.footer__top
+				.footer__top-right
+					.footer__col
+						.footer__col-title Главная
+						.footer__col-item Курсы
+						.footer__col-item Навигация
+						.footer__col-item Преподаватели
+						.footer__col-item Студенты
+						.footer__col-item Для компаний
+						.footer__col-item О нас
+					.footer__col
+						.footer__col-title Курсы
+						.footer__col-item Data Science
+						.footer__col-item Веб-Разработка
+						.footer__col-item Android-Разработка
+						.footer__col-item БИЗНЕС АНАЛИТИКА
+					.footer__col
+						.footer__col-title Контакты
+						.footer__col-item datascience.kz@gmail.com
+						.footer__col-item +7 776 125 59 52
+				.footer__top-left
+					.footer__col
+						.footer__col-title Социальные сети
+						.footer__social-inner 
+							a.footer__social-item(href="#")
+								img.footer__social-item-img(src="images/social/facebook.svg")
+							a.footer__social-item(href="#")
+								img.footer__social-item-img(src="images/social/instagram.svg")
+							a.footer__social-item(href="#")
+								img.footer__social-item-img(src="images/social/telegram.svg")
+							a.footer__social-item(href="#")
+								img.footer__social-item-img(src="images/social/whatsapp.svg")
+			.footer__bottom
+				.footer__bottom-left © ABLE Online Academy
+				.footer__bottom-right Политика конфиденциальности
+	<!-- END FOOTER -->	
