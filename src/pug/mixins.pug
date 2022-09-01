@@ -37,3 +37,8 @@ mixin learning-card(imgSrc, title)
 		.learning-card__img-wrapper 
 			img.learning-card__img(src=imgSrc)
 		.learning-card__title.title.title--mini!=title
+
+mixin location-card(title, text)
+	.location-card
+		.location-card__title!=title 
+		.location-card__text!=text 

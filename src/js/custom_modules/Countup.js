@@ -40,7 +40,7 @@ function Countup(block) {
 			let currentCount = countTo * progress;
 
 			if(isFloat){
-				currentCount = currentCount.toFixed(1).toString();
+				currentCount = currentCount.toFixed(2).toString(1);
 			}else{
 				currentCount = Math.round(currentCount);
 			}

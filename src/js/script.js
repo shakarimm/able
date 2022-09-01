@@ -38,6 +38,33 @@ import Nav from "./modules/Nav";
 			}
 			window.addEventListener("scroll", () => {   handleScrollAnimation();});
 			
+	const tabsBtn = document.querySelectorAll(".tmpl-hh__tabs__nav-btn")
+	const tabsItem = document.querySelectorAll(".tmpl-hh__tabs__item")
+
+	tabsBtn.forEach(onTabClick)
+
+	function onTabClick(item) {
+		item.addEventListener("click", function() {
+			let currentBtn = item;
+			let tabId = currentBtn.getAttribute("data-tab")
+			let currentTab = document.querySelector(tabId)
+
+			if( !currentBtn.classList.contains("tmpl-hh__tabs__nav-btn--active") ) {
+				tabsBtn.forEach(function(item) {
+					item.classList.remove("tmpl-hh__tabs__nav-btn--active")
+				})
+	
+				tabsItem.forEach(function(item) {
+					item.classList.remove("tmpl-hh__tabs__item--active")
+				})
+	
+				currentBtn.classList.add("tmpl-hh__tabs__nav-btn--active")
+				currentTab.classList.add("tmpl-hh__tabs__item--active")
+			}
+		})
+	}
+
+	document.querySelector(".tmpl-hh__tabs__nav-btn").click()
 /*
 	--------------------------------------------
 	--------------------------------------------
