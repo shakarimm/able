@@ -74,9 +74,6 @@ block content
 									.tabs-info
 										.tabs-info__top
 											.tabs-info__item
-												.tabs-info__item-title Дата начала:
-												.tabs-info__item-text 1 июля
-											.tabs-info__item
 												.tabs-info__item-title Длительность:
 												.tabs-info__item-text 6 месяцев
 											.tabs-info__item
@@ -102,9 +99,6 @@ block content
 									.tabs-info
 										.tabs-info__top
 											.tabs-info__item
-												.tabs-info__item-title Дата начала:
-												.tabs-info__item-text 1 июля
-											.tabs-info__item
 												.tabs-info__item-title Длительность:
 												.tabs-info__item-text 6 месяцев
 											.tabs-info__item
@@ -129,9 +123,6 @@ block content
 									.tabs-info
 										.tabs-info__top
 											.tabs-info__item
-												.tabs-info__item-title Дата начала:
-												.tabs-info__item-text 1 июля
-											.tabs-info__item
 												.tabs-info__item-title Длительность:
 												.tabs-info__item-text 6 месяцев
 											.tabs-info__item
@@ -155,9 +146,6 @@ block content
 								.tabs__bottom
 									.tabs-info
 										.tabs-info__top
-											.tabs-info__item
-												.tabs-info__item-title Дата начала:
-												.tabs-info__item-text 1 июля
 											.tabs-info__item
 												.tabs-info__item-title Длительность:
 												.tabs-info__item-text 6 месяцев
@@ -222,7 +210,7 @@ block content
 		<!-- END SECTION FOUNDERS -->
 
 		<!-- START SECTION VIDEO -->
-		.section.s-video.section--medium-pt
+		.section.s-video
 			.container
 				+video("onYbuQrqiJk", "/images/video-bg.jpg")
 		<!-- END SECTION VIDEO -->
@@ -262,9 +250,202 @@ block content
 			.container 
 				.s-banner__inner 
 					.s-banner__title.title Станьте специалистом в IT. <br>Работа гарантирована!
-					.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+					.s-banner__btn.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
 		<!-- END SECTION BANNER -->
 	<!-- END CONTENT HOME -->
+
+	<!-- START CONTENT COURSES -->
+	.content.content__courses
+
+		<!-- START SECTION FS -->
+		.section.s-fs.section--long-pb 
+			.container 
+				.s-fs__inner 
+					.s-fs__content
+						.s-fs__title Освой профессию <span><br>Data Science</span> <br>за 6 месяцев 
+						.s-fs__text.s-fs__text--data 
+							p Получите готовые к работе навыки в анализе данных и машинного обучения
+						.s-fs__btn.btn.btn--primary ХОЧУ НА КУРС
+						.s-fs__price
+							.s-fs__price-nums от <span class="gray">31 500</span> <span class="blue">19 500 ₸</span> в месяц
+							.s-fs__price-text при оплате в рассрочку на 12 месяцев
+					.s-fs__img-wrapper 
+						img.s-fs__img(src="images/fs.jpg")
+		<!-- END SECTION FS -->
+
+		<!-- START SECTION SLOGAN -->
+		.section.s-slogan 
+			.container 
+				.s-slogan__title.title.title--primary.title--centered.title--without-after Ищете качественные <br>курсы
+				.s-slogan__subtitle.title.title--mb-long.title--centered.title--medium по окончанию которых вы точно <br>будете работать? 
+				.s-slogan__text 
+					p Вы попали в нужное место! 
+		<!-- END SECTION SLOGAN -->
+
+		<!-- START SECTION AFTER-COURSE -->
+		.section.s-after-course.section--long 
+			.container
+				.title.title--mb-long К концу курса вы сможете: 
+				.s-after-course__cards
+					+icon-card("team", "Использовать Python для самостоятельного решения задач, над которыми обычно работают несколько специалистов")
+					+icon-card("idea", "Использовать библиотеки Python-а для анализа, очистки, визуализации данных")
+					+icon-card("comp", "Использовать SQL для работы с большими массивами базой данных, создавать инфографику, писать сложные запросы")
+					+icon-card("like", "Понимать и использовать классические алгоритмы машинного обучения для решения разновидных задач, оценивать качество вашего решения при помощи общепринятых метрик")
+		<!-- END SECTION AFTER-COURSE -->
+
+		<!-- START SECTION AUDIENCE -->
+		.section.s-audience 
+			.container 
+				.title.title--mb-long Для кого курс
+				.s-audience__inner.flex
+					+titled-text-card("Новичкам", "Для новичков в области IT обучения откроет двери к прорыву в сферу Data Science и Machine Learning.")
+					+titled-text-card("Начинающим программистам", "Начинающие программисты смогут повысить квалификацию и увеличить спектр проектов, которые в свою очередь увеличат доход в х2, х3.")
+					+titled-text-card("Аналитикам", "Опытные аналитики и разработчики научатся автоматизировать аналитические процессы, что позволит повысить результативность и получить более высокую должность.")
+		<!-- END SECTION AUDIENCE -->
+
+		<!-- START SECTION PROGRAM -->
+		.section.s-program.section--long
+			.container 
+				.title.title--mb-long Программа курса
+				.s-program__inner.flex
+					+program-card("<span>01.</span> Основы Python")
+						p Типы переменных (числа, текст, списки, словари, и т.д.)
+						p Операторы (сравнения, условные, и т.д.)
+						p Циклы (for, while)
+						p Функции (def, рекурсия)
+						p Объектно-ориентированное программирование (class, inheritance, и т.д.)
+						p Стандартные модули и библиотеки  (os, csv, json, и т.д.)
+						p Модули и Пакеты
+					+program-card("<span>02.</span> Обработка и визуализация данных")
+						p Библиотеки Python
+						p Numpy
+						p Pandas
+						p Matplotlib
+						p Seaborn
+						p EDA – Exploratory Data Analysis
+					+program-card("<span>03.</span> Основы машинного обучения")
+						p Теория вероятности
+						p Что такое машинное обучение?
+						p Разбиение данных
+						p Основные типы задач (классификация, регрессия)
+						p Алгоритмы (Линейная регрессия, Дерево принятия решений, и т.д.)
+		<!-- END SECTION PROGRAM -->
+
+		<!-- START SECTION TEACHER -->
+		.section.s-teacher
+			.container 
+				.title.title--mb-long Преподаватель курса
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/1.jpg")
+					.s-teacher__content 
+						.s-teacher__name Азамат Хасенов
+						.s-teacher__descr Автор курса data science
+						.s-teacher__text 
+							p Работал специалистом по искусственному интеллекту в Южной Корее, компания ST UNITAS
+							p Работал дата сайентист в компании Huawei
+							p Сейчас дата сайентист в топовой казахстанской компании BTS Digital
+		<!-- END SECTION TEACHER -->
+
+		<!-- START SECTION QUOTE -->
+		.section.s-quote.section--long 
+			.container 
+				.s-quote__inner
+					.s-quote__text 
+						img.s-quote__img.s-quote__img--one(src="images/quote/1.svg") 
+						img.s-quote__img.s-quote__img--two(src="images/quote/2.svg") 
+						p Преподаватель Азамат был очень крутым, имел реальный опыт и служил отличным ресурсом, в возникших сложностях и непониманиях. Помогал мне освоить материал, а также решать технические вопросы. Он также предоставлял дополнительные ресурсы, если я хотел попрактиковаться или развить дополнительные навыки.
+					.s-quote__graduate
+						.s-quote__graduate__img-wrapper 
+							img.s-quote__graduate__img(src="images/graduate.png")
+						.s-quote__graduate__info
+							p Рустам Бекишев, <br>Выпускник науки о данных
+							a.s-quote__graduate__link(href="#courses")
+								img.s-quote__graduate__link-img(src="images/graduate-inst.svg")
+								.s-quote__graduate__link-text rustambekishev
+		<!-- END SECTION QUOTE -->
+
+		<!-- START SECTION WE-HAVE -->
+		.section.s-we-have 
+			.container 
+				.title.title--mb-long Учиться у нас, это: 
+				.s-we-have__inner.flex 
+					+we-have-card("images/we-have-card/1.jpg","Индивидуальная поддержка во время обучения")
+						p Получите помощь по любой проблеме, большой или маленькой, от вашего личного наставника, действующего специалиста.
+					+we-have-card("images/we-have-card/2.jpg","Контроль продуктивности и освоение материала")
+						p Проверка выполнения домашнего задания, постоянная активность в чате и офлайн встречи помогут вам достичь успеха.
+					+we-have-card("images/we-have-card/3.jpg","Вдохновение и мотивация от лучших")
+						p Ваш преподаватель — это ваше окно в мир науки о данных. Он мотивирует вас, отвечает на вопросы и поддерживает в течение всего обучения. 
+		<!-- END SECTION WE-HAVE -->
+
+		<!-- START SECTION PRICE -->
+		.section.s-price.section--long
+			.container
+				.title.title--mb-long Цены
+				.s-price__inner
+					.s-price-card
+						img.s-price-card__img(src="images/price/1.svg")
+						.s-price-card__inner 
+							.s-price-card__installment РАССРОЧКА 16 250 ₸/МЕС
+							.s-price-card__title.s-price-card__title--big.title.title--mini БАЗОВЫЙ
+							.s-price-card__list
+								.s-price-card__item Самостоятельное прохождение курса
+								.s-price-card__item Доступ к курсу 6 месяцев
+								.s-price-card__item Проверка заданий на платформе
+								.s-price-card__item.s-price-card__item--none Сертификат об окончании не выдается
+							.s-price-card__nums 
+								.s-price-card__last-price 240 000 ₸
+								.s-price-card__new-price 195 000 ₸
+							.s-price__btn-wrapper
+								.s-price__btn.btn.btn--course ХОЧУ НА КУРС
+					.s-price-card.s-price-card--blue
+						img.s-price-card__img(src="images/price/2.svg")
+						.s-price-card__inner 
+							.s-price-card__installment РАССРОЧКА 19 500 ₸/МЕС
+							.s-price-card__title.title.title--mini ОПТИМАЛЬНЫЙ
+							.s-price-card__list
+								.s-price-card__item Поддержка и проверка заданий от куратора
+								.s-price-card__item Живые вебинары с преподавателем
+								.s-price-card__item Общий чат с учениками и преподавателями
+								.s-price-card__item Доступ к курсу навсегда
+								.s-price-card__item Онлайн воркшопы
+								.s-price-card__item Еженедельные прямые эфиры с преподавателем
+								.s-price-card__item Выделенный студенческий консультант и техническая поддержка во время обучения
+								.s-price-card__item 8 проектов в портфолио 
+								.s-price-card__item Гарантия трудоустройства после окончания курса
+							.s-price-card__nums 
+								.s-price-card__last-price.s-price-card__last-price--blue 330 000 ₸
+								.s-price-card__new-price 235 000 ₸
+							.s-price__btn-wrapper
+								.s-price__btn.btn.btn--course-blue ХОЧУ НА КУРС
+					.s-price-card
+						img.s-price-card__img(src="images/price/3.svg")
+						.s-price-card__inner 
+							.s-price-card__installment РАССРОЧКА 49 500 ₸/МЕС
+							.s-price-card__title.title.title--mini мАКСИМУМ
+							.s-price-card__list
+								.s-price-card__item Все что в пакете “оптимальный”
+								.s-price-card__item Индивидуальное обучение
+								.s-price-card__item Приоритетный VIP-чат с преподавателями
+								.s-price-card__item Доступ к курсу навсегда
+								.s-price-card__item Личное курирование самого преподавателя на протяжении всего курса
+								.s-price-card__item Живые созвоны с преподавателем
+							.s-price-card__nums 
+								.s-price-card__last-price 800 000 ₸
+								.s-price-card__new-price 595 000 ₸
+							.s-price__btn-wrapper
+								.s-price__btn.btn.btn--course ХОЧУ НА КУРС
+		<!-- END SECTION PRICE -->
+
+		<!-- START SECTION BANNER -->
+		.section.s-banner
+			.container 
+				.s-banner__inner.s-banner__inner--flex-wrap 
+					.s-banner__title.s-banner__title--wide.title.title--centered.title--mb-short Точную информацию по тарифам <br>можно уточнить перейдя по кнопке
+					.s-banner__btn.s-banner__btn--centered.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+		<!-- END SECTION BANNER -->
+
+	<!-- START CONTENT COURSES -->
 
 	<!-- START FOOTER -->
 	.footer 

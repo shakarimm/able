@@ -41,4 +41,24 @@ mixin learning-card(imgSrc, title)
 mixin location-card(title, text)
 	.location-card
 		.location-card__title!=title 
-		.location-card__text!=text 
+		.location-card__text!=text
+
+mixin icon-card(icon, text) 
+	.icon-card
+		.icon-card__icon-container 
+			+icon(icon, 'icon-card__icon')
+		.icon-card__text!=text
+
+mixin program-card(title)
+	.program-card
+		.program-card__title!=title
+		.program-card__text 
+			block
+
+mixin we-have-card(imgSrc, title)
+	.we-have-card
+		.we-have-card__img-wrapper 
+			img.we-have-card__img(src=imgSrc)
+		.we-have-card__title.title.title--mini!=title
+		.we-have-card__text
+			block
