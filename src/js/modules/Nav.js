@@ -4,13 +4,13 @@ function Nav() {
 	let nav, btn, opened = false;
 	let classes = {
 		nav: {
-			base: 'tmpl-hh__nav',
-			opened: 'tmpl-hh__nav--opened'
+			base: 'nav',
+			opened: 'nav--opened'
 		},
 		btn: {
-			base: 'tmpl-hh__nav-btn',
-			active: 'tmpl-hh__nav-btn--active',
-			closed: 'tmpl-hh__nav-btn--closed'
+			base: 'nav-btn',
+			active: 'nav-btn--active',
+			closed: 'nav-btn--closed'
 		}
 	};
 

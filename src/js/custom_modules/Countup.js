@@ -7,9 +7,9 @@
 */
 function Countup(block) {
 	let classes = {
-		base: 'tmpl-hh__countup',
-		withoutSeparate: 'tmpl-hh__countup--without-separate',
-		initialized: 'tmpl-hh__countup--initialized'
+		base: 'countup',
+		withoutSeparate: 'countup--without-separate',
+		initialized: 'countup--initialized'
 	};
 
 	let duration = 2000,

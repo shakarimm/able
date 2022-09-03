@@ -1,16 +1,16 @@
 function Content(callback) {
 	let classes = {
-		tab: 'tmpl-hh__content-tab',
-		swiperContainer: 'tmpl-hh__swiper-container',
-		tabActive: 'tmpl-hh__content-tab--active',
-		content: 'tmpl-hh__content',
-		contentActive: 'tmpl-hh__content--active',
-		contentOpacity1: 'tmpl-hh__content--opacity-1',
+		tab: 'content-tab',
+		swiperContainer: 'swiper-container',
+		tabActive: 'content-tab--active',
+		content: 'content',
+		contentActive: 'content--active',
+		contentOpacity1: 'content--opacity-1',
 	};
 
 	let contents,
 		tabs,
-		classPrefix = 'tmpl-hh__content__';
+		classPrefix = 'content__';
 
 	let updateActiveSwipers = function () {
 		let contents = document.getElementsByClassName(classes.contentActive);

@@ -12,8 +12,8 @@ block content
 					a.nav__item.content-tab(href="#navigation") Навигация
 					a.nav__item.content-tab(href="#career") Преподаватель
 					a.nav__item.content-tab(href="#students") Студенты
-					a.nav__item.content-tab(href="#students") Для компаний
-					a.nav__item.content-tab(href="#students") О нас
+					a.nav__item.content-tab(href="#company") Для компаний
+					a.nav__item.content-tab(href="#we") О нас
 				a.header__btn.btn.btn--transparent Бесплатная консультация
 				+nav-btn
 	<!-- END HEADER -->
@@ -254,7 +254,7 @@ block content
 		<!-- END SECTION BANNER -->
 	<!-- END CONTENT HOME -->
 
-	<!-- START CONTENT COURSES -->
+	<!-- START CONTENT DATA-SCIENCE -->
 	.content.content__courses
 
 		<!-- START SECTION FS -->
@@ -444,8 +444,627 @@ block content
 					.s-banner__title.s-banner__title--wide.title.title--centered.title--mb-short Точную информацию по тарифам <br>можно уточнить перейдя по кнопке
 					.s-banner__btn.s-banner__btn--centered.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
 		<!-- END SECTION BANNER -->
+	<!-- END CONTENT DATA-SCIENCE -->
 
-	<!-- START CONTENT COURSES -->
+	<!-- START CONTENT DEVELOPMENT -->
+	.content.content__navigation
+
+		<!-- START SECTION FS -->
+		.section.s-fs.section--long-pb 
+			.container 
+				.s-fs__inner 
+					.s-fs__content
+						.s-fs__title Профессия  <span><br>веб-разработчика</span> <br>с нуля за 6 месяцев
+						.s-fs__text.s-fs__text--data 
+							p Освой все, что необходимо для создания web-сайтов и начни зарабатывать на этом!
+						.s-fs__btn.btn.btn--primary ХОЧУ НА КУРС
+						.s-fs__price
+							.s-fs__price-nums от <span class="gray">31 500</span> <span class="blue">19 500 ₸</span> в месяц
+							.s-fs__price-text при оплате в рассрочку на 12 месяцев
+					.s-fs__img-wrapper 
+						img.s-fs__img(src="images/fs.jpg")
+		<!-- END SECTION FS -->
+
+		<!-- START SECTION SLOGAN -->
+		.section.s-slogan 
+			.container 
+				.s-slogan__title.title.title--primary.title--centered.title--without-after Освой JavaScript, PHP и создавай сайты,
+				.s-slogan__subtitle.title.title--mb-long.title--centered.title--medium которыми пользуются миллионы человек ежедневно. 
+				.s-slogan__text 
+					p Заказчики найдутся уже во время обучения! 
+		<!-- END SECTION SLOGAN -->
+
+		<!-- START SECTION AFTER-COURSE -->
+		.section.s-after-course.section--long 
+			.container
+				.title.title--mb-long К концу курса вы сможете: 
+				.s-after-course__cards
+					+icon-card("team", "Выстраивать и стилизовать веб страницу с помощью знаний основных принципов верстки")
+					+icon-card("idea", "Будете делать динамичные веб страницы, с помощью базовых знаний JavaScript")
+					+icon-card("comp", "Освоите фреймворки и библиотеки которые облегчат разработку и количество строк кода")
+					+icon-card("like", "Освоите все системы веб (фронтенд, бэкенд, база данных), как они строятся и общаются между собой ")
+		<!-- END SECTION AFTER-COURSE -->
+
+		<!-- START SECTION AUDIENCE -->
+		.section.s-audience 
+			.container 
+				.title.title--mb-long Для кого курс
+				.s-audience__inner.flex
+					+titled-text-card("Новичкам", "Научитесь верстать лендинги и небольшие сайты. Если хотите сменить работу или ищите дополнительный заработок, то это идеальный курс для новичков. К концу курса уже сможете окупить его стоимость")
+					+titled-text-card("Веб-разработчикам с небольшим опытом", "Улучшив имеющиеся навыки в написании кода на JavaScript и PHP, вы станете востребованным специалистом")
+					+titled-text-card("Профессионалам", "Закрепите знания, начнете работать с зарубежными проектами и преодолеете страх выйти на фриланс")
+		<!-- END SECTION AUDIENCE -->
+
+		<!-- START SECTION PROGRAM -->
+		.section.s-program.section--long
+			.container 
+				.title.title--mb-long Программа курса
+				.s-program__inner.flex
+					+program-card("<span>01.</span> Верстка")
+						p Первый код на HTML
+						p Что такое CSS
+						p CSS Flexbox
+						p Функции (def, рекурсия)
+						p CSS Grid
+						p Финальный проект
+					+program-card("<span>02.</span> JavaScript")
+						p Базовый Javascript
+						p Продвинутый Javascript
+						p Структуры данных
+						p Объектно-ориентированное программирование 
+						p Функциональное программирование
+						p Проекты
+					+program-card("<span>03.</span> Библиотеки и фреймворки")
+						p Bootstrap
+						p jQuery
+						p ReactJS
+						p MERN
+						p SASS
+						p Проекты
+		<!-- END SECTION PROGRAM -->
+
+		<!-- START SECTION TEACHER -->
+		.section.s-teacher
+			.container 
+				.title.title--mb-long Преподаватель курса
+			.container.container--teachers
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/2.jpg")
+					.s-teacher__content 
+						.s-teacher__name Сакен Кенжегулов
+						.s-teacher__descr Автор курса Веб-разработка	
+						.s-teacher__text 
+							p получил диплом о высшем образовании в UNIST, Южная Корея.
+							p Software engineer мирового гиганта Google, призер нескольких олимпиад международного уровня, имеет многолетний опыт работы в IT-отраслях (веб-разработка, ИИ, роботетхника и т.д.).
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/3.jpg")
+					.s-teacher__content 
+						.s-teacher__name Ерлан Байтуринов
+						.s-teacher__descr Автор курса Веб-разработка
+						.s-teacher__text 
+							p получил диплом о высшем образовании в СДУ.
+							p Software engineer мирового гиганта Google. Работал во многих казахстанских компаниях.
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/4.jpg")
+					.s-teacher__content 
+						.s-teacher__name Диана Мадуан
+						.s-teacher__descr Автор курса data science
+						.s-teacher__text 
+							p выпускница Международного университета информационных технологий в Алматы, front-end разработчик в международной компании Citadel, ментор курса веб-разработки.
+		<!-- END SECTION TEACHER -->
+
+		<!-- START SECTION QUOTE -->
+		.section.s-quote.section--long 
+			.container 
+				.s-quote__inner
+					.s-quote__text 
+						img.s-quote__img.s-quote__img--one(src="images/quote/1.svg") 
+						img.s-quote__img.s-quote__img--two(src="images/quote/2.svg") 
+						p Спасибо Онлайн Академии Эйбл и Диане за обучение и за то, что помогли устроиться в Новозеландскую компанию веб-разработчиком
+					.s-quote__graduate
+						.s-quote__graduate__img-wrapper 
+							img.s-quote__graduate__img(src="images/graduate-2.png")
+						.s-quote__graduate__info
+							p Олжас Курманбаев, <br>Выпускник курса веб-разработки
+							.s-quote__graduate__info-post Веб-разработчик в Новой Зеландии в компании CentralPass
+		<!-- END SECTION QUOTE -->
+
+		<!-- START SECTION WE-HAVE -->
+		.section.s-we-have 
+			.container 
+				.title.title--mb-long Учиться у нас, это: 
+				.s-we-have__inner.flex 
+					+we-have-card("images/we-have-card/1.jpg","Индивидуальная поддержка во время обучения")
+						p Получите помощь по любой проблеме, большой или маленькой, от вашего личного наставника, действующего специалиста.
+					+we-have-card("images/we-have-card/2.jpg","Контроль продуктивности и освоение материала")
+						p Проверка выполнения домашнего задания, постоянная активность в чате и офлайн встречи помогут вам достичь успеха.
+					+we-have-card("images/we-have-card/3.jpg","Вдохновение и мотивация от лучших")
+						p Ваш преподаватель — это ваше окно в мир науки о данных. Он мотивирует вас, отвечает на вопросы и поддерживает в течение всего обучения. 
+		<!-- END SECTION WE-HAVE -->
+
+		<!-- START SECTION PRICE -->
+		.section.s-price.section--long
+			.container
+				.title.title--mb-long Цены
+				.s-price__inner
+					.s-price-card
+						img.s-price-card__img(src="images/price/1.svg")
+						.s-price-card__inner 
+							.s-price-card__installment РАССРОЧКА 16 250 ₸/МЕС
+							.s-price-card__title.s-price-card__title--big.title.title--mini БАЗОВЫЙ
+							.s-price-card__list
+								.s-price-card__item Самостоятельное прохождение курса
+								.s-price-card__item Доступ к курсу 6 месяцев
+								.s-price-card__item Проверка заданий на платформе
+								.s-price-card__item.s-price-card__item--none Сертификат об окончании не выдается
+							.s-price-card__nums 
+								.s-price-card__last-price 240 000 ₸
+								.s-price-card__new-price 195 000 ₸
+							.s-price__btn-wrapper
+								.s-price__btn.btn.btn--course ХОЧУ НА КУРС
+					.s-price-card.s-price-card--blue
+						img.s-price-card__img(src="images/price/2.svg")
+						.s-price-card__inner 
+							.s-price-card__installment РАССРОЧКА 19 500 ₸/МЕС
+							.s-price-card__title.title.title--mini ОПТИМАЛЬНЫЙ
+							.s-price-card__list
+								.s-price-card__item Поддержка и проверка заданий от куратора
+								.s-price-card__item Живые вебинары с преподавателем
+								.s-price-card__item Общий чат с учениками и преподавателями
+								.s-price-card__item Доступ к курсу навсегда
+								.s-price-card__item Онлайн воркшопы
+								.s-price-card__item Еженедельные прямые эфиры с преподавателем
+								.s-price-card__item Выделенный студенческий консультант и техническая поддержка во время обучения
+								.s-price-card__item 8 проектов в портфолио 
+								.s-price-card__item Гарантия трудоустройства после окончания курса
+							.s-price-card__nums 
+								.s-price-card__last-price.s-price-card__last-price--blue 330 000 ₸
+								.s-price-card__new-price 235 000 ₸
+							.s-price__btn-wrapper
+								.s-price__btn.btn.btn--course-blue ХОЧУ НА КУРС
+					.s-price-card
+						img.s-price-card__img(src="images/price/3.svg")
+						.s-price-card__inner 
+							.s-price-card__installment РАССРОЧКА 49 500 ₸/МЕС
+							.s-price-card__title.title.title--mini мАКСИМУМ
+							.s-price-card__list
+								.s-price-card__item Все что в пакете “оптимальный”
+								.s-price-card__item Индивидуальное обучение
+								.s-price-card__item Приоритетный VIP-чат с преподавателями
+								.s-price-card__item Доступ к курсу навсегда
+								.s-price-card__item Личное курирование самого преподавателя на протяжении всего курса
+								.s-price-card__item Живые созвоны с преподавателем
+							.s-price-card__nums 
+								.s-price-card__last-price 800 000 ₸
+								.s-price-card__new-price 595 000 ₸
+							.s-price__btn-wrapper
+								.s-price__btn.btn.btn--course ХОЧУ НА КУРС
+		<!-- END SECTION PRICE -->
+
+		<!-- START SECTION BANNER -->
+		.section.s-banner
+			.container 
+				.s-banner__inner.s-banner__inner--flex-wrap 
+					.s-banner__title.s-banner__title--wide.title.title--centered.title--mb-short Точную информацию по тарифам <br>можно уточнить перейдя по кнопке
+					.s-banner__btn.s-banner__btn--centered.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+		<!-- END SECTION BANNER -->
+	<!-- END CONTENT DEVELOPMENT -->
+
+	<!-- START CONTENT BUSINESS -->
+	.content.content__career
+
+		<!-- START SECTION FS -->
+		.section.s-fs.section--long-pb 
+			.container 
+				.s-fs__inner 
+					.s-fs__content
+						.s-fs__title Профессия  <span><br>бизнес-аналитика</span> <br>с нуля за 7 месяцев
+						.s-fs__text.s-fs__text--data 
+							p Стань профессионалом, который определяет потребности бизнеса с помощью данных и находит решения
+						.s-fs__btn.btn.btn--primary ХОЧУ НА КУРС
+						.s-fs__price
+							.s-fs__price-nums от <span class="gray">27 000</span> <span class="blue">20 500 ₸</span> в месяц
+							.s-fs__price-text при оплате в рассрочку на 12 месяцев
+					.s-fs__img-wrapper 
+						img.s-fs__img(src="images/fs.jpg")
+		<!-- END SECTION FS -->
+
+		<!-- START SECTION SLOGAN -->
+		.section.s-slogan 
+			.container 
+				.s-slogan__title.title.title--primary.title--centered.title--without-after Став бизнес-аналитиком,
+				.s-slogan__subtitle.title.title--centered.title--medium научитесь находить ключевые боли в бизнес-процессах и <br>превращать их в достоинства, чтобы увеличить прибыль.
+				.s-slogan__text 
+					p С новыми навыками сможете выстраивать стратегические бизнес-<br>модели и применять во всех сферах деятельности: финансы, <br>строительство, консалтинг, IT и другие.
+		<!-- END SECTION SLOGAN -->
+
+		<!-- START SECTION AFTER-COURSE -->
+		.section.s-after-course.section--long 
+			.container
+				.title.title--mb-long К концу курса вы сможете: 
+				.s-after-course__cards
+					+icon-card("team", "Использовать Power BI для бизнес-аналитики и подготовки интерактивных отчетов. Анализировать большое количество данных из разных источников. Преобразовывать цифры в понятные отчеты. Отслеживать изменения показателей на динамических дашбордах")
+					+icon-card("idea", "Использовать SQL – язык запросов, позволяющий работать с данными из баз данных, читать их, извлекать и исследовать.")
+					+icon-card("comp", "Использовать Python для решения задач, которые ранее занимали огромное количество ручной работы. Использовать библиотеки Python-а для анализа, очистки, визуализации данных")
+		<!-- END SECTION AFTER-COURSE -->
+
+		<!-- START SECTION AUDIENCE -->
+		.section.s-audience 
+			.container 
+				.title.title--mb-long Для кого курс
+				.s-audience__inner.flex
+					+titled-text-card("Новичкам", "Научитесь анализировать и развивать бизнес-процессы, став высокооплачиваемым специалистом. Поменяйте кардинально жизнь")
+					+titled-text-card("Начинающим аналитикам", "Улучшите свои навыки и получите повышение на работе")
+					+titled-text-card("Топ-менеджерам", "Реализуйте новые проекты, улучшив имеющиеся знания. Курс поможет расширить новые горизонты")
+		<!-- END SECTION AUDIENCE -->
+
+		<!-- START SECTION PROGRAM -->
+		.section.s-program.section--long
+			.container 
+				.title.title--mb-long Программа курса
+				.s-program__inner.flex
+					+program-card("<span>01.</span> Основы Python")
+						p Типы переменных (числа, текст, списки, словари, и т.д.)
+						p Операторы (сравнения, условные, и т.д.)
+						p Циклы (for, while)
+						p Функции (def, рекурсия)
+						p Объектно-ориентированное программирование (class, inheritance, и т.д.)
+						p Стандартные модули и библиотеки  (os, csv, json, и т.д.)
+						p Модули и Пакеты
+					+program-card("<span>02.</span> Обработка и визуализация данных")
+						p Библиотеки Python
+						p Numpy
+						p Pandas
+						p Matplotlib
+						p Seaborn
+						p EDA – Exploratory Data <br>Analysis
+					+program-card("<span>03.</span> Power BI")
+						p Работа с базами данных
+						p Работа с Power Query Editor
+						p Введение в DAX
+						p Оптимизация Power BI
+						p Варианты визуализации
+						p Анализ данных в Power BI
+						p Power BI Service
+					+program-card("<span>03.</span> SQL")
+						p Функции
+						p Джойны
+						p Подзапросы
+						p Триггеры
+						p Практика
+						p SQL интервью
+		<!-- END SECTION PROGRAM -->
+
+		<!-- START SECTION TEACHER -->
+		.section.s-teacher
+			.container 
+				.title.title--mb-long Преподаватель курса
+			.container.container--teachers
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/5.jpg")
+					.s-teacher__content 
+						.s-teacher__name Азамат Хасенов
+						.s-teacher__descr Автор курса data science
+						.s-teacher__text 
+							p Работал специалистом по искусственному интеллекту в Южной Корее, компания ST UNITAS
+							p Работал дата сайентист в компании Huawei
+							p Сейчас дата сайентист в топовой казахстанской компании BTS Digital
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/6.jpg")
+					.s-teacher__content 
+						.s-teacher__name Акжан Ракыш
+						.s-teacher__descr Старший консультант KPMG
+						.s-teacher__text 
+							p Проходил стажировку в США и Германии.
+							p Работал IT-специалистом в компании ST Unitas, Южная Корея.
+							p Data Scientist в Huawei
+		<!-- END SECTION TEACHER -->
+
+		<!-- START SECTION QUOTE -->
+		.section.s-quote.section--long 
+			.container 
+				.s-quote__inner
+					.s-quote__text 
+						img.s-quote__img.s-quote__img--one(src="images/quote/1.svg") 
+						img.s-quote__img.s-quote__img--two(src="images/quote/2.svg") 
+						p Спасибо Онлайн Академии Эйбл и Диане за обучение и за то, что помогли устроиться в Новозеландскую компанию веб-разработчиком
+					.s-quote__graduate
+						.s-quote__graduate__img-wrapper 
+							img.s-quote__graduate__img(src="images/graduate-2.png")
+						.s-quote__graduate__info
+							p Олжас Курманбаев, <br>Выпускник курса веб-разработки
+							.s-quote__graduate__info-post Веб-разработчик в Новой Зеландии в компании CentralPass
+		<!-- END SECTION QUOTE -->
+
+		<!-- START SECTION WE-HAVE -->
+		.section.s-we-have 
+			.container 
+				.title.title--mb-long Учиться у нас, это: 
+				.s-we-have__inner.flex 
+					+we-have-card("images/we-have-card/1.jpg","Индивидуальная поддержка во время обучения")
+						p Получите помощь по любой проблеме, большой или маленькой, от вашего личного наставника, действующего специалиста.
+					+we-have-card("images/we-have-card/2.jpg","Контроль продуктивности и освоение материала")
+						p Проверка выполнения домашнего задания, постоянная активность в чате и офлайн встречи помогут вам достичь успеха.
+					+we-have-card("images/we-have-card/3.jpg","Вдохновение и мотивация от лучших")
+						p Ваш преподаватель — это ваше окно в мир науки о данных. Он мотивирует вас, отвечает на вопросы и поддерживает в течение всего обучения. 
+		<!-- END SECTION WE-HAVE -->
+
+		<!-- START SECTION PRICE -->
+		.section.s-price.section--long
+			.container
+				.title.title--mb-long Цены
+				.s-price__inner
+					.s-price-card
+						img.s-price-card__img(src="images/price/1.svg")
+						.s-price-card__inner 
+							.s-price-card__installment РАССРОЧКА 16 250 ₸/МЕС
+							.s-price-card__title.s-price-card__title--big.title.title--mini БАЗОВЫЙ
+							.s-price-card__list
+								.s-price-card__item Самостоятельное прохождение курса
+								.s-price-card__item Доступ к курсу 6 месяцев
+								.s-price-card__item Проверка заданий на платформе
+								.s-price-card__item.s-price-card__item--none Сертификат об окончании не выдается
+							.s-price-card__nums 
+								.s-price-card__last-price 280 000 ₸
+								.s-price-card__new-price 215 000 ₸
+							.s-price__btn-wrapper
+								.s-price__btn.btn.btn--course ХОЧУ НА КУРС
+					.s-price-card.s-price-card--blue
+						img.s-price-card__img(src="images/price/2.svg")
+						.s-price-card__inner 
+							.s-price-card__installment РАССРОЧКА 19 500 ₸/МЕС
+							.s-price-card__title.title.title--mini ОПТИМАЛЬНЫЙ
+							.s-price-card__list
+								.s-price-card__item Поддержка и проверка заданий от куратора
+								.s-price-card__item Живые вебинары с преподавателем
+								.s-price-card__item Общий чат с учениками и преподавателями
+								.s-price-card__item Доступ к курсу навсегда
+								.s-price-card__item Онлайн воркшопы
+								.s-price-card__item Еженедельные прямые эфиры с преподавателем
+								.s-price-card__item Выделенный студенческий консультант и техническая поддержка во время обучения
+								.s-price-card__item 8 проектов в портфолио 
+								.s-price-card__item Гарантия трудоустройства после окончания курса
+							.s-price-card__nums 
+								.s-price-card__last-price.s-price-card__last-price--blue 320 000 ₸
+								.s-price-card__new-price 245 000 ₸
+							.s-price__btn-wrapper
+								.s-price__btn.btn.btn--course-blue ХОЧУ НА КУРС
+					.s-price-card
+						img.s-price-card__img(src="images/price/3.svg")
+						.s-price-card__inner 
+							.s-price-card__installment РАССРОЧКА 49 500 ₸/МЕС
+							.s-price-card__title.title.title--mini мАКСИМУМ
+							.s-price-card__list
+								.s-price-card__item Все что в пакете “оптимальный”
+								.s-price-card__item Индивидуальное обучение
+								.s-price-card__item Приоритетный VIP-чат с преподавателями
+								.s-price-card__item Доступ к курсу навсегда
+								.s-price-card__item Личное курирование самого преподавателя на протяжении всего курса
+								.s-price-card__item Живые созвоны с преподавателем
+							.s-price-card__nums 
+								.s-price-card__last-price 800 000 ₸
+								.s-price-card__new-price 595 000 ₸
+							.s-price__btn-wrapper
+								.s-price__btn.btn.btn--course ХОЧУ НА КУРС
+		<!-- END SECTION PRICE -->
+
+		<!-- START SECTION BANNER -->
+		.section.s-banner
+			.container 
+				.s-banner__inner.s-banner__inner--flex-wrap 
+					.s-banner__title.s-banner__title--wide.title.title--centered.title--mb-short Точную информацию по тарифам <br>можно уточнить перейдя по кнопке
+					.s-banner__btn.s-banner__btn--centered.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+		<!-- END SECTION BANNER -->
+	<!-- END CONTENT BUSINESS -->
+
+	<!-- START CONTENT ANDROID -->
+	.content.content__students
+
+		<!-- START SECTION FS -->
+		.section.s-fs.section--long-pb 
+			.container 
+				.s-fs__inner 
+					.s-fs__content
+						.s-fs__title Профессия  <span><br>андроид разработчика</span> <br>с нуля за 8 месяцев
+						.s-fs__text.s-fs__text--data 
+							p Научись создавать приложения для самой востребованной операционной системы андроид.
+						.s-fs__btn.btn.btn--primary ХОЧУ НА КУРС
+						.s-fs__price
+							.s-fs__price-nums от <span class="gray">31 500</span> <span class="blue">22 000 ₸</span> в месяц
+							.s-fs__price-text при оплате в рассрочку на 12 месяцев
+					.s-fs__img-wrapper 
+						img.s-fs__img(src="images/fs.jpg")
+		<!-- END SECTION FS -->
+
+		<!-- START SECTION SLOGAN -->
+		.section.s-slogan 
+			.container 
+				.s-slogan__title.title.title--primary.title--centered.title--without-after Вы научитесь создавать и обновлять <br>мобильные приложения,
+				.s-slogan__subtitle.title.title--centered.title--medium.title--without-after игры, программные обеспечения для устройств, работающих на самой распространенной операционной системе в мире - около 3 <br>млрд устройств по данным Google. Это в  три раза больше <br>приложений, чем на iOS.
+		<!-- END SECTION SLOGAN -->
+
+		<!-- START SECTION AFTER-COURSE -->
+		.section.s-after-course.section--long 
+			.container
+				.title.title--mb-long К концу курса вы сможете: 
+				.s-after-course__cards
+					+icon-card("team", "Владеть языками Java и Kotlin, работать с интегрированной средой разработки Android Studio")
+					+icon-card("idea", "Использовать методы построения экранов, разрабатывать пользовательские интерфейсы различной сложности UX/UI.")
+					+icon-card("comp", "Управлять процессом с помощью GitHub и работать с PlayMarket")
+		<!-- END SECTION AFTER-COURSE -->
+
+		<!-- START SECTION AUDIENCE -->
+		.section.s-audience 
+			.container 
+				.title.title--mb-long Для кого курс
+				.s-audience__inner.flex
+					+titled-text-card("Новичкам", "Освоите Kotlin и станете разработчиком для андроид приложений. Сможете работать на аутсорс с любой точки мира. Будете постоянно развиваться создавать что-то новое")
+					+titled-text-card("Работающим специалистам", "Повысите квалификацию, систематизируя знания и разрабатывай приложения на любой операционке, повысив чек")
+		<!-- END SECTION AUDIENCE -->
+
+		<!-- START SECTION PROGRAM -->
+		.section.s-program.section--long
+			.container 
+				.title.title--mb-long Программа курса
+				.s-program__inner.flex
+					+program-card("<span>01.</span> Основы Kotlin")
+						p обзор языка и основной синтаксис и типы
+						p управление потоками циклы и условия
+						p функции и билдеры
+						p null safety, equality
+						p ООП в котлин
+						p асинхронное программирование
+						p корутины
+					+program-card("<span>02.</span> Основа интерфейсов в андроид")
+						p Установка среды для разработки
+						p Статичные View: Текст, кнопки, картинки
+						p Динамичные View: Списки, фрагменты, диалоги
+					+program-card("<span>03.</span> Android outer scope")
+						p Взаимодействие с сервером( retrofit, архитектура)
+						p Многопоточность
+						p Работа с локальным хранилищем
+					+program-card("<span>03.</span> Возвращение в inner scope")
+						p Android компоненты(ContentProvider, Serivces)
+						p Пуш уведомления
+						p Intent
+						p Карты
+						p Разрешения
+						p SOLID
+		<!-- END SECTION PROGRAM -->
+
+		<!-- START SECTION TEACHER -->
+		.section.s-teacher
+			.container 
+				.title.title--mb-long Преподаватель курса
+			.container.container--teachers
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/7.jpg")
+					.s-teacher__content 
+						.s-teacher__name Бауыржан Нургалиев
+						.s-teacher__descr Автор курса андроид разработка
+						.s-teacher__text 
+							p 6 лет в android-разработке
+							p Сеньор разработчик в международной компании EPAM
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/8.jpg")
+					.s-teacher__content 
+						.s-teacher__name Толеген Акылбеков
+						.s-teacher__descr Автор курса андроид разработка
+						.s-teacher__text 
+							p разработчик в международной компании EPAM
+		<!-- END SECTION TEACHER -->
+
+		<!-- START SECTION QUOTE -->
+		.section.s-quote.section--long 
+			.container 
+				.s-quote__inner
+					.s-quote__text 
+						img.s-quote__img.s-quote__img--one(src="images/quote/1.svg") 
+						img.s-quote__img.s-quote__img--two(src="images/quote/2.svg") 
+						p Спасибо Онлайн Академии Эйбл и Диане за обучение и за то, что помогли устроиться в Новозеландскую компанию веб-разработчиком
+					.s-quote__graduate
+						.s-quote__graduate__img-wrapper 
+							img.s-quote__graduate__img(src="images/graduate-2.png")
+						.s-quote__graduate__info
+							p Олжас Курманбаев, <br>Выпускник курса веб-разработки
+							.s-quote__graduate__info-post Веб-разработчик в Новой Зеландии в компании CentralPass
+		<!-- END SECTION QUOTE -->
+
+		<!-- START SECTION WE-HAVE -->
+		.section.s-we-have 
+			.container 
+				.title.title--mb-long Учиться у нас, это: 
+				.s-we-have__inner.flex 
+					+we-have-card("images/we-have-card/1.jpg","Индивидуальная поддержка во время обучения")
+						p Получите помощь по любой проблеме, большой или маленькой, от вашего личного наставника, действующего специалиста.
+					+we-have-card("images/we-have-card/2.jpg","Контроль продуктивности и освоение материала")
+						p Проверка выполнения домашнего задания, постоянная активность в чате и офлайн встречи помогут вам достичь успеха.
+					+we-have-card("images/we-have-card/3.jpg","Вдохновение и мотивация от лучших")
+						p Ваш преподаватель — это ваше окно в мир науки о данных. Он мотивирует вас, отвечает на вопросы и поддерживает в течение всего обучения. 
+		<!-- END SECTION WE-HAVE -->
+
+		<!-- START SECTION PRICE -->
+		.section.s-price.section--long
+			.container
+				.title.title--mb-long Цены
+				.s-price__inner
+					.s-price-card
+						img.s-price-card__img(src="images/price/1.svg")
+						.s-price-card__inner 
+							.s-price-card__installment РАССРОЧКА 16 250 ₸/МЕС
+							.s-price-card__title.s-price-card__title--big.title.title--mini БАЗОВЫЙ
+							.s-price-card__list
+								.s-price-card__item Самостоятельное прохождение курса
+								.s-price-card__item Доступ к курсу 6 месяцев
+								.s-price-card__item Проверка заданий на платформе
+								.s-price-card__item.s-price-card__item--none Сертификат об окончании не выдается
+							.s-price-card__nums 
+								.s-price-card__last-price 280 000 ₸
+								.s-price-card__new-price 215 000 ₸
+							.s-price__btn-wrapper
+								.s-price__btn.btn.btn--course ХОЧУ НА КУРС
+					.s-price-card.s-price-card--blue
+						img.s-price-card__img(src="images/price/2.svg")
+						.s-price-card__inner 
+							.s-price-card__installment РАССРОЧКА 19 500 ₸/МЕС
+							.s-price-card__title.title.title--mini ОПТИМАЛЬНЫЙ
+							.s-price-card__list
+								.s-price-card__item Поддержка и проверка заданий от куратора
+								.s-price-card__item Живые вебинары с преподавателем
+								.s-price-card__item Общий чат с учениками и преподавателями
+								.s-price-card__item Доступ к курсу навсегда
+								.s-price-card__item Онлайн воркшопы
+								.s-price-card__item Еженедельные прямые эфиры с преподавателем
+								.s-price-card__item Выделенный студенческий консультант и техническая поддержка во время обучения
+								.s-price-card__item 8 проектов в портфолио 
+								.s-price-card__item Гарантия трудоустройства после окончания курса
+							.s-price-card__nums 
+								.s-price-card__last-price.s-price-card__last-price--blue 320 000 ₸
+								.s-price-card__new-price 245 000 ₸
+							.s-price__btn-wrapper
+								.s-price__btn.btn.btn--course-blue ХОЧУ НА КУРС
+					.s-price-card
+						img.s-price-card__img(src="images/price/3.svg")
+						.s-price-card__inner 
+							.s-price-card__installment РАССРОЧКА 49 500 ₸/МЕС
+							.s-price-card__title.title.title--mini мАКСИМУМ
+							.s-price-card__list
+								.s-price-card__item Все что в пакете “оптимальный”
+								.s-price-card__item Индивидуальное обучение
+								.s-price-card__item Приоритетный VIP-чат с преподавателями
+								.s-price-card__item Доступ к курсу навсегда
+								.s-price-card__item Личное курирование самого преподавателя на протяжении всего курса
+								.s-price-card__item Живые созвоны с преподавателем
+							.s-price-card__nums 
+								.s-price-card__last-price 800 000 ₸
+								.s-price-card__new-price 595 000 ₸
+							.s-price__btn-wrapper
+								.s-price__btn.btn.btn--course ХОЧУ НА КУРС
+		<!-- END SECTION PRICE -->
+
+		<!-- START SECTION BANNER -->
+		.section.s-banner
+			.container 
+				.s-banner__inner.s-banner__inner--flex-wrap 
+					.s-banner__title.s-banner__title--wide.title.title--centered.title--mb-short Точную информацию по тарифам <br>можно уточнить перейдя по кнопке
+					.s-banner__btn.s-banner__btn--centered.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+		<!-- END SECTION BANNER -->
+	<!-- END CONTENT ANDROID -->
+
+	<!-- START CONTENT PAYMENT -->
+	.content.content__company
+
+		<!-- START SECTION NAV-FS -->
+		
+		<!-- END SECTION NAV-FS -->
+	<!-- END CONTENT PAYMENT -->
 
 	<!-- START FOOTER -->
 	.footer 

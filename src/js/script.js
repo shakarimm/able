@@ -11,19 +11,19 @@ import Nav from "./modules/Nav";
 	--------------------------------------------
  */
 	function initCompanySlider() {
-		swiper.init(".tmpl-hh__company-slider", {
+		swiper.init(".company-slider", {
 			loop: true,
 			slidesPerView: 6,
 			autoHeight: true,
-			bulletActiveClass: '.tmpl-hh__company-slider-pagination-active',
+			bulletActiveClass: '.company-slider-pagination-active',
 			pagination: {
-				el: '.tmpl-hh__company-slider__pagination',
+				el: '.company-slider__pagination',
 				clickable: true,
 			},
 		});
 	}
 
-	const scrollElements = document.querySelectorAll(".tmpl-hh__s-stats");
+	const scrollElements = document.querySelectorAll(".s-stats");
 	const elementInView = (el, dividend = 1) => {  
 		const elementTop = el.getBoundingClientRect().top;  
 		return (    
@@ -32,14 +32,14 @@ import Nav from "./modules/Nav";
 			const handleScrollAnimation = () => {  
 				scrollElements.forEach((el) => {    
 					if (elementInView(el, 1.25)) {      
-						new Countup(".tmpl-hh__s-stats");
+						new Countup(".s-stats");
 					}  
 				})
 			}
 			window.addEventListener("scroll", () => {   handleScrollAnimation();});
 			
-	const tabsBtn = document.querySelectorAll(".tmpl-hh__tabs__nav-btn")
-	const tabsItem = document.querySelectorAll(".tmpl-hh__tabs__item")
+	const tabsBtn = document.querySelectorAll(".tabs__nav-btn")
+	const tabsItem = document.querySelectorAll(".tabs__item")
 
 	tabsBtn.forEach(onTabClick)
 
@@ -49,22 +49,22 @@ import Nav from "./modules/Nav";
 			let tabId = currentBtn.getAttribute("data-tab")
 			let currentTab = document.querySelector(tabId)
 
-			if( !currentBtn.classList.contains("tmpl-hh__tabs__nav-btn--active") ) {
+			if( !currentBtn.classList.contains("tabs__nav-btn--active") ) {
 				tabsBtn.forEach(function(item) {
-					item.classList.remove("tmpl-hh__tabs__nav-btn--active")
+					item.classList.remove("tabs__nav-btn--active")
 				})
 	
 				tabsItem.forEach(function(item) {
-					item.classList.remove("tmpl-hh__tabs__item--active")
+					item.classList.remove("tabs__item--active")
 				})
 	
-				currentBtn.classList.add("tmpl-hh__tabs__nav-btn--active")
-				currentTab.classList.add("tmpl-hh__tabs__item--active")
+				currentBtn.classList.add("tabs__nav-btn--active")
+				currentTab.classList.add("tabs__item--active")
 			}
 		})
 	}
 
-	document.querySelector(".tmpl-hh__tabs__nav-btn").click()
+	document.querySelector(".tabs__nav-btn").click()
 /*
 	--------------------------------------------
 	--------------------------------------------

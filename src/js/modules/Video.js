@@ -1,7 +1,7 @@
 function Video() {
 	let classes = {
-		item: 'tmpl-hh__video',
-		itemPlaying: 'tmpl-hh__video--playing',
+		item: 'video',
+		itemPlaying: 'video--playing',
 	};
 
 	let getVideoFrame = function (videoId, source) {
