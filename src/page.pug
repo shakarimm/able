@@ -10,10 +10,15 @@ block content
 				.header__nav.nav
 					a.nav__item.content-tab(href="#courses") Курсы
 					a.nav__item.content-tab(href="#navigation") Навигация
-					a.nav__item.content-tab(href="#career") Преподаватель
-					a.nav__item.content-tab(href="#students") Студенты
+					a.nav__item.content-tab(href="#business") Преподаватель
+					a.nav__item.content-tab(href="#android") Студенты
 					a.nav__item.content-tab(href="#company") Для компаний
-					a.nav__item.content-tab(href="#we") О нас
+					a.nav__item.content-tab(href="#history") О нас
+					a.nav__item.content-tab(href="#review") Обзор
+					a.nav__item.content-tab(href="#hiring") Найм
+					a.nav__item.content-tab(href="#corpo") Корпо
+					a.nav__item.content-tab(href="#trainee") Стажеры
+					a.nav__item.content-tab(href="#questions") Вопросы
 				a.header__btn.btn.btn--transparent Бесплатная консультация
 				+nav-btn
 	<!-- END HEADER -->
@@ -654,7 +659,7 @@ block content
 	<!-- END CONTENT DEVELOPMENT -->
 
 	<!-- START CONTENT BUSINESS -->
-	.content.content__career
+	.content.content__business
 
 		<!-- START SECTION FS -->
 		.section.s-fs.section--long-pb 
@@ -863,7 +868,7 @@ block content
 	<!-- END CONTENT BUSINESS -->
 
 	<!-- START CONTENT ANDROID -->
-	.content.content__students
+	.content.content__android
 
 		<!-- START SECTION FS -->
 		.section.s-fs.section--long-pb 
@@ -1062,9 +1067,388 @@ block content
 	.content.content__company
 
 		<!-- START SECTION NAV-FS -->
-		
+		.section.s-nav-fs
+			.container 
+				.title.title--mb-long Способы оплаты
+				.s-nav-fs__text 
+					p Оплата за обучение проводится единожды. Стоимость курса включает в себя весь курс и условия по пакету, который вы выберете. Договор скидывается по запросу.
 		<!-- END SECTION NAV-FS -->
+
+		<!-- START SECTION PAY-TYPE -->
+		.section.s-pay-type.section--long 
+			.container 
+				.title.title--mb-long Принимается оплата, путем:
+				.s-pay-type__inner 
+					+pay-card(false, '/images/pay-card/money.png', 'Наличной оплаты', false)
+					+pay-card('percent', false, 'Рассрочки от банка', 'Kaspi, Halyk Bank - 3, 6, 12 месяцев. (24 месяцев в определенные дни от банка) ')
+					+pay-card('world', false, 'Международные переводы', false)
+					+pay-card('wife', false, 'Оплата для организаций через счет на оплату', false)
+		<!-- END SECTION PAY-TYPE -->
+
+		<!-- START SECTION PAY-CASH -->
+		.section.s-pay-cash 
+			.container
+				.s-pay-cash__inner
+					.s-pay-cash__num 1
+					.s-pay-cash__content
+						.s-pay-cash__title.title.title--mb-long Оплата наличными
+						.s-pay-cash__text 
+							p Мы выставляем на ваш номер счет - выбираете способ оплаты Kaspi Gold - оплата прошла. Если же у вас нет каспи, можно осуществить перевод на карты Халык банка, Фридом Финанс. Комиссию оплачиваем мы
+		<!-- END SECTION PAY-CASH -->
+
+		<!-- START SECTION PAY-INSTALLMENT -->
+		.section.s-pay-installment.section--long 
+			.container
+				.s-pay-installment__inner
+					.s-pay-installment__num 2
+					.s-pay-installment__content
+						.s-pay-installment__title.title.title--mb-long Оплата по рассрочке
+						.s-pay-installment__subtitle Kaspi:
+						.s-pay-installment__text 
+							p Сперва вам нужно получить одобрение от банка, следуйте инструкции 
+						.s-pay-installment__cards 
+							+pay-installment-card("images/pay-installment/1.jpg", "Выберите раздел рассрочка 0-0-12 на главное странице Каспи.")
+							+pay-installment-card("images/pay-installment/2.jpg", "Нажимаем на оформить рассрочку.")
+							+pay-installment-card("images/pay-installment/3.jpg", "Вводим сумму курса, который хотите приобрести в рассрочку. ")
+							+pay-installment-card("images/pay-installment/4.jpg", "Выбираем срок и оформляем рассрочку. В случае одобрение, сообщите менеджеру. Он вышлет вам счет на номер каспи. При оплате выберете “Рассрочка”.")
+						.s-pay-installment__subtitle Халык банк:
+						.s-pay-installment__text 
+							p Следуйте инструкции 
+						.s-pay-installment__cards 
+							+pay-installment-card("images/pay-installment/1.jpg", "В главном меню выбираем “рассрочка”.")
+							+pay-installment-card("images/pay-installment/2.jpg", "Выбираем “Homebank Рассрочка” .")
+							+pay-installment-card("images/pay-installment/3.jpg", "В поисковике вводим название нашей академии.")
+							+pay-installment-card("images/pay-installment/4.jpg", "Далее вводим сумму и заполняете остальные поля. После одобрения менеджер скинет вам QR код, по которому можно будет совершить оплату.")
+		<!-- END SECTION PAY-INSTALLMENT -->
+
+		<!-- START SECTION PAY-INTERNATIONAL -->
+		.section.s-pay-international 
+			.container
+				.s-pay-international__inner
+					.s-pay-international__num 3
+					.s-pay-international__content
+						.s-pay-international__title.title.title--mb-long Международные переводы 
+						.s-pay-international__text 
+							p Международные переводы осуществляются с помощью сервисов moneygram, paysend, paypall.
+						.s-pay-international__cards 
+							.s-pay-international__img-wrapper 
+								img.s-pay-international(src="images/pay-international/1.png")
+							.s-pay-international__img-wrapper 
+								img.s-pay-international(src="images/pay-international/2.png")
+							.s-pay-international__img-wrapper 
+								img.s-pay-international(src="images/pay-international/3.png") 
+		<!-- END SECTION PAY-INTERNATIONAL -->
+
+		<!-- START SECTION PAY-ORGANIZATION -->
+		.section.s-pay-organization.section--long 
+			.container
+				.s-pay-organization__inner
+					.s-pay-organization__num 4
+					.s-pay-organization__content
+						.s-pay-organization__title.title.title--mb-long Оплата для организаций  
+						.s-pay-organization__text 
+							p Оплата для организаций через счет на оплату проводится между двумя юридическими лица согласно закону.
+		<!-- END SECTION PAY-ORGANIZATION -->
 	<!-- END CONTENT PAYMENT -->
+
+	<!-- START CONTENT HISTORY -->
+	.content.content__history
+
+		<!-- START SECTION NAV-FS -->
+		.section.s-nav-fs
+			.container 
+				.title.title--mb-long Истории студентов
+				.s-nav-fs__text 
+					p Наши студенты- наша сила! Мы гордимся, что они смогли изменить свою жизнь в лучшую сторону, и благодарим что их выбор пал на нашу академию! 
+				.s-nav-fs__cards 
+					+history-card('images/history-card/1.jpg', 'Александр, 35 лет', 'Работал по специальности химиком на Казахстанском предприятии. <br>Прошел обучение по курсу Data Science в нашей академии.', 'Устроился на работу почти сразу после прохождения обучения в Kaspi Bank на должность Data Scientist. На данный момент Александр работает в Южной Корее по специальности Data Science.')
+					+history-card('images/history-card/2.jpg', 'Жаглас, 24 года', 'Учился по специальности Автоматизация и управление в г. Шымкент. Не мог найти хорошо оплачиваемую работу по специальности. Прошел обучение по курсу Data Science в нашей академии.', 'Через 4-5 месяцев в период обучения вышел на стажировку в Казактелеком, после стажировки Жалгас начал работать в Хоум Кредит банке на должности Data Science, работает по настоящее время. Также Жалгас учит наших студентов на курсе по Data Science и учится на магистратуре.')
+					+history-card('images/history-card/3.jpg', 'Малика, 27 лет', 'Работала преподавателем в детском образовательном центре. Прошла обучение по курсу Data Science в нашей академии.', 'После окончания обучения устроилась в Евразийский Банк аналитиком данных. Сейчас работает в компании Wing Partners – специалист по Data Science.')
+					+history-card('images/history-card/4.jpg', 'Наталья, 33 года', 'По профессии энергетик, была на декрете.', 'После обучения трудоустроилась в Колеса.kz, среди 3000 претендентов на должность прошли только 13 человек, Наталья была одной из успешно прошедших конкурс.')
+					+history-card('images/history-card/5.png', 'Асет, 25 лет', 'По профессии инженер-химик, работал на производстве в компании Фуд мастер.', 'После обучения получил приглашение в Kaspi.kz, Aviata, АО НИТ. Он выбрал АО НИТ, в данное время работает в BTS digital.')
+					+history-card('images/history-card/6.jpg', 'Газиза, 25 лет', 'Работала по специальности инженером в г. Актау, решила сменить профессию на высокооплачиваемую. <br>Прошла обучение по курсу веб-разработка в нашей академии', 'По окончанию наших курсов получила приглашение на работу  в компанию в ТОО Grand Era, г. Алматы . По сей день работает в этой компании веб-разработчиком.')
+					+history-card('images/history-card/7.jpg', 'Олжас, 37 лет', 'Работал в г. Алматы специалистом по 3D графике Прошел курс по Веб-разработке в нашей академии с нуля', 'Получил приглашение на работе в Новую Зеландию г. Окланд. Работает как фулстак разработчик , React , Nest js.')
+		<!-- END SECTION NAV-FS -->
+
+		<!-- START SECTION RESULT -->
+		.section.s-result.section--long
+			.container
+				.s-result__inner
+					.s-result__content 
+						.s-result__title.title.title--mb-long Результаты студентов
+						.s-result__text 
+							p Наш курс поможет начать успешную карьеру в сфере IT с помощью структурированной программы обучения и практики подкрепляющей знания
+					.s-result__stats
+						+result-card('70%', 'студентов нашли работодателя еще во время обучения')
+						+result-card('95%', 'выпускников ушли с основной работы и поменяли сферу деятельности')
+		<!-- END SECTION RESULT -->
+	<!-- END CONTENT HISTORY -->
+
+	<!-- START CONTENT REVIEW -->
+	.content.content__review
+		<!-- START SECTION NAV-FS -->
+		.section.s-nav-fs
+			.container 
+				.title.title--mb-long Добро пожаловать <br>в АBLE Оnline Аcademy
+				.s-nav-fs__subtitle Как взаимодействовать с нами до записи на курс:
+				.s-nav-fs__icon-cards 
+					+icon-card("team", "Oставьте заявку на нашей странице на консультацию. Это быстро и бесплатно, и мы немедленно обработаем вашу заявку.")
+					+icon-card("idea", "Будьте готовы к телефонному звонку. Сразу после подачи заявки наш менеджер свяжется с вами, чтобы ответить на вопросы и обсудить ваши цели.")
+					+icon-card("comp", "Мы отправим ссылку на тест, чтобы выяснить, что вы уже знаете, чтобы начать с правильного места. Если вы новичок в этой области, не волнуйтесь — у нас есть план для всех.")
+					+icon-card("comp", "После того, как определим ваш уровень и начальную точку, вам просто нужно выбрать способ оплаты и дату начала. Будьте готовы изменить свою карьеру.")
+		<!-- END SECTION NAV-FS -->
+
+		<!-- START SECTION WHAT-NEXT -->
+		.section.s-what-next.section--long 
+			.container 
+				.s-what-next__inner 
+					.s-what-next__content
+						.s-what-next__item Обучение начинается сразу же после оплаты, открываются все доступы. Для удобства наших студентов мы сделали гибкий график и доступность к курсу 24 часа. 
+						.s-what-next__item Вы сразу внедряетесь в кипящий процесс нашей академии. Наша программа специально сделана так, что несмотря на ваш уровень и дату старта вы с лёгкостью вольетесь в процесс обучения и будете на одной волне с учащимися.
+						.s-what-next__item Вы регистрируетесь на платформе, мы открываем вам доступ к обучению, добавляем в чаты с сокурсниками и преподавателями. Обучение, которое изменит вашу жизнь начинается!
+					.s-what-next__img-wrapper 
+						img.s-what-next__img(src="images/what-next.jpg")
+		<!-- END SECTION WHAT-NEXT -->
+	<!-- END CONTENT REVIEW -->
+
+	<!-- START CONTENT EMPLOYMENT -->
+	.content.content__employment
+		<!-- START SECTION NAV-FS -->
+		.section.s-nav-fs
+			.container 
+				.title.title--mb-long С 2022 года мы официально <br>трудоустраиваем наших выпускников
+				.s-nav-fs__subtitle Что это значит и как это работает?
+				.s-nav-fs__icon-cards 
+					+titled-text-card('01', 'Во время обучения выбранного вами курса, вы автоматически попадаете под нашу программу «Able career”.')
+					+titled-text-card('02', 'Наш преподаватель начинает курирование процесса вашего трудоустройства во время обучения: составляет резюме вместе с вами, готовит вас на собеседование.')
+					+titled-text-card('03', 'Мы предлагаем вашу кандидатуру нашим партнерам, или компаниям, которые вы выберете сами. По запросу пишем рекомендательное письмо.')
+					+titled-text-card('04', 'Преподаватель будет поддерживать и курировать вас в течение 6 месяцев в поиске работы.')
+				.s-nav-fs__warning
+					.s-nav-fs__warning__img-wrapper
+						img.s-nav-fs__warning__img-wrapper(src="images/warning.svg")
+					.s-nav-fs__warning__text 
+						p Если, курирование преподавателя безуспешно, вы не можете устроиться на работу в течение этих 6 месяцев, вы получите полный возврат средств за обучение.
+		<!-- END SECTION NAV-FS -->
+
+		<!-- START SECTION TERMS -->
+		.section.s-terms.section--long 
+			.container 
+				.title.title--mb-long Условия
+				.s-terms__inner 
+					.s-terms__item 12 еженедельных офлайн занятий с опытным преподавателем 
+					.s-terms__item Вы заканчиваете весь курс, который выбрали
+					.s-terms__item Вы должны будете готовы к переезду в Нур-Султан или Алматы
+					.s-terms__item Вы должно быть старше 18 лет
+					.s-terms__item Вы выполняете все рекомендации преподавателя
+		<!-- END SECTION TERMS -->
+
+		<!-- START SECTION COMPANIES -->
+		.section.s-companies.section--medium
+			.container 
+				.title.title--mb-long Наши студенты наняты компаниями:
+			.swiper-container.company-slider__second
+				.swiper-wrapper 
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/1.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/2.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/3.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/4.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/5.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/6.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/7.png")
+			.company-slider__second__pagination
+		<!-- END SECTION COMPANIES -->
+	<!-- END CONTENT EMPLOYMENT -->
+
+	<!-- START CONTENT HIRING -->
+	.content.content__hiring
+
+		<!-- START SECTION CONTACT-US -->
+		.section.s-contact-us 
+			.container 
+				.s-contact-us__inner 
+					.s-contact-us__content 
+						.s-contact-us__title.title.title--mb-long Наймите наших студентов
+						.s-contact-us__text 
+							p Наши студенты достигают результатов, меняющие их жизнь
+					form.s-contact-us__form 
+						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
+						.s-contact-us__form-text 
+							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
+						input.s-contact-us__form-input(placeholder="Ваше имя*")
+						input.s-contact-us__form-input(placeholder="E-mail*" type="mail")
+						input.s-contact-us__form-input(placeholder="+7 (...)*" type="tel" id="phone-mask")
+						input.s-contact-us__form-input(placeholder="Ваш комментарий")
+						button.s-contact-us__form-btn.btn.btn--primary(type="submit") ОТПРАВИТЬ
+		<!-- END SECTION CONTACT-US -->
+
+		<!-- START SECTION FOR-WHAT-STUDENTS -->
+		.section.s-for-what-students.section--long 
+			.container 
+				.title.title--mb-long Почему вам следует нанять <br>наших студентов?
+				+titled-image-card("images/titled-image-card/1.jpg", "Учебная программа нацелена на практику")
+					p С первых дней обучения, наши студенты работают над практикой. Курсы обычно занимают у студентов от шести до восьми месяцев, и мы позволяем учащимся двигаться в своем собственном темпе, поскольку большинство наших студентов работают неполный или полный рабочий день вне курсов. Большая часть наших проектных работ основана на практике, позволяя студентам продемонстрировать свое мастерство в своем портфолио. Каждый курс завершается проектом, который демонстрирует их навыки в реальной.
+				+titled-image-card("images/titled-image-card/2.jpg", "Наставники наших учеников - действующие эксперты и ведущие профессионалы своей ниши", true)
+					p Преподаватели каждого курса, являются ведущими профессионалами своей ниши. Они работают с нашими студентами ежедневно в чатах, еженедельно на воркшопах, чтобы оценить прогресс, облегчить знакомство с отраслью и предоставить им ценный контекст о том, как материал, который они изучают, применим в реальной жизни.
+				+titled-image-card("images/titled-image-card/3.jpg", "Наши студенты готовы работать")
+					p Навыки и готовность наших выпускников к работе были оценены с помощью их проектных работ, которые соответствуют стандартам, требуемыми компаниями в 2022 году. Они продемонстрировали приверженность карьерному переходу, успешно освоив новый набор навыков и выполнив строгую программу, требующую дисциплины и настойчивости. Наши выпускники знают, что технологии постоянно меняются, и подходят к обучению и работе с учетом этого ожидания.
+		<!-- END SECTION FOR-WHAT-STUDENTS -->
+
+		<!-- START SECTION BANNER -->
+		.section.s-banner
+			.container 
+				.s-banner__inner 
+					.s-banner__title.title Готовы продвинуться по карьерной<br> лестнице?
+					.s-banner__btn.btn.btn--primary СВЯЗАТЬСЯ С НАМИ
+		<!-- END SECTION BANNER -->
+	<!-- END CONTENT HIRING -->
+
+	<!-- START CONTENT CORPO -->
+	.content.content__corpo
+
+		<!-- START SECTION CONTACT-US -->
+		.section.s-contact-us 
+			.container 
+				.s-contact-us__inner 
+					.s-contact-us__content 
+						.s-contact-us__title.title.title--mb-long Корпоративное обучение
+						.s-contact-us__text 
+							p Подготовьте свою команду к будущему. Мы обучаем востребованным цифровым навыкам в соответствии с потребностями рынка. Программы Able будут двигать ваш бизнес вперед.
+					form.s-contact-us__form 
+						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
+						.s-contact-us__form-text 
+							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
+						input.s-contact-us__form-input(placeholder="Ваше имя*")
+						input.s-contact-us__form-input(placeholder="E-mail*" type="mail")
+						input.s-contact-us__form-input(placeholder="+7 (...)*" type="tel" id="phone-mask")
+						input.s-contact-us__form-input(placeholder="Ваш комментарий")
+						button.s-contact-us__form-btn.btn.btn--primary(type="submit") ОТПРАВИТЬ
+		<!-- END SECTION CONTACT-US -->
+
+		<!-- START SECTION COMPANIES -->
+		.section.s-companies.section--medium
+			.container 
+				.title.title--mb-long Наши студенты наняты компаниями:
+			.swiper-container.company-slider__third
+				.swiper-wrapper 
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/1.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/2.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/3.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/4.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/5.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/6.png")
+					.swiper-slide 
+						.s-companies__img-wrapper
+							img.s-companies__img(src="images/company-slider/7.png")
+			.company-slider__third__pagination
+		<!-- END SECTION COMPANIES -->
+
+		<!-- START SECTION BANNER -->
+		.section.s-banner
+			.container 
+				.s-banner__inner 
+					.s-banner__title.title Готовы продвинуться по карьерной<br> лестнице?
+					.s-banner__btn.btn.btn--primary СВЯЗАТЬСЯ С НАМИ
+		<!-- END SECTION BANNER -->
+	<!-- END CONTENT CORPO -->
+
+	<!-- START CONTENT TRAINEE -->
+	.content.content__trainee
+
+		<!-- START SECTION CONTACT-US -->
+		.section.s-contact-us 
+			.container 
+				.s-contact-us__inner 
+					.s-contact-us__content 
+						.s-contact-us__title.title.title--mb-long Стажеры <br>для вашей компании
+
+						.s-contact-us__text 
+							p Мы выпускаем высококвалифицированных специалистов со свежими знаниями, которые готовы заполнить ваши потребности.
+					form.s-contact-us__form 
+						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
+						.s-contact-us__form-text 
+							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
+						input.s-contact-us__form-input(placeholder="Ваше имя*")
+						input.s-contact-us__form-input(placeholder="E-mail*" type="mail")
+						input.s-contact-us__form-input(placeholder="+7 (...)*" type="tel" id="phone-mask")
+						input.s-contact-us__form-input(placeholder="Ваш комментарий")
+						button.s-contact-us__form-btn.btn.btn--primary(type="submit") ОТПРАВИТЬ
+		<!-- END SECTION CONTACT-US -->
+
+		<!-- START SECTION FOR-WHAT-STUDENTS -->
+		.section.s-for-what-students.section--long 
+			.container 
+				.title.title--mb-long Почему вам следует нанять <br>наших студентов?
+				+titled-image-card("images/titled-image-card/1.jpg", "Учебная программа нацелена на практику")
+					p С первых дней обучения, наши студенты работают над практикой. Курсы обычно занимают у студентов от шести до восьми месяцев, и мы позволяем учащимся двигаться в своем собственном темпе, поскольку большинство наших студентов работают неполный или полный рабочий день вне курсов. Большая часть наших проектных работ основана на практике, позволяя студентам продемонстрировать свое мастерство в своем портфолио. Каждый курс завершается проектом, который демонстрирует их навыки в реальной.
+				+titled-image-card("images/titled-image-card/2.jpg", "Наставники наших учеников - действующие эксперты и ведущие профессионалы своей ниши", true)
+					p Преподаватели каждого курса, являются ведущими профессионалами своей ниши. Они работают с нашими студентами ежедневно в чатах, еженедельно на воркшопах, чтобы оценить прогресс, облегчить знакомство с отраслью и предоставить им ценный контекст о том, как материал, который они изучают, применим в реальной жизни.
+				+titled-image-card("images/titled-image-card/3.jpg", "Наши студенты готовы работать")
+					p Навыки и готовность наших выпускников к работе были оценены с помощью их проектных работ, которые соответствуют стандартам, требуемыми компаниями в 2022 году. Они продемонстрировали приверженность карьерному переходу, успешно освоив новый набор навыков и выполнив строгую программу, требующую дисциплины и настойчивости. Наши выпускники знают, что технологии постоянно меняются, и подходят к обучению и работе с учетом этого ожидания.
+		<!-- END SECTION FOR-WHAT-STUDENTS -->
+
+		<!-- START SECTION BANNER -->
+		.section.s-banner
+			.container 
+				.s-banner__inner 
+					.s-banner__title.title Готовы продвинуться по карьерной<br> лестнице?
+					.s-banner__btn.btn.btn--primary СВЯЗАТЬСЯ С НАМИ
+		<!-- END SECTION BANNER -->
+	<!-- END CONTENT TRAINEE -->
+
+	<!-- START CONTENT QUESTIONS -->
+	.content.content__questions
+
+		<!-- START SECTION CONTACT-US -->
+		.section.s-contact-us 
+			.container 
+				.s-contact-us__inner 
+					.s-contact-us__content 
+						.s-contact-us__title.title.title--mb-long Контакты 
+						.s-contact-us__items
+							.s-contact-us__item 
+								.s-contact-us__item-text Телефон:
+								a.s-contact-us__item-link(href="#") +7 776 125 59 52
+							.s-contact-us__item 
+								.s-contact-us__item-text Почта:
+								a.s-contact-us__item-link(href="#") datascience.kz@gmail.com
+					form.s-contact-us__form 
+						.s-contact-us__form-title.title.title--mini ОСТАЛИСЬ ВОПРОСЫ ? 
+						.s-contact-us__form-text 
+							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
+						input.s-contact-us__form-input(placeholder="Ваше имя*")
+						input.s-contact-us__form-input(placeholder="E-mail*" type="mail")
+						input.s-contact-us__form-input(placeholder="+7 (...)*" type="tel" id="phone-mask")
+						input.s-contact-us__form-input(placeholder="Ваш комментарий")
+						button.s-contact-us__form-btn.btn.btn--primary(type="submit") ОТПРАВИТЬ
+		<!-- END SECTION CONTACT-US -->
+
+	<!-- END CONTENT QUESTIONS -->
 
 	<!-- START FOOTER -->
 	.footer 

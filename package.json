@@ -36,6 +36,7 @@
 		"node-sass": "^5.0.0"
 	},
 	"dependencies": {
-		"gulp-html-prettify": "0.0.1"
+		"gulp-html-prettify": "0.0.1",
+		"imask": "^6.4.2"
 	}
 }

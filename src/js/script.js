@@ -3,6 +3,7 @@ import Countup from './custom_modules/Countup';
 import Video from "./modules/Video";
 import Content from "./modules/Content";
 import Nav from "./modules/Nav";
+
 /*
 	--------------------------------------------
 	--------------------------------------------
@@ -23,6 +24,38 @@ import Nav from "./modules/Nav";
 		});
 	}
 
+	function initCompanySecondSlider() {
+		swiper.init(".company-slider__second", {
+			loop: true,
+			slidesPerView: 6,
+			autoHeight: true,
+			bulletActiveClass: '.company-slider__second-pagination-active',
+			pagination: {
+				el: '.company-slider__second__pagination',
+				clickable: true,
+			},
+		});
+	}
+
+	function initCompanyThirdSlider() {
+		swiper.init(".company-slider__third", {
+			loop: true,
+			slidesPerView: 6,
+			autoHeight: true,
+			bulletActiveClass: '.company-slider__third-pagination-active',
+			pagination: {
+				el: '.company-slider__third__pagination',
+				clickable: true,
+			},
+		});
+	}
+/*
+	--------------------------------------------
+	--------------------------------------------
+						TABS
+	--------------------------------------------
+	--------------------------------------------
+ */
 	const scrollElements = document.querySelectorAll(".s-stats");
 	const elementInView = (el, dividend = 1) => {  
 		const elementTop = el.getBoundingClientRect().top;  
@@ -65,6 +98,18 @@ import Nav from "./modules/Nav";
 	}
 
 	document.querySelector(".tabs__nav-btn").click()
+	/*
+	--------------------------------------------
+	--------------------------------------------
+						INPUT MASK
+	--------------------------------------------
+	--------------------------------------------
+ */
+	let phoneMask = IMask(
+		document.getElementById('phone-mask'), {
+			mask: '+{7}(000)000-00-00'
+		});
+	console.log(phoneMask)
 /*
 	--------------------------------------------
 	--------------------------------------------
@@ -79,3 +124,5 @@ import Nav from "./modules/Nav";
 	new Nav();
 
 	initCompanySlider()
+	initCompanySecondSlider()
+	initCompanyThirdSlider()
