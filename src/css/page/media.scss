@@ -1,5 +1,6 @@
 @import "./../assets/vars";
 @import "./../assets/keyframes";
+@import "./../modules/nav";
 
 // BREAKPOINT LAPTOP
 @media (max-width: $ss_laptop) {
@@ -13,6 +14,19 @@
 
 // BREAKPOINT TABLET
 @media (max-width: $ss_tablet) {
+	@include nav-module($color_primary, #fff);
+	.nav{
+		flex-direction: column;
+		&-btn{
+			display: block;
+		}
+		&__item{
+			color: #fff;
+			&.content-tab--active{
+				text-decoration: underline;
+			}
+		}
+	}
 	.wrapper{
 		font-size: 15px;
 	}

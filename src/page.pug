@@ -8,17 +8,28 @@ block content
 				a.header__logo.content-tab(href="#about")
 					img.header__logo-img(src="images/logo.svg")
 				.header__nav.nav
-					a.nav__item.content-tab(href="#courses") Курсы
-					a.nav__item.content-tab(href="#navigation") Навигация
-					a.nav__item.content-tab(href="#business") Преподаватель
-					a.nav__item.content-tab(href="#android") Студенты
-					a.nav__item.content-tab(href="#company") Для компаний
-					a.nav__item.content-tab(href="#history") О нас
-					a.nav__item.content-tab(href="#review") Обзор
-					a.nav__item.content-tab(href="#hiring") Найм
-					a.nav__item.content-tab(href="#corpo") Корпо
-					a.nav__item.content-tab(href="#trainee") Стажеры
-					a.nav__item.content-tab(href="#questions") Вопросы
+					.nav__item.nav__item--parent Курсы
+						.nav__item-menu
+							a.nav__item-sub.content-tab(href="#data") Data Science
+							a.nav__item-sub.content-tab(href="#development") Веб-разработчик
+							a.nav__item-sub.content-tab(href="#business") Бизнес-аналитика
+							a.nav__item-sub.content-tab(href="#android") Андроид разработчик
+					.nav__item.nav__item--parent Навигация
+						.nav__item-menu
+							a.nav__item-sub.content-tab(href="#review") Обзор
+							a.nav__item-sub.content-tab(href="#employment") Трудоустройство
+							a.nav__item-sub.content-tab(href="#payment") Способ оплаты
+					a.nav__item.content-tab(href="#") Преподаватель
+					.nav__item.nav__item--parent Студенты
+						.nav__item-menu
+							a.nav__item-sub.content-tab(href="#history") Истории студентов
+							a.nav__item-sub.content-tab(href="#hiring") Нанять наших студентов
+					.nav__item.nav__item--parent Для компаний
+						.nav__item-menu
+							a.nav__item-sub.content-tab(href="#corpo") Корпоративное обучение
+							a.nav__item-sub.content-tab(href="#trainee") Стажеры  для вашей компании
+							a.nav__item-sub.content-tab(href="#questions") Контакты
+					a.nav__item.content-tab(href="#") О нас
 				a.header__btn.btn.btn--transparent Бесплатная консультация
 				+nav-btn
 	<!-- END HEADER -->
@@ -260,7 +271,7 @@ block content
 	<!-- END CONTENT HOME -->
 
 	<!-- START CONTENT DATA-SCIENCE -->
-	.content.content__courses
+	.content.content__data
 
 		<!-- START SECTION FS -->
 		.section.s-fs.section--long-pb 
@@ -452,7 +463,7 @@ block content
 	<!-- END CONTENT DATA-SCIENCE -->
 
 	<!-- START CONTENT DEVELOPMENT -->
-	.content.content__navigation
+	.content.content__development
 
 		<!-- START SECTION FS -->
 		.section.s-fs.section--long-pb 
@@ -1064,7 +1075,7 @@ block content
 	<!-- END CONTENT ANDROID -->
 
 	<!-- START CONTENT PAYMENT -->
-	.content.content__company
+	.content.content__payment
 
 		<!-- START SECTION NAV-FS -->
 		.section.s-nav-fs
@@ -1447,7 +1458,6 @@ block content
 						input.s-contact-us__form-input(placeholder="Ваш комментарий")
 						button.s-contact-us__form-btn.btn.btn--primary(type="submit") ОТПРАВИТЬ
 		<!-- END SECTION CONTACT-US -->
-
 	<!-- END CONTENT QUESTIONS -->
 
 	<!-- START FOOTER -->
