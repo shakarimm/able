@@ -10,6 +10,94 @@
 	.wrapper{
 		font-size: 16px;
 	}
+	.header{
+		&__logo{
+			width: 100px;
+		}
+	}
+	.nav{
+		&__item{
+			&+&{
+				margin-left: 10px;
+			}
+		}
+	}
+	.s-first-screen{
+		&__inner{
+			align-items: center;
+		}
+		&__content{
+			width: 48%;
+		}
+		&__img-wrapper{
+			width: 44%;
+		}
+		&__title{
+			font-size: 42px;
+			span{
+				font-size: 38px;
+			}
+		}
+		&__text{
+			margin-top: 38px;
+		}
+		&__directions{
+			margin-top: 38px;
+			&-items{
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin-bottom: -20px;
+			}
+			&-item{
+				width: 60%;
+				margin-bottom: 20px;
+				text-align: center;
+				&+&{
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	.tabs{
+		&__nav{
+			&-btn{
+				padding: 18px 17px;
+			}
+		}
+	}
+	.s-courses{
+		&__help{
+			&-btn{
+				padding: 13px 29px;
+			}
+		}
+	}
+	.s-system{
+		&__cards{
+			margin-bottom: -25px;
+		}
+	}
+	.titled-text-card{
+		width: 49%;
+		margin-bottom: 25px;
+		min-height: 267px;
+	}
+	.location-card{
+		&__text{
+			height: 180px;
+		}
+	}
+	.learning-card{
+    width: 31%;
+	}
+	.s-location{
+		padding: 70px 0;
+		&__img{
+			top: -20%;
+			right: -37%;
+			width: 90%;
+		}
+	}
 }
 
 // BREAKPOINT TABLET
@@ -30,8 +118,25 @@
 	.wrapper{
 		font-size: 15px;
 	}
+	.s-first-screen{
+		&__img-wrapper{
+			width: 38%;
+		}
+	}
 	.container{
 		padding: 0 15px;
+		max-width: 696px;
+	}
+	.s-location{
+		&__cards{
+			flex-wrap: wrap;
+		}
+		&__img{
+			top: 0;
+		}
+	}
+	.location-card{
+		width: 49%;
 	}
 }
 
@@ -40,12 +145,148 @@
 	.wrapper{
 		font-size: 14px;
 	}
+	.header{
+		padding: 15px 0;
+	}
+	.s-first-screen{
+		padding-top: 130px;
+		&__inner{
+			flex-wrap: wrap;
+		}
+		&__content{
+			width: 100%;
+		}
+		&__img-wrapper{
+			width: 100%;
+			margin-top: 30px;
+		}
+		&__img{
+			width: 100%;
+		}
+	}
+	.title{
+		font-size: 28px;
+		line-height: 1.2;
+		padding-bottom: 18px;
+		&::after{
+			width: 50px;
+		}
+		&--mini{
+			font-size: 20px;
+			line-height: 1.2;
+			padding-bottom: 10px;
+			&::after{
+				width: 20px;
+				height: 2px;
+			}
+		}
+		&--mb{
+			&-short{
+				margin-bottom: 18px;
+			}
+			&-long{
+				margin-bottom: 34px;
+			}
+		}
+		&--primary{
+			font-size: 50px;
+		}
+	}
+	.s-stats{
+		&__cards{
+			flex-wrap: wrap;
+			margin-bottom: -20px;
+		}
+	}
+	.stat-card{
+		width: 100%;
+		margin-bottom: 20px;
+		&__title{
+			font-size: 56px;
+			line-height: 62px;
+		}
+	}
+	.s-courses{
+		&__inner{
+			flex-wrap: wrap;
+		}
+		&__tabs{
+			width: 100%;
+		}
+		&__help{
+			width: 100%;
+			margin-top: 20px;
+		}
+	}
+	.tabs{
+		&__current{
+			text-align: center;
+			padding-bottom: 20px;
+		}
+		&__content{
+			margin-top: 20px;
+			display: none;
+		}
+		&__nav{
+			display: none;
+			&-btn{
+				width: 100%;
+			}
+			&-wrapper{
+				background: #fff;
+			}
+			&--mobile{
+				display: block;
+			}
+		}
+	}
+	.titled-text-card{
+		width: 100%;
+	}
+	.s-location{
+		&__cards{
+			flex-wrap: wrap;
+		}
+	}
+	.location-card{
+		width: 48%;
+	}
 }
 
 // BREAKPOINT PHONE
 @media (max-width: $ss_phone) {
-	.wrapper{
-		width: calc(100% + 30px);
-		margin: 0 -15px;
+	.header{
+		&__btn{
+			display: none;
+		}
+	}
+	.nav{
+		&__item{
+			&--mobile{
+				display: block;
+			}
+		}
+	}
+	.s-first-screen{
+		padding-top: 110px;
+		&__title{
+			font-size: 32px;
+			line-height: 52px;
+			span{
+				font-size: 30px;
+				line-height: 52px;
+			}
+		}
+		&__directions{
+			&-item{
+				width: 70%;
+			}
+		}
+	}
+	.stat-card{
+		&__title{
+			font-size: 42px;
+			line-height: 54px;
+		}
 	}
 }

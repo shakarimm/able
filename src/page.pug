@@ -10,10 +10,18 @@ block content
 				.header__nav.nav
 					.nav__item.nav__item--parent Курсы
 						.nav__item-menu
-							a.nav__item-sub.content-tab(href="#data") Data Science
-							a.nav__item-sub.content-tab(href="#development") Веб-разработчик
-							a.nav__item-sub.content-tab(href="#business") Бизнес-аналитика
-							a.nav__item-sub.content-tab(href="#android") Андроид разработчик
+							.nav__item-menu__wrapper
+								a.nav__item-sub.content-tab(href="#data") Data Science
+								.nav__item-garant Гарантия работы
+							.nav__item-menu__wrapper
+								a.nav__item-sub.content-tab(href="#development") Веб-разработка
+								//- .nav__item-garant Гарантия работы
+							.nav__item-menu__wrapper
+								a.nav__item-sub.content-tab(href="#business") Бизнес аналитика
+								.nav__item-garant Гарантия работы
+							.nav__item-menu__wrapper
+								a.nav__item-sub.content-tab(href="#android") Андроид-разработка
+								.nav__item-garant Гарантия работы
 					.nav__item.nav__item--parent Навигация
 						.nav__item-menu
 							a.nav__item-sub.content-tab(href="#review") Обзор
@@ -30,6 +38,7 @@ block content
 							a.nav__item-sub.content-tab(href="#trainee") Стажеры  для вашей компании
 							a.nav__item-sub.content-tab(href="#questions") Контакты
 					a.nav__item.content-tab(href="#") О нас
+					a.header__btn.btn.btn--transparent.nav__item--mobile Бесплатная консультация
 				a.header__btn.btn.btn--transparent Бесплатная консультация
 				+nav-btn
 	<!-- END HEADER -->
@@ -73,7 +82,10 @@ block content
 				.s-courses__title.title.title--mb-long.title--without-after Ознакомьтесь с нашими курсами, ориентированными на практику
 				.s-courses__inner
 					.s-courses__tabs.tabs
-						.tabs__nav
+						//- .tabs__current-wrapper
+						//- 	.tabs__current#tabCurrent
+						//- 	+icon("arrow-down", "tabs__current-icon")
+						.tabs__nav#tabsNav
 							button.tabs__nav-btn(type="button" data-tab="#tab_1") Data Science
 							button.tabs__nav-btn(type="button" data-tab="#tab_2") Веб-Разработка
 							button.tabs__nav-btn(type="button" data-tab="#tab_3") Android-Разработка
@@ -177,6 +189,113 @@ block content
 													img.tabs-info__item-img(src="images/tabs/2.png")
 											.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
 									.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
+						.tabs__nav.tabs__nav--mobile
+							.tabs__nav-wrapper
+								button.tabs__nav-btn#tabsBtnOne(type="button" data-tab="#tab_5") Data Science
+								.tabs__item#tab_5
+									.tabs__text
+										p Вы научитесь:
+										p 1. Использовать Python его для самостоятельного решения задач, над которыми обычно работают несколько специалистов;
+										p 2. Использовать библиотеки Python-а для анализа, очистки, визуализации данных.
+										p 3. Использовать SQL для работы с большими массивами базой данных, создавать инфографику, писать сложные запросы
+										p 4. Использовать классические алгоритмы машинного обучения для решения разновидных задач, оценивать качество вашего решения при помощи общепринятых метрик.
+									.tabs__bottom
+										.tabs-info
+											.tabs-info__top
+												.tabs-info__item
+													.tabs-info__item-title Длительность:
+													.tabs-info__item-text 6 месяцев
+												.tabs-info__item
+													.tabs-info__item-title Стоимость:
+													.tabs-info__item-text от 39 000 ₸ в месяц
+											.tabs-info__bottom
+												.tabs-info__item
+													.tabs-info__item-img-wrapper 
+														img.tabs-info__item-img(src="images/tabs/1.png")
+												.tabs-info__item
+													.tabs-info__item-img-wrapper 
+														img.tabs-info__item-img(src="images/tabs/2.png")
+												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
+										.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
+							.tabs__nav-wrapper
+								button.tabs__nav-btn(type="button" data-tab="#tab_6") Веб-Разработка
+								.tabs__item#tab_6
+									.tabs__text
+										p Вы научитесь:
+										p 1. Выстраивать и стилизовать веб страницу с помощью знаний основных принципов верстки.
+										p 2. Будете делать динамичные веб страницы, с помощью базовых знаний JavaScript
+										p 3. Освоите фреймворки и библиотеки которые облегчат разработку и количество строк кода
+										p 4. Освоите все системы веб (фронтенд, бэкенд, база данных), как они строятся и общаются между собой
+									.tabs__bottom
+										.tabs-info
+											.tabs-info__top
+												.tabs-info__item
+													.tabs-info__item-title Длительность:
+													.tabs-info__item-text 6 месяцев
+												.tabs-info__item
+													.tabs-info__item-title Стоимость:
+													.tabs-info__item-text от 39 000 ₸ в месяц
+											.tabs-info__bottom
+												.tabs-info__item
+													.tabs-info__item-img-wrapper 
+														img.tabs-info__item-img(src="images/tabs/1.png")
+												.tabs-info__item
+													.tabs-info__item-img-wrapper 
+														img.tabs-info__item-img(src="images/tabs/2.png")
+												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
+										.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
+							.tabs__nav-wrapper
+								button.tabs__nav-btn(type="button" data-tab="#tab_7") Android-Разработка
+								.tabs__item#tab_7
+									.tabs__text
+										p Вы научитесь:
+										p 1. Использовать языки Java и Kotlin, работать с интегрированной средой разработки Android Studio
+										p 2. Использовать методы построения экранов, разрабатывать пользовательские интерфейсы различной сложности UX/UI
+										p 3. Управлять процессом с помощью GitHub и работать с PlayMarket.
+									.tabs__bottom
+										.tabs-info
+											.tabs-info__top
+												.tabs-info__item
+													.tabs-info__item-title Длительность:
+													.tabs-info__item-text 6 месяцев
+												.tabs-info__item
+													.tabs-info__item-title Стоимость:
+													.tabs-info__item-text от 39 000 ₸ в месяц
+											.tabs-info__bottom
+												.tabs-info__item
+													.tabs-info__item-img-wrapper 
+														img.tabs-info__item-img(src="images/tabs/1.png")
+												.tabs-info__item
+													.tabs-info__item-img-wrapper 
+														img.tabs-info__item-img(src="images/tabs/2.png")
+												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
+										.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
+							.tabs__nav-wrapper
+								button.tabs__nav-btn(type="button" data-tab="#tab_8") Бизнес аналитика
+								.tabs__item#tab_8
+									.tabs__text
+										p Вы научитесь:
+										p 1. Использовать Power BI для бизнес-аналитики и подготовки интерактивных отчетов. Анализировать большое количество данных из разных источников. Преобразовывать цифры в понятные отчеты. Отслеживать изменения показателей на динамических дашбордах.
+										p 2. Использовать SQL – язык запросов, позволяющий работать с данными из баз данных, читать их, извлекать и исследовать.
+										p 3. Использовать Python для решения задач, которые ранее занимали огромное количество ручной работы. Использовать библиотеки Python-а для анализа, очистки, визуализации данных.
+									.tabs__bottom
+										.tabs-info
+											.tabs-info__top
+												.tabs-info__item
+													.tabs-info__item-title Длительность:
+													.tabs-info__item-text 6 месяцев
+												.tabs-info__item
+													.tabs-info__item-title Стоимость:
+													.tabs-info__item-text от 39 000 ₸ в месяц
+											.tabs-info__bottom
+												.tabs-info__item
+													.tabs-info__item-img-wrapper 
+														img.tabs-info__item-img(src="images/tabs/1.png")
+												.tabs-info__item
+													.tabs-info__item-img-wrapper 
+														img.tabs-info__item-img(src="images/tabs/2.png")
+												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
+										.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
 					.s-courses__help
 						.s-courses__help-text 
 							p Нужна помощь в подборе правильного курса для вас? Пройди тест пойми, что тебе подходит
@@ -189,15 +308,15 @@ block content
 				.title.title--mb-long Cистемный подход к обучению
 				.s-system__cards 
 					+titled-text-card("Видеоуроки", "Смотреть видеоуроки можно в любое время, доступ к учебным материалам предоставляется бессрочно")
-					+titled-text-card("практика", "80% обучения нацелена на практику для качественного усвоения материала и подкрепления теории")
-					+titled-text-card("наставничество", "Созвоны с преподавателями и их поддержка на протяжении всего обучения, офлайн воркшопы, нетворкинг с другими студентами и круглосуточный чат в мессенджерах для обсуждения заданий и обмена опытом значительно облегчит ваше обучение")
+					+titled-text-card("Практика", "80% обучения нацелена на практику для качественного усвоения материала и подкрепления теории")
+					+titled-text-card("Наставничество", "Созвоны с преподавателями и их поддержка на протяжении всего обучения, офлайн воркшопы, нетворкинг с другими студентами и круглосуточный чат в мессенджерах для обсуждения заданий и обмена опытом значительно облегчит ваше обучение")
 					+titled-text-card("Трудоустройство", "С 2022 года мы внедрили 100% гарантию на трудоустройство для студентов на курсах Data Science, Android-разработка, Бизнес-аналитика. По окончанию их, мы начинаем курирование вашего трудоустройства в течение полгода ")
 		<!-- END SECTION SYSTEM -->
 
 		<!-- START SECTION LOCATION -->
 		.section.s-location
 			.container 
-				img.s-location__img(src="images/map.svg") 
+				img.s-location__img(src="images/map.svg")
 				.s-location__title.title.title--white.title--mb-long Проходи обучение с любого места и подстраивай график под себя
 				.s-location__cards 
 					+location-card("01", "Первая в Казахстане онлайн школа современных IT профессий")
@@ -292,7 +411,7 @@ block content
 		<!-- START SECTION SLOGAN -->
 		.section.s-slogan 
 			.container 
-				.s-slogan__title.title.title--primary.title--centered.title--without-after Ищете качественные <br>курсы
+				.s-slogan__title.title.title--primary.title--centered.title--without-after Ищете качественные курсы
 				.s-slogan__subtitle.title.title--mb-long.title--centered.title--medium по окончанию которых вы точно <br>будете работать? 
 				.s-slogan__text 
 					p Вы попали в нужное место! 
@@ -438,7 +557,7 @@ block content
 						img.s-price-card__img(src="images/price/3.svg")
 						.s-price-card__inner 
 							.s-price-card__installment РАССРОЧКА 49 500 ₸/МЕС
-							.s-price-card__title.title.title--mini мАКСИМУМ
+							.s-price-card__title.title.title--mini МАКСИМУМ
 							.s-price-card__list
 								.s-price-card__item Все что в пакете “оптимальный”
 								.s-price-card__item Индивидуальное обучение
@@ -645,7 +764,7 @@ block content
 						img.s-price-card__img(src="images/price/3.svg")
 						.s-price-card__inner 
 							.s-price-card__installment РАССРОЧКА 49 500 ₸/МЕС
-							.s-price-card__title.title.title--mini мАКСИМУМ
+							.s-price-card__title.title.title--mini МАКСИМУМ
 							.s-price-card__list
 								.s-price-card__item Все что в пакете “оптимальный”
 								.s-price-card__item Индивидуальное обучение
@@ -854,7 +973,7 @@ block content
 						img.s-price-card__img(src="images/price/3.svg")
 						.s-price-card__inner 
 							.s-price-card__installment РАССРОЧКА 49 500 ₸/МЕС
-							.s-price-card__title.title.title--mini мАКСИМУМ
+							.s-price-card__title.title.title--mini МАКСИМУМ
 							.s-price-card__list
 								.s-price-card__item Все что в пакете “оптимальный”
 								.s-price-card__item Индивидуальное обучение
@@ -1050,7 +1169,7 @@ block content
 						img.s-price-card__img(src="images/price/3.svg")
 						.s-price-card__inner 
 							.s-price-card__installment РАССРОЧКА 49 500 ₸/МЕС
-							.s-price-card__title.title.title--mini мАКСИМУМ
+							.s-price-card__title.title.title--mini МАКСИМУМ
 							.s-price-card__list
 								.s-price-card__item Все что в пакете “оптимальный”
 								.s-price-card__item Индивидуальное обучение
@@ -1467,9 +1586,15 @@ block content
 				.footer__top-right
 					.footer__col
 						.footer__col-title Главная
-						.footer__col-item Курсы
-						.footer__col-item Навигация
-						.footer__col-item Преподаватели
+						.footer__col-items 
+							.footer__col-item Курсы
+							.footer__col-item Навигация
+							.footer__col-item Преподаватели
+							//- .footer__col-item Студенты
+							//- .footer__col-item Для компаний
+							//- .footer__col-item О нас
+					.footer__col
+						.footer__col-title.footer__col-title--transparent Главная
 						.footer__col-item Студенты
 						.footer__col-item Для компаний
 						.footer__col-item О нас
@@ -1478,7 +1603,7 @@ block content
 						.footer__col-item Data Science
 						.footer__col-item Веб-Разработка
 						.footer__col-item Android-Разработка
-						.footer__col-item БИЗНЕС АНАЛИТИКА
+						.footer__col-item Бизнес аналитика
 					.footer__col
 						.footer__col-title Контакты
 						.footer__col-item datascience.kz@gmail.com
@@ -1497,5 +1622,5 @@ block content
 								img.footer__social-item-img(src="images/social/whatsapp.svg")
 			.footer__bottom
 				.footer__bottom-left © ABLE Online Academy
-				.footer__bottom-right Политика конфиденциальности
+				//- .footer__bottom-right Политика конфиденциальности
 	<!-- END FOOTER -->	

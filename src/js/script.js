@@ -3,6 +3,7 @@ import Countup from './custom_modules/Countup';
 import Video from "./modules/Video";
 import Content from "./modules/Content";
 import Nav from "./modules/Nav";
+import closest from "./modules/Closest";
 
 /*
 	--------------------------------------------
@@ -52,7 +53,7 @@ import Nav from "./modules/Nav";
 /*
 	--------------------------------------------
 	--------------------------------------------
-						TABS
+						STATS
 	--------------------------------------------
 	--------------------------------------------
  */
@@ -70,6 +71,14 @@ import Nav from "./modules/Nav";
 				})
 			}
 			window.addEventListener("scroll", () => {   handleScrollAnimation();});
+
+	/*
+	--------------------------------------------
+	--------------------------------------------
+						TABS
+	--------------------------------------------
+	--------------------------------------------
+ */
 			
 	const tabsBtn = document.querySelectorAll(".tabs__nav-btn")
 	const tabsItem = document.querySelectorAll(".tabs__item")
@@ -81,18 +90,18 @@ import Nav from "./modules/Nav";
 			let currentBtn = item;
 			let tabId = currentBtn.getAttribute("data-tab")
 			let currentTab = document.querySelector(tabId)
-
 			if( !currentBtn.classList.contains("tabs__nav-btn--active") ) {
 				tabsBtn.forEach(function(item) {
 					item.classList.remove("tabs__nav-btn--active")
 				})
-	
 				tabsItem.forEach(function(item) {
 					item.classList.remove("tabs__item--active")
 				})
-	
 				currentBtn.classList.add("tabs__nav-btn--active")
 				currentTab.classList.add("tabs__item--active")
+			}
+			if (window.innerWidth < 700) {
+				
 			}
 		})
 	}
@@ -109,7 +118,6 @@ import Nav from "./modules/Nav";
 		document.getElementById('phone-mask'), {
 			mask: '+{7}(000)000-00-00'
 		});
-	console.log(phoneMask)
 /*
 	--------------------------------------------
 	--------------------------------------------
