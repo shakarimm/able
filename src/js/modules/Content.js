@@ -89,6 +89,7 @@ function Content(callback) {
 			tabs[i].addEventListener('click', function () {
 				let content = this.getAttribute('href').replace('#', '');
 				change(content);
+				scrollTo({ top: 0, behavior: 'smooth' });
 			});
 		}
 	};

@@ -27,10 +27,11 @@
 			align-items: center;
 		}
 		&__content{
-			width: 48%;
+			width: 100%;
 		}
 		&__img-wrapper{
 			width: 44%;
+			display: none;
 		}
 		&__title{
 			font-size: 42px;
@@ -55,6 +56,30 @@
 				&+&{
 					margin-left: 0;
 				}
+			}
+		}
+	}
+	.s-fs{
+		&__title{
+			font-size: 42px;
+			line-height: 56px;
+		}
+		&__text{
+			margin-bottom: 42px;
+		}
+		&__price{
+			&-nums{
+				.blue{
+					font-size: 44px;
+					line-height: 20px;
+				}
+				.gray{
+					font-size: 24px;
+					line-height: 18px;
+				}
+			}
+			&-text{
+				margin-left: 82px;
 			}
 		}
 	}
@@ -98,6 +123,142 @@
 			width: 90%;
 		}
 	}
+	.footer{
+		&__col{
+			&+&{
+				margin-left: 55px;
+			}
+		}
+	}
+	.s-after-course{
+		&__cards{
+			margin-bottom: -20px;
+		}
+		.icon-card{
+			width: 49%;
+			margin-bottom: 20px;
+			height: auto;
+			height: 250px;
+		}
+	}
+	.s-teacher{
+		&__img-wrapper{
+			width: 37%;
+		}
+	}
+	.s-price{
+		&__inner{
+			flex-wrap: wrap;
+		}
+	}
+	.s-price-card{
+		&__img{
+			width: 15%;
+			top: -2%;
+		}
+		&__installment{
+			width: 230px;
+			font-size: 16px;
+		}
+		&__inner{
+			padding: 28px 12px;
+		}
+		&__title{
+			font-weight: 700;
+			font-size: 22px;
+			margin-bottom: 32px;
+			&--big{
+				margin-bottom: 100px;
+			}
+		}
+		&__last-price{
+			font-size: 20px;
+		}
+		&__new-price{
+			font-size: 24px;
+			margin-left: 26px;
+		}
+	}
+	.s-nav-fs{
+		&__cards{
+			margin-bottom: -36px;
+		}
+	}
+	.history-card{
+		margin-bottom: 36px;
+		&__way{
+			&-point{
+				width: 15%;
+			}
+			&-text{
+				width: 80%;
+			}
+		}
+	}
+	.s-result{
+		&__content{
+			width: 48%;
+		}
+	}
+	.s-contact-us{
+		&__form{
+			width: 50%;
+		}
+		&__items{
+			flex-wrap: wrap;
+		}
+		&__item{
+			width: 100%;
+			&-text{
+				margin-bottom: 7px;
+			}
+			&+&{
+				margin-left: 0;
+				margin-top: 18px;
+			}
+		}
+	}
+	.s-nav-fs{
+		&__icon-cards{
+			flex-wrap: wrap;
+			margin-bottom: -30px;
+		}
+		.icon-card{
+			width: 48%;
+			margin-bottom: 30px;
+			height: 250px;
+		}
+	}
+	.pay-card{
+		width: 70%;
+		margin: 0 auto 32px;
+	}
+	.s-about{
+		&__content{
+			width: 48%;
+		}
+		&__img-wrapper{
+			width: 45%;
+		}
+	}
+	.s-gallery{
+		&__right{
+			margin-left: 24px;
+			&-top{
+				margin-bottom: 24px;
+			}
+		}
+	}
+	.slider-arrow{
+		top: auto;
+		bottom: 0;
+		&--next{
+			right: 2%;
+		}
+		&--prev{
+			left: 2%;
+		}
+	}
 }
 
 // BREAKPOINT TABLET
@@ -115,12 +276,46 @@
 			}
 		}
 	}
+	.title{
+		font-size: 32px;
+		&--mini{
+			font-size: 20px;
+		}
+		&--mb{
+			&-short{
+				margin-bottom: 26px;
+			}
+			&-long{
+				margin-bottom: 42px;
+			}
+		}
+	}
 	.wrapper{
 		font-size: 15px;
 	}
-	.s-first-screen{
+	.s-fs{
+		&__text{
+			margin-bottom: 28px;
+		}
+		&__price{
+			margin-top: 38px;
+			&-nums{
+				font-size: 18px;
+				.blue{
+					font-size: 32px;
+				}
+				.gray{
+					font-size: 18px;
+				}
+			}
+			&-text{
+				margin-left: 66px;
+				font-size: 12px;
+				margin-top: 8px;
+			}
+		}
 		&__img-wrapper{
-			width: 38%;
+			display: none;
 		}
 	}
 	.container{
@@ -130,6 +325,7 @@
 	.s-location{
 		&__cards{
 			flex-wrap: wrap;
+			margin-bottom: 10px;
 		}
 		&__img{
 			top: 0;
@@ -137,6 +333,261 @@
 	}
 	.location-card{
 		width: 49%;
+		margin-bottom: 20px;
+	}
+	.s-founders{
+		&__title{
+			top: 3%;
+			left: 35px;
+		}
+	}
+	.company-slider, .company-slider__second, .company-slider__third, .gallery-slider{
+		&__pagination{
+			margin-top: 40px;
+		}
+	}
+	.s-banner{
+		padding: 50px 0 70px;
+		&__inner{
+			flex-wrap: wrap;
+			text-align: center;
+		}
+		&__title{
+			width: 100%;
+			margin-bottom: 30px;
+			&::after{
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		&__btn{
+			margin: 0 auto;
+		}
+	}
+	.footer{
+		&__top{
+			&-right{
+				flex-wrap: wrap;
+				margin-bottom: -25px;
+				.footer__col{
+					width: 48%;
+					margin-bottom: 25px;
+				}
+			}
+			&-left{
+				width: 30%;
+			}
+		}
+		&__col{
+			&+&{
+				margin-left: 0;
+			}
+		}
+	}
+	.s-slogan{
+		&__title{
+			font-size: 32px !important;
+		}
+		&__subtitle{
+			font-size: 22px !important;
+			margin-bottom: 24px !important;
+		}
+		&__text{
+			font-size: 22px;
+		}
+	}
+	.s-after-course{
+		.icon-card{
+			height: 280px;
+		}
+	}
+	.s-audience{
+		.titled-text-card{
+			width: 100%;
+			min-height: auto;
+
+		}
+	}
+	.s-program{
+		&__inner{
+			margin-bottom: -20px;
+		}
+		.program-card{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+	.s-teacher{
+		&__descr{
+			margin-bottom: 30px;
+		}
+		&__text{
+			font-size: 16px;
+		}
+		&__inner{
+			padding: 0;
+		}
+	}
+	.s-quote{
+		&__text{
+			font-size: 18px;
+		}
+		&__img{
+			width: 5%;
+			&--one{
+				top: -10%;
+			}
+			&--two{
+				bottom: -15%;
+			}
+		}
+	}
+	.s-price{
+		&__inner{
+			margin-bottom: -50px;
+		}
+	}
+	.s-price-card{
+		width: 60%;
+		margin: 0 auto 50px;
+		text-align: center;
+		&__img{
+			width: 10%;
+			top: -2%;
+			left: -4%;
+		}
+		&__item{
+			margin: 0 auto;
+			text-align: left;
+		}
+		&__title{
+			&--big{
+				margin-bottom: 32px;
+			}
+		}
+	}
+	.content__android{
+		.s-audience__inner{
+			padding: 0;
+		}
+		.titled-text-card{
+			width: 48% !important;
+		}
+	}
+	.s-nav-fs{
+		&__cards{
+			padding-top: 30px;
+		}
+	}
+	.history-card{
+		&__way{
+			&-point{
+				width: 16%;
+				font-size: 18px;
+			}
+		}
+	}
+	.result-card{
+		padding: 22px 15px 28px;
+		width: 48%;
+		&__title{
+			font-size: 38px;
+			line-height: 62px;
+		}
+	}
+	.s-contact-us{
+		&__inner{
+			padding: 130px 0 40px 0;
+			flex-wrap: wrap;
+		}
+		&__form{
+			margin-left: 30px;
+		}
+	}
+	.s-nav-fs{
+		.icon-card{
+			height: 300px;
+		}
+		&__text{
+			&--full{
+				font-size: 22px;
+			}
+		}
+	}
+	.s-what-next{
+		&__inner{
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		&__item{
+			font-size: 16px;
+			&+&{
+				margin-top: 18px;
+			}
+		}
+	}
+	.s-terms{
+		&__item{
+			font-size: 19px;
+		}
+	}
+	.pay-card{
+		width: 90%;
+		justify-content: space-between;
+	}
+	.s-pay-installment{
+		&__cards{
+			flex-wrap: wrap;
+		}
+	}
+	.pay-installment-card{
+		margin-bottom: 40px;
+		&__img-wrapper{
+			width: 60%;
+			margin: 0 auto;
+		}
+		&__title{
+			text-align: center;
+		}
+	}
+	.icon-titled-card{
+		padding: 30px 14px;
+		width: 100%;
+		margin-bottom: 20px;
+		&__title{
+			text-align: center;
+		}
+		&:first-child{
+			width: 100%;
+			margin-bottom: 20px;
+			.icon-titled-card{
+				&__title{
+					font-size: 20px;
+					margin-left: 16px;
+				}
+			}
+		}
+		&:last-child{
+			.icon-titled-card{
+				&__img-wrapper{
+					width: auto;
+				}
+			}
+		}
+	}
+	.s-mentoring{
+		&__inner{
+			flex-wrap: wrap;
+		}
+		&__img-wrapper{
+			width: 100%;
+			order: 2;
+			margin-top: 20px;
+		}
+		&__content{
+			width: 100%;
+			order: 1;
+		}
 	}
 }
 
@@ -150,18 +601,17 @@
 	}
 	.s-first-screen{
 		padding-top: 130px;
-		&__inner{
-			flex-wrap: wrap;
-		}
 		&__content{
 			width: 100%;
+			text-align: center;
 		}
-		&__img-wrapper{
-			width: 100%;
-			margin-top: 30px;
+		&__directions{
+			&-items{
+				justify-content: center;
+			}
 		}
-		&__img{
-			width: 100%;
+		&__text{
+			margin: 20px auto;
 		}
 	}
 	.title{
@@ -187,9 +637,6 @@
 			&-long{
 				margin-bottom: 34px;
 			}
-		}
-		&--primary{
-			font-size: 50px;
 		}
 	}
 	.s-stats{
@@ -248,13 +695,227 @@
 			flex-wrap: wrap;
 		}
 	}
-	.location-card{
-		width: 48%;
+	.learning-card{
+		&__title{
+			font-size: 16px !important;
+		}
+		&__img-wrapper{
+			margin-bottom: 14px;
+		}
+	}
+	.s-founders{
+		&__title{
+			max-width: 177px;
+		}
+	}
+	.footer{
+		&__top{
+			&-right{
+				width: 49%;
+				.footer__col{
+					width: 100%;
+					&:first-child{
+						margin-bottom: 0;
+					}
+					&-title{
+						&--transparent{
+							display: none;
+						}
+					}
+				}
+			}
+			&-left{
+				width: 49%;
+			}
+		}
+	}
+	.s-fs{
+		padding-top: 130px;
+		&__inner{
+			display: block;
+			text-align: center;
+		}
+		&__text{
+			margin: 0 auto 28px;
+		}
+		&__title{
+			font-size: 36px;
+			line-height: 48px;
+		}
+	}
+	.s-after-course{
+		.icon-card{
+			width: 100%;
+			height: 220px;
+		}
+	}
+	.s-teacher{
+		&__name{
+			font-size: 26px;
+			margin-bottom: 12px;
+		}
+		&__descr{
+			font-size: 17px;
+		}
+	}
+	.s-we-have{
+		&__inner{
+			margin-bottom: -20px;
+		}
+		.we-have-card{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+	.history-card{
+		&__name{
+			font-size: 21px;
+			padding-bottom: 13px;
+			margin-bottom: 17px;
+		}
+		&__way{
+			&-point{
+				width: 23%;
+			}
+			&-text{
+				width: 75%;
+			}
+		}
+	}
+	.s-nav-fs{
+		padding-top: 130px;
+	}
+	.s-result{
+		&__inner{
+			flex-wrap: wrap;
+		}
+		&__content{
+			width: 100%;
+		}
+		&__stats{
+			width: 100%;
+			margin-top: 20px;
+		}
+	}
+	.s-for-what-students{
+		.titled-image-card{
+			flex-wrap: wrap;
+			&__image-wrapper{
+				width: 100%;
+				order: 1;
+				margin-bottom: 20px;
+			}
+			&__content{
+				width: 100%;
+				order: 2;
+			}
+			&__title{
+				margin-bottom: 22px;
+			}
+		}
+	}
+	.s-contact-us{
+		&__content{
+			width: 100%;
+			margin-bottom: 24px;
+		}
+		&__form{
+			width: 100%;
+			margin: 0 auto;
+			padding: 28px 24px;
+			&-btn{
+				margin: 20px auto 0;
+				display: block;
+			}
+		}
+	}
+	.s-nav-fs{
+		.icon-card{
+			height: auto;
+		}
+		&__text{
+			&--studlife{
+				font-size: 18px;
+			}
+		}
+	}
+	.s-what-next{
+		&__content{
+			width: 100%;
+		}
+		&__img-wrapper{
+			width: 100%;
+			margin: 20px auto 0;
+			text-align: center;
+		}
+	}
+	.pay-card{
+		background: linear-gradient(90deg, #00C0F3 0%, #3997D3 100%);
+		&__img{
+			font-size: 2.5em;
+		}
+		&__title{
+			font-size: 20px;
+		}
+	}
+	.s-about{
+		padding: 120px 0 45px;
+		&__title{
+			margin-bottom: 24px;
+		}
+		&__item{
+			&+&{
+				margin-top: 14px;
+			}
+		}
+		&__content{
+			width: 100%;
+			margin-top: 22px;
+			order: 2;
+		}
+		&__img-wrapper{
+			width: 100%;
+			text-align: center;
+			order: 1;
+		}
+	}
+	.s-our-company{
+		.icon-card{
+			width: 100%;
+			margin-bottom: 20px;
+		}
 	}
 }
 
 // BREAKPOINT PHONE
 @media (max-width: $ss_phone) {
+	.section{
+		position: relative;
+		&--long{
+			&, &-pt{
+				padding-top: 10.2%;
+			}
+			&, &-pb{
+				padding-bottom: 10.2%;
+			}
+		}
+		&--medium{
+			&, &-pt{
+				padding-top: 8.6%;
+			}
+			&, &-pb{
+				padding-bottom: 8.6%;
+			}
+		}
+		&--short{
+			&, &-pt{
+				padding-top: 4.4%;
+			}
+			&, &-pb{
+				padding-bottom: 4.4%;
+			}
+		}
+	}
 	.header{
 		&__btn{
 			display: none;
@@ -265,6 +926,12 @@
 			&--mobile{
 				display: block;
 			}
+		}
+	}
+	.title{
+		font-size: 24px;
+		&--mini{
+			font-size: 18px;
 		}
 	}
 	.s-first-screen{
@@ -283,10 +950,293 @@
 			}
 		}
 	}
+	.s-courses{
+		padding: 30px 0;
+	}
 	.stat-card{
 		&__title{
 			font-size: 42px;
 			line-height: 54px;
 		}
+	}
+	.s-location{
+		padding: 40px 0;
+	}
+	.location-card{
+		width: 100%;
+		&__text{
+			height: 120px;
+		}
+	}
+	.s-learning{
+		&__inner{
+			margin-bottom: -20px;
+		}
+	}
+	.learning-card{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.s-founders{
+		&__title{
+			display: none;
+			&--mobile{
+				display: block;
+				position: relative;
+				max-width: none;
+				left: 0;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.video{
+		&__play-btn{
+			font-size: 4em;
+		}
+	}
+	.company-slider, .company-slider__second, .company-slider__third, .gallery-slider{
+		&__pagination{
+			margin-top: 25px;
+			.swiper-pagination-bullet{
+				margin: 0 7px 8px;
+				width: 7px;
+				height: 7px;
+			}
+		}
+	}
+	.s-banner{
+		padding: 30px 0 45px;
+	}
+	.footer{
+		&__top{
+			&-right{
+				width: 45%;
+			}
+			&-left{
+				width: 55%;
+			}
+		}
+		&__social{
+			&-item{
+				&+&{
+					margin-left: 9px;
+				}
+			}
+		}
+	}
+	.s-fs{
+		padding-top: 100px;
+		&__title{
+			font-size: 28px;
+			line-height: 34px;
+		}
+	}
+	.s-slogan{
+		&__title{
+			font-size: 24px !important;
+		}
+		&__subtitle{
+			font-size: 17px !important;
+			margin-bottom: 18px !important;
+		}
+		&__text{
+			font-size: 17px;
+		}
+	}
+	.s-after-course{
+		.icon-card{
+			height: auto;
+		}
+	}
+	.s-program{
+		.program-card{
+			&__title{
+				font-size: 20px;
+				margin-bottom: 24px;
+			}
+		}
+	}
+	.s-teacher{
+		&__inner{
+			flex-wrap: wrap;
+		}
+		&__img-wrapper{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		&__content{
+			width: 100%;
+		}
+	}
+	.s-quote{
+		&__text{
+			font-size: 16px;
+		}
+		&__img{
+			width: 5%;
+			&--one{
+				top: -2%;
+			}
+			&--two{
+				bottom: -2%;
+			}
+		}
+		&__graduate{
+			&__info{
+				font-size: 16px;
+    		margin-left: 15px;
+			}
+			&__link{
+				margin-top: 8px;
+			}
+		}
+	}
+	.s-we-have{
+		.we-have-card{
+			&__title{
+				margin-bottom: 20px;
+				margin-top: 15px;
+			}
+		}
+	}
+	.s-price-card{
+		width: 90%;
+		&__last-price{
+			font-size: 17px;
+		}
+		&__new-price{
+			font-size: 22px;
+			margin-left: 20px;
+		}
+		&__nums{
+			margin-top: 40px;
+			margin-bottom: 20px;
+		}
+	}
+	.content__android{
+		.s-slogan{
+			&__subtitle{
+				margin-bottom: 0 !important;
+				padding-bottom: 0 !important;
+			}
+		}
+	}
+	.s-banner{
+		&__btn{
+			padding: 14px 20px;
+		}
+	}
+	.s-teacher{
+		&__inner{
+			&:not(:first-child){
+				margin-top: 40px;
+			}
+		}
+	}
+	.content__android{
+		.titled-text-card{
+			width: 100% !important;
+		}
+	}
+	.s-nav-fs{
+		padding-top: 100px;
+	}
+	.history-card{
+		flex-wrap: wrap;
+		&__img-wrapper{
+			text-align: center;
+			width: 100%;
+			margin-bottom: 15px;
+		}
+		&__content{
+			width: 100%;
+		}
+		&__way{
+			&-point{
+				font-size: 16px;
+			}
+		}
+	}
+	.result-card{
+		padding: 18px 10px 20px;
+		&__title{
+			font-size: 32px;
+			line-height: 48px;
+		}
+	}
+	.s-contact-us{
+		&__inner{
+			padding: 100px 0 32px 0;
+		}
+	}
+	.s-nav-fs{
+		&__icon-cards{
+			margin-bottom: -20px;
+		}
+		.icon-card{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		&__warning{
+			margin-top: 24px;
+		}
+	}
+	.s-terms{
+		padding-bottom: 2%;
+		&__item{
+			font-size: 16px;
+		}
+	}
+	.s-pay-international{
+		&__cards{
+			flex-wrap: wrap;
+			margin-top: 18px;
+		}
+		&__img-wrapper{
+			width: 80%;
+			&+&{
+				margin-left: 0;
+				margin-top: 20px;
+			}
+		}
+	}
+	.pay-installment-card{
+		margin-bottom: 25px;
+		&__img-wrapper{
+			width: 100%;
+		}
+	}
+	.pay-card{
+		flex-wrap: wrap;
+		justify-content: center;
+    text-align: center;
+		padding: 16px;
+		&__icon-container{
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		&__content{
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+	.s-about{
+		padding: 100px 0 35px;
+	}
+	.s-nav-fs{
+		&__text{
+			&--full{
+				font-size: 18px;
+			}
+		}
+	}
+	.s-mentoring{
+		&__text{
+			font-size: 18px;
+		}
+	}
+	.slider-arrow{
+		top: auto;
+		bottom: -10px;
 	}
 }

@@ -433,7 +433,7 @@
 		}
 	}
 }
-.company-slider, .company-slider__second, .company-slider__third{
+.company-slider, .company-slider__second, .company-slider__third, .gallery-slider{
 	margin: 0 -5%;
 	&__pagination{
 		text-align: center;
@@ -757,7 +757,7 @@
 	&__content{
 		color: #fff;
 		max-width: 264px;
-		margin-left: 37px;
+		margin-left: 50px;
 	}
 	&__title{
 		font-weight: 700;
@@ -766,11 +766,16 @@
 	&__icon{
 		width: 3em;
 		height: 3em;
-		font-size: 3.9em;
+		font-size: 2.9em;
+	}
+	&__img{
+		width: 3em;
+		height: 3em;
+		font-size: 2.9em;
 	}
 }
 .pay-installment-card{
-	width: 100%;
+	width: 24%;
 	&__title{
 		font-weight: 500;
 		font-size: 16px;
@@ -864,6 +869,64 @@
 	}
 	&__text{
 		font-size: 18px;
+	}
+}
+.icon-titled-card{
+	padding: 50px 24px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+	width: 32%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:first-child{
+		width: 85%;
+		text-align: center;
+    margin: 0 auto 52px;
+		.icon-titled-card{
+			&__title{
+				font-size: 28px;
+				margin-left: 36px;
+			}
+		}
+	}
+	&:last-child{
+		.icon-titled-card{
+			&__img-wrapper{
+				width: 24%;
+			}
+		}
+	}
+	&__img{
+		width: 1em;
+		height: 1em;
+		font-size: 3em;
+	}
+	&__title{
+		font-weight: 500;
+		font-size: 20px;
+		margin-left: 16px;
+	}
+}
+.slider-arrow{
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	z-index: 2;
+	padding: 13px;
+	border: 1px solid #676767;
+	border-radius: 50%;
+	transition: all .4s;
+	&__icon{
+		width: 19px;
+		height: 19px;
+	}
+	&--prev{
+		left: -4%;
+	}
+	&--next{
+		right: -4%;
 	}
 }
 // SECTIONS-HOME
@@ -1043,6 +1106,9 @@
 		max-width: 300px;
     text-align: left;
 		z-index: 2;
+		&--mobile{
+			display: none;
+		}
 	}
 }
 .s-video{
@@ -1077,6 +1143,21 @@
 		max-width: 688px;
 		line-height: 1.5;
 		font-size: 18px;
+		&--full{
+			max-width: none;
+			font-size: 30px;
+		}
+		&--studlife{
+			font-size: 24px;
+			line-height: 30px;
+			max-width: none;
+		}
+	}
+	&__icon-titled-cards{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 50px;
 	}
 	&__cards{
 		padding-top: 49px;
@@ -1100,6 +1181,12 @@
 			max-width: 897px;
 			margin-left: 17px;
 		}
+	}
+	&__img-wrapper{
+		margin-top: 50px;
+	}
+	&__img{
+		border-radius: 16px;
 	}
 }
 .s-pay-type{
@@ -1134,6 +1221,9 @@
 .s-pay-installment{
 	&__inner{
 		display: flex;
+	}
+	&__content{
+		width: 100%;
 	}
 	&__subtitle{
 		font-weight: 500;
@@ -1275,8 +1365,7 @@
 			width: 27px;
 			height: 27px;
 			left: 0;
-			top: 50%;
-			transform: translateY(-50%);
+			top: 4px;
 		}
 	}
 }
@@ -1370,6 +1459,67 @@
 		}
 	}
 }
+.s-for-what-students{
+	&__cards{
+		margin-bottom: -50px;
+	}
+}
+.s-mentoring{
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__content{
+		width: 55%;
+	}
+	&__img-wrapper{
+		width: 42.5%;
+	}
+	&__text{
+		font-size: 20px;
+		line-height: 1.6;
+		&-bullet{
+			padding-left: 20px;
+			position: relative;
+			&::after{
+				position: absolute;
+				content: '';
+				left: 0;
+				top: 14px;
+				width: 4px;
+				height: 4px;
+				background: $color_text;
+				border-radius: 50%;
+			}
+		}
+	}
+	&__subtitle{
+		margin-top: 17px;
+		margin-bottom: 22px;
+		font-weight: 500;
+		font-size: 26px;
+	}
+}
+.s-gallery{
+	&__inner{
+		display: flex;
+		justify-content: center;
+		img{
+			border-radius: 8px;
+		}
+	}
+	&__right{
+		margin-left: 32px;
+		&-top{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 32px;
+			.s-gallery__img-wrapper{
+				width: 48%;
+			}
+		}
+	}
+}
 // SECTIONS-COURSES
 .s-fs{
 	padding-top: 157px;
@@ -1386,6 +1536,9 @@
 		span{
 			color: $color_primary;
 		}
+	}
+	&__img{
+		border-radius: 20px;
 	}
 	&__text{
 		color: rgba(0, 0, 0, 0.7);
@@ -1461,6 +1614,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 0 100px;
 		&:not(:first-child){
 			margin-top: 88px;
 		}
@@ -1483,6 +1637,8 @@
 		position: relative;
 		font-size: 20px;
 		color: #151515;
+		padding-top: 20px;
+    padding-bottom: 20px;
 		&::after{
 			position: absolute;
 			content: '';
@@ -1542,10 +1698,12 @@
 				font-weight: 500;
 			}
 		}
-		&__img{
+		&__img-wrapper{
 			width: 87px;
 			height: 87px;
-			border-radius: 70px;
+		}
+		&__img{
+			border-radius: 50%;
 		}
 		&__link{
 			display: flex;
@@ -1575,6 +1733,43 @@
 	}
 	&__btn-wrapper{
 		text-align: center;
+	}
+}
+.s-about{
+	background: #E5F6FF;
+	padding: 154px 0 63px;
+	&__title{
+		margin-bottom: 12px;
+	}
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__img{
+		border-radius: 10px;
+	}
+	&__item{
+		padding: 17px 18px 17px 32px;
+		background: #FFFFFF;
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+		border-radius: 8px;
+		max-width: 717px;
+		&+&{
+			margin-top: 60px;
+		}
+	}
+}
+.s-our-company{
+	&__cards{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.icon-card{
+		width: 31%;
+		height: auto;
 	}
 }
 // CONTENT
@@ -1616,6 +1811,19 @@
 			&::after{
 				left: 0;
 				transform: translateX(0);
+			}
+		}
+	}
+}
+.content__studlife{
+	.program-card{
+		width: 24%;
+		&__text{
+			p{
+				padding-left: 0;
+				&::after{
+					display: none;
+				}
 			}
 		}
 	}

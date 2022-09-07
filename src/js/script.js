@@ -3,7 +3,7 @@ import Countup from './custom_modules/Countup';
 import Video from "./modules/Video";
 import Content from "./modules/Content";
 import Nav from "./modules/Nav";
-import closest from "./modules/Closest";
+// import closest from "./modules/Closest";
 
 /*
 	--------------------------------------------
@@ -46,6 +46,23 @@ import closest from "./modules/Closest";
 			bulletActiveClass: '.company-slider__third-pagination-active',
 			pagination: {
 				el: '.company-slider__third__pagination',
+				clickable: true,
+			},
+		});
+	}
+
+	function initGallerySlider() {
+		swiper.init(".gallery-slider", {
+			loop: true,
+			slidesPerView: 1,
+			autoHeight: true,
+			bulletActiveClass: '.gallery-slider-pagination-active',
+			navigation: {
+				prevEl: ".gallery-slider-arrow-prev",
+				nextEl: ".gallery-slider-arrow-next",
+			},
+			pagination: {
+				el: '.gallery-slider__pagination',
 				clickable: true,
 			},
 		});
@@ -118,6 +135,8 @@ import closest from "./modules/Closest";
 		document.getElementById('phone-mask'), {
 			mask: '+{7}(000)000-00-00'
 		});
+
+		console.log(phoneMask)
 /*
 	--------------------------------------------
 	--------------------------------------------
@@ -134,3 +153,4 @@ import closest from "./modules/Closest";
 	initCompanySlider()
 	initCompanySecondSlider()
 	initCompanyThirdSlider()
+	initGallerySlider()

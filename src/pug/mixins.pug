@@ -78,13 +78,13 @@ mixin pay-card(icon=true,imgSrc=false,title,text=false)
 mixin pay-installment-card(imgSrc, title)
 	.pay-installment-card
 		.pay-installment-card__img-wrapper 
-			img.pay-installment-card(src=imgSrc)
+			img.pay-installment-card__img(src=imgSrc)
 		.pay-installment-card__title!=title
 
 mixin history-card(imgSrc, name, textOne, textTwo)
 	.history-card
 		.history-card__img-wrapper 
-			img.history-card(src=imgSrc)
+			img.history-card__img(src=imgSrc)
 		.history-card__content 
 			.history-card__name!=name 
 			.history-card__way 
@@ -119,3 +119,9 @@ mixin titled-image-card(imageSrc, title, isReverse=false)
 			+image(imageSrc)
 			+content
 				block
+
+mixin icon-titled-card(imgSrc, title)
+	.icon-titled-card
+		.icon-titled-card__img-wrapper
+			img.icon-titled-card__img(src=imgSrc)
+		.icon-titled-card__title!=title

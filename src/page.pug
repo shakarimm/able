@@ -5,7 +5,7 @@ block content
 	.header
 		.container
 			.header__inner
-				a.header__logo.content-tab(href="#about")
+				a.header__logo.content-tab(href="#home")
 					img.header__logo-img(src="images/logo.svg")
 				.header__nav.nav
 					.nav__item.nav__item--parent Курсы
@@ -27,24 +27,25 @@ block content
 							a.nav__item-sub.content-tab(href="#review") Обзор
 							a.nav__item-sub.content-tab(href="#employment") Трудоустройство
 							a.nav__item-sub.content-tab(href="#payment") Способ оплаты
-					a.nav__item.content-tab(href="#") Преподаватель
+					a.nav__item.content-tab(href="#teacher") Преподаватель
 					.nav__item.nav__item--parent Студенты
 						.nav__item-menu
 							a.nav__item-sub.content-tab(href="#history") Истории студентов
 							a.nav__item-sub.content-tab(href="#hiring") Нанять наших студентов
+							a.nav__item-sub.content-tab(href="#studlife") Студенчаская жизнь
 					.nav__item.nav__item--parent Для компаний
 						.nav__item-menu
 							a.nav__item-sub.content-tab(href="#corpo") Корпоративное обучение
 							a.nav__item-sub.content-tab(href="#trainee") Стажеры  для вашей компании
 							a.nav__item-sub.content-tab(href="#questions") Контакты
-					a.nav__item.content-tab(href="#") О нас
-					a.header__btn.btn.btn--transparent.nav__item--mobile Бесплатная консультация
-				a.header__btn.btn.btn--transparent Бесплатная консультация
+					a.nav__item.content-tab(href="#about") О нас
+					a.header__btn.btn.btn--transparent.nav__item--mobile(href="https://api.whatsapp.com/send/?phone=77761255952&text&type=phone_number&app_absent=0" target="blanc_") Бесплатная консультация
+				a.header__btn.btn.btn--transparent(href="https://api.whatsapp.com/send/?phone=77761255952&text&type=phone_number&app_absent=0" target="blanc_") Бесплатная консультация
 				+nav-btn
 	<!-- END HEADER -->
 
 	<!-- START CONTENT HOME -->
-	.content.content--active.content--opacity-1.content__about
+	.content.content--active.content--opacity-1.content__home
 		<!-- START SECTION FIRST-SCREEN -->
 		.section.s-first-screen
 			.container 
@@ -61,7 +62,7 @@ block content
 								.s-first-screen__directions-item Android-разработка
 						.s-first-screen__text 
 							p Нужна помощь в подборе правильного курса для вас? Пройди тест и пойми, что тебе подходит
-						a.s-first-screen__btn.btn.btn--blue ПРОЙТИ ТЕСТ
+						a.s-first-screen__btn.btn.btn--blue(href="https://docs.google.com/forms/d/1GmGuYvS70Zs6sZ3Opq2mzkibZcDgG3k7jdYdPX-VnAY/viewform?ts=6317af5b&edit_requested=true" target="blanc_") ПРОЙТИ ТЕСТ
 					.s-first-screen__img-wrapper 
 						img.s-first-screen__img(src="images/fs.jpg")
 		<!-- END SECTION FIRST-SCREEN -->
@@ -115,7 +116,7 @@ block content
 												.tabs-info__item-img-wrapper 
 													img.tabs-info__item-img(src="images/tabs/2.png")
 											.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
-									.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
+									.tabs__btn.btn.btn--primary.content-tab(href="#data") ПОДРОБНЕЕ
 							.tabs__item#tab_2
 								.tabs__text
 									p Вы научитесь:
@@ -140,7 +141,7 @@ block content
 												.tabs-info__item-img-wrapper 
 													img.tabs-info__item-img(src="images/tabs/2.png")
 											.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
-									.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
+									.tabs__btn.btn.btn--primary.content-tab(href="#development") ПОДРОБНЕЕ
 							.tabs__item#tab_3
 								.tabs__text
 									p Вы научитесь:
@@ -164,7 +165,7 @@ block content
 												.tabs-info__item-img-wrapper 
 													img.tabs-info__item-img(src="images/tabs/2.png")
 											.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
-									.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
+									.tabs__btn.btn.btn--primary.content-tab(href="#business") ПОДРОБНЕЕ
 							.tabs__item#tab_4
 								.tabs__text
 									p Вы научитесь:
@@ -188,7 +189,7 @@ block content
 												.tabs-info__item-img-wrapper 
 													img.tabs-info__item-img(src="images/tabs/2.png")
 											.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
-									.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
+									.tabs__btn.btn.btn--primary.content-tab(href="#android") ПОДРОБНЕЕ
 						.tabs__nav.tabs__nav--mobile
 							.tabs__nav-wrapper
 								button.tabs__nav-btn#tabsBtnOne(type="button" data-tab="#tab_5") Data Science
@@ -216,7 +217,7 @@ block content
 													.tabs-info__item-img-wrapper 
 														img.tabs-info__item-img(src="images/tabs/2.png")
 												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
-										.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
+										a.tabs__btn.btn.btn--primary.content-tab(href="#data") ПОДРОБНЕЕ
 							.tabs__nav-wrapper
 								button.tabs__nav-btn(type="button" data-tab="#tab_6") Веб-Разработка
 								.tabs__item#tab_6
@@ -243,7 +244,7 @@ block content
 													.tabs-info__item-img-wrapper 
 														img.tabs-info__item-img(src="images/tabs/2.png")
 												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
-										.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
+										.tabs__btn.btn.btn--primary.content-tab(href="#development") ПОДРОБНЕЕ
 							.tabs__nav-wrapper
 								button.tabs__nav-btn(type="button" data-tab="#tab_7") Android-Разработка
 								.tabs__item#tab_7
@@ -269,7 +270,7 @@ block content
 													.tabs-info__item-img-wrapper 
 														img.tabs-info__item-img(src="images/tabs/2.png")
 												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
-										.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
+										.tabs__btn.btn.btn--primary.content-tab(href="#business") ПОДРОБНЕЕ
 							.tabs__nav-wrapper
 								button.tabs__nav-btn(type="button" data-tab="#tab_8") Бизнес аналитика
 								.tabs__item#tab_8
@@ -295,11 +296,11 @@ block content
 													.tabs-info__item-img-wrapper 
 														img.tabs-info__item-img(src="images/tabs/2.png")
 												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
-										.tabs__btn.btn.btn--primary ПОДРОБНЕЕ
+										.tabs__btn.btn.btn--primary.content-tab(href="#android") ПОДРОБНЕЕ
 					.s-courses__help
 						.s-courses__help-text 
 							p Нужна помощь в подборе правильного курса для вас? Пройди тест пойми, что тебе подходит
-						a.s-courses__help-btn.btn.btn--test(href="#") ПРОЙТИ ТЕСТ
+						a.s-courses__help-btn.btn.btn--test(href="https://docs.google.com/forms/d/1GmGuYvS70Zs6sZ3Opq2mzkibZcDgG3k7jdYdPX-VnAY/viewform?ts=6317af5b&edit_requested=true" target="blanc_") ПРОЙТИ ТЕСТ
 		<!-- END SECTION COURSES -->
 
 		<!-- START SECTION SYSTEM -->
@@ -323,7 +324,7 @@ block content
 					+location-card("02", "Преподаватели лучшие специалисты в своей нише из топовых мировых компаний")
 					+location-card("03", "Индивидуальный подход к каждому ученику")
 					+location-card("04", "Предоставляем по запросу консультации со специалистами из Google, Apple  и Facebook")
-				.s-location__btn.btn.btn--transparent БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+				a.s-location__btn.btn.btn--transparent(href="https://api.whatsapp.com/send/?phone=77761255952&text&type=phone_number&app_absent=0" target="blanc_") БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
 		<!-- END SECTION LOCATION -->
 
 		<!-- START SECTION LEARNING -->
@@ -338,6 +339,8 @@ block content
 
 		<!-- START SECTION FOUNDERS -->
 		.section.s-founders.section--long 
+			.container 
+				.s-founders__title.s-founders__title--mobile.title Основатели Академии ABLE 
 			.s-founders__img-wrapper
 				img.s-founders__img(src="images/founders.jpg")
 				.container 
@@ -385,7 +388,7 @@ block content
 			.container 
 				.s-banner__inner 
 					.s-banner__title.title Станьте специалистом в IT. <br>Работа гарантирована!
-					.s-banner__btn.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+					a.s-banner__btn.btn.btn--primary(href="https://api.whatsapp.com/send/?phone=77761255952&text&type=phone_number&app_absent=0" target="blanc_") БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
 		<!-- END SECTION BANNER -->
 	<!-- END CONTENT HOME -->
 
@@ -405,7 +408,7 @@ block content
 							.s-fs__price-nums от <span class="gray">31 500</span> <span class="blue">19 500 ₸</span> в месяц
 							.s-fs__price-text при оплате в рассрочку на 12 месяцев
 					.s-fs__img-wrapper 
-						img.s-fs__img(src="images/fs.jpg")
+						img.s-fs__img(src="images/fs/1.jpg")
 		<!-- END SECTION FS -->
 
 		<!-- START SECTION SLOGAN -->
@@ -480,6 +483,18 @@ block content
 							p Работал специалистом по искусственному интеллекту в Южной Корее, компания ST UNITAS
 							p Работал дата сайентист в компании Huawei
 							p Сейчас дата сайентист в топовой казахстанской компании BTS Digital
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/5.jpg")
+					.s-teacher__content 
+						.s-teacher__name Малика
+						.s-teacher__descr Ментор/наставник на курсе Data Science
+						.s-teacher__text 
+							p Закончила КазНУ им. аль-Фараби по специальности Математическое и компьютерное моделирование
+							p Научная стажировка в Германии
+							p Преподавала в школе программирования и математики АЛГОРИТМИКА
+							p Работала аналитиком дистанционных продаж в Евразийском банке
+							p Сейчас работает Data Scientist-ом в Wings Partners
 		<!-- END SECTION TEACHER -->
 
 		<!-- START SECTION QUOTE -->
@@ -577,7 +592,7 @@ block content
 			.container 
 				.s-banner__inner.s-banner__inner--flex-wrap 
 					.s-banner__title.s-banner__title--wide.title.title--centered.title--mb-short Точную информацию по тарифам <br>можно уточнить перейдя по кнопке
-					.s-banner__btn.s-banner__btn--centered.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+					a.s-banner__btn.s-banner__btn--centered.btn.btn--primary(href="https://api.whatsapp.com/send/?phone=77761255952&text&type=phone_number&app_absent=0" target="blanc_") БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
 		<!-- END SECTION BANNER -->
 	<!-- END CONTENT DATA-SCIENCE -->
 
@@ -597,7 +612,7 @@ block content
 							.s-fs__price-nums от <span class="gray">31 500</span> <span class="blue">19 500 ₸</span> в месяц
 							.s-fs__price-text при оплате в рассрочку на 12 месяцев
 					.s-fs__img-wrapper 
-						img.s-fs__img(src="images/fs.jpg")
+						img.s-fs__img(src="images/fs/2.jpg")
 		<!-- END SECTION FS -->
 
 		<!-- START SECTION SLOGAN -->
@@ -668,27 +683,42 @@ block content
 						img.s-teacher__img(src="images/teachers/2.jpg")
 					.s-teacher__content 
 						.s-teacher__name Сакен Кенжегулов
-						.s-teacher__descr Автор курса Веб-разработка	
+						.s-teacher__descr Автор курса web-разработка	
 						.s-teacher__text 
-							p получил диплом о высшем образовании в UNIST, Южная Корея.
-							p Software engineer мирового гиганта Google, призер нескольких олимпиад международного уровня, имеет многолетний опыт работы в IT-отраслях (веб-разработка, ИИ, роботетхника и т.д.).
+							p Закончил UNIST по специальности информационные технологии
+							p Проходил стажировку в Корее, Швейцарии
+							p Работает в роли разработчика в Google офис Калифорния
 				.s-teacher__inner 
 					.s-teacher__img-wrapper 
 						img.s-teacher__img(src="images/teachers/3.jpg")
 					.s-teacher__content 
 						.s-teacher__name Ерлан Байтуринов
-						.s-teacher__descr Автор курса Веб-разработка
+						.s-teacher__descr Автор курса web-разработка
 						.s-teacher__text 
-							p получил диплом о высшем образовании в СДУ.
-							p Software engineer мирового гиганта Google. Работал во многих казахстанских компаниях.
+							p Закончил СДУ
+							p Работал разработчиком в Olzha Holding
+							p Работает разработчиком в Google офис Дублин, Ирландия
 				.s-teacher__inner 
 					.s-teacher__img-wrapper 
-						img.s-teacher__img(src="images/teachers/4.jpg")
+						img.s-teacher__img(src="images/teachers/6.jpg")
 					.s-teacher__content 
 						.s-teacher__name Диана Мадуан
-						.s-teacher__descr Автор курса data science
+						.s-teacher__descr ментор/наставник на курсе web-разработка
 						.s-teacher__text 
-							p выпускница Международного университета информационных технологий в Алматы, front-end разработчик в международной компании Citadel, ментор курса веб-разработки.
+							p Закончила в МУИТ, Алматы по специальности информационные технологии
+							p Сейчас работает в роли Middle Frontend разработчика в Citadel one
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/6.jpg")
+					.s-teacher__content 
+						.s-teacher__name Арман Жаманкулов
+						.s-teacher__descr ментор/наставник на курсе web-разработка
+						.s-teacher__text 
+							p Профессиональный массажист. Прошёл курс по массажу в ЕШКО. 
+							p Специалист по ремонту и модернизации ПК. Прошёл курс в г. Актау.
+							p Работал IT консультантом в Каратальской районной больльнице 1 год.
+							p Прошёл курс по frontend в Able. Html, css, js, ReactJS.
+							p В настоящее время работаю удалённо в Able.
 		<!-- END SECTION TEACHER -->
 
 		<!-- START SECTION QUOTE -->
@@ -784,7 +814,7 @@ block content
 			.container 
 				.s-banner__inner.s-banner__inner--flex-wrap 
 					.s-banner__title.s-banner__title--wide.title.title--centered.title--mb-short Точную информацию по тарифам <br>можно уточнить перейдя по кнопке
-					.s-banner__btn.s-banner__btn--centered.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+					a.s-banner__btn.s-banner__btn--centered.btn.btn--primary(href="https://api.whatsapp.com/send/?phone=77761255952&text&type=phone_number&app_absent=0" target="blanc_") БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
 		<!-- END SECTION BANNER -->
 	<!-- END CONTENT DEVELOPMENT -->
 
@@ -804,7 +834,7 @@ block content
 							.s-fs__price-nums от <span class="gray">27 000</span> <span class="blue">20 500 ₸</span> в месяц
 							.s-fs__price-text при оплате в рассрочку на 12 месяцев
 					.s-fs__img-wrapper 
-						img.s-fs__img(src="images/fs.jpg")
+						img.s-fs__img(src="images/fs/3.jpg")
 		<!-- END SECTION FS -->
 
 		<!-- START SECTION SLOGAN -->
@@ -993,7 +1023,7 @@ block content
 			.container 
 				.s-banner__inner.s-banner__inner--flex-wrap 
 					.s-banner__title.s-banner__title--wide.title.title--centered.title--mb-short Точную информацию по тарифам <br>можно уточнить перейдя по кнопке
-					.s-banner__btn.s-banner__btn--centered.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+					a.s-banner__btn.s-banner__btn--centered.btn.btn--primary(href="https://api.whatsapp.com/send/?phone=77761255952&text&type=phone_number&app_absent=0" target="blanc_") БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
 		<!-- END SECTION BANNER -->
 	<!-- END CONTENT BUSINESS -->
 
@@ -1013,7 +1043,7 @@ block content
 							.s-fs__price-nums от <span class="gray">31 500</span> <span class="blue">22 000 ₸</span> в месяц
 							.s-fs__price-text при оплате в рассрочку на 12 месяцев
 					.s-fs__img-wrapper 
-						img.s-fs__img(src="images/fs.jpg")
+						img.s-fs__img(src="images/fs/4.jpg")
 		<!-- END SECTION FS -->
 
 		<!-- START SECTION SLOGAN -->
@@ -1189,7 +1219,7 @@ block content
 			.container 
 				.s-banner__inner.s-banner__inner--flex-wrap 
 					.s-banner__title.s-banner__title--wide.title.title--centered.title--mb-short Точную информацию по тарифам <br>можно уточнить перейдя по кнопке
-					.s-banner__btn.s-banner__btn--centered.btn.btn--primary БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+					a.s-banner__btn.s-banner__btn--centered.btn.btn--primary(href="https://api.whatsapp.com/send/?phone=77761255952&text&type=phone_number&app_absent=0" target="blanc_") БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
 		<!-- END SECTION BANNER -->
 	<!-- END CONTENT ANDROID -->
 
@@ -1219,7 +1249,8 @@ block content
 		.section.s-pay-cash 
 			.container
 				.s-pay-cash__inner
-					.s-pay-cash__num 1
+					.s-pay-cash__num-wrapper
+						.s-pay-cash__num 1
 					.s-pay-cash__content
 						.s-pay-cash__title.title.title--mb-long Оплата наличными
 						.s-pay-cash__text 
@@ -1230,7 +1261,8 @@ block content
 		.section.s-pay-installment.section--long 
 			.container
 				.s-pay-installment__inner
-					.s-pay-installment__num 2
+					.s-pay-cash__num-wrapper
+						.s-pay-cash__num 2
 					.s-pay-installment__content
 						.s-pay-installment__title.title.title--mb-long Оплата по рассрочке
 						.s-pay-installment__subtitle Kaspi:
@@ -1245,17 +1277,18 @@ block content
 						.s-pay-installment__text 
 							p Следуйте инструкции 
 						.s-pay-installment__cards 
-							+pay-installment-card("images/pay-installment/1.jpg", "В главном меню выбираем “рассрочка”.")
-							+pay-installment-card("images/pay-installment/2.jpg", "Выбираем “Homebank Рассрочка” .")
-							+pay-installment-card("images/pay-installment/3.jpg", "В поисковике вводим название нашей академии.")
-							+pay-installment-card("images/pay-installment/4.jpg", "Далее вводим сумму и заполняете остальные поля. После одобрения менеджер скинет вам QR код, по которому можно будет совершить оплату.")
+							+pay-installment-card("images/pay-installment/5.jpg", "В главном меню выбираем “рассрочка”.")
+							+pay-installment-card("images/pay-installment/6.jpg", "Выбираем “Homebank Рассрочка” .")
+							+pay-installment-card("images/pay-installment/7.jpg", "В поисковике вводим название нашей академии.")
+							+pay-installment-card("images/pay-installment/8.jpg", "Далее вводим сумму и заполняете остальные поля. После одобрения менеджер скинет вам QR код, по которому можно будет совершить оплату.")
 		<!-- END SECTION PAY-INSTALLMENT -->
 
 		<!-- START SECTION PAY-INTERNATIONAL -->
 		.section.s-pay-international 
 			.container
 				.s-pay-international__inner
-					.s-pay-international__num 3
+					.s-pay-cash__num-wrapper
+						.s-pay-cash__num 3
 					.s-pay-international__content
 						.s-pay-international__title.title.title--mb-long Международные переводы 
 						.s-pay-international__text 
@@ -1273,13 +1306,98 @@ block content
 		.section.s-pay-organization.section--long 
 			.container
 				.s-pay-organization__inner
-					.s-pay-organization__num 4
+					.s-pay-cash__num-wrapper
+						.s-pay-cash__num 4
 					.s-pay-organization__content
 						.s-pay-organization__title.title.title--mb-long Оплата для организаций  
 						.s-pay-organization__text 
 							p Оплата для организаций через счет на оплату проводится между двумя юридическими лица согласно закону.
 		<!-- END SECTION PAY-ORGANIZATION -->
 	<!-- END CONTENT PAYMENT -->
+
+	<!-- START CONTENT STUDLIFE -->
+	.content.content__studlife
+
+		<!-- START SECTION NAV-FS -->
+		.section.s-nav-fs
+			.container 
+				.title.title--mb-long Студенчаская жизнь
+				.s-nav-fs__text.s-nav-fs__text--studlife 
+					p Помимо онлайн обучения на платформе вы всегда можете рассчитывать на поддержку преподавателя и самих учеников.
+				.s-nav-fs__img-wrapper
+					img.s-nav-fs__img(src="images/studlife.jpg")
+		<!-- END SECTION NAV-FS -->
+
+		<!-- START SECTION PROGRAM -->
+		.section.s-program.section--long
+			.container 
+				.title.title--mb-long Программа курса
+				.s-program__inner.flex
+					+program-card("<span>01.</span> Офлайн воркошапами")
+						p Каждое воскресенье, на протяжении всего вашего обучения, в Астане и Алматы проходят офлайн воркшопы. На них преподаватель решает практику вместе с вами, отвечает на вопросы вживую и делится практическими знаниями
+					+program-card("<span>02.</span> Онлайн Q&A сессиями")
+						p На протяжении всего обучения преподаватель связывается в установленное время с учениками и отвечает на все возникшие вопросы во время обучения. Дает конструктивные советы и указывает на точки роста 
+					+program-card("<span>03.</span> Нетверкингом")
+						p За 3 года наши студенты образовали сообщество единомышленников. Они общаются с друг-другом ежедневно, совместно решают задачи, и всегда отзывчивы на помощь друг другу
+					+program-card("<span>03.</span> Общим чатом")
+						p Наш чат кипит ежедневно в нем отвечают 24/7 преподаватели, ученики и выпускники
+		<!-- END SECTION PROGRAM -->
+
+		<!-- START SECTION GALLERY -->
+		.section.s-gallery.section--long-pb 
+			.container 
+				.swiper-container.gallery-slider
+					.swiper-wrapper
+						.swiper-slide 
+							.s-gallery__inner 
+								.s-gallery__left
+									.s-gallery__img-wrapper 
+										img.s-gallery__img(src="images/gallery/1.jpg")
+								.s-gallery__right
+									.s-gallery__right-top 
+										.s-gallery__img-wrapper 
+											img.s-gallery__img(src="images/gallery/2.jpg")
+										.s-gallery__img-wrapper 
+											img.s-gallery__img(src="images/gallery/3.jpg")
+									.s-gallery__right-bottom
+										.s-gallery__img-wrapper 
+											img.s-gallery__img(src="images/gallery/4.jpg")
+						.swiper-slide 
+							.s-gallery__inner 
+								.s-gallery__left
+									.s-gallery__img-wrapper 
+										img.s-gallery__img(src="images/gallery/5.jpg")
+								.s-gallery__right
+									.s-gallery__right-top 
+										.s-gallery__img-wrapper 
+											img.s-gallery__img(src="images/gallery/6.jpg")
+										.s-gallery__img-wrapper 
+											img.s-gallery__img(src="images/gallery/7.jpg")
+									.s-gallery__right-bottom
+										.s-gallery__img-wrapper 
+											img.s-gallery__img(src="images/gallery/8.jpg") 
+						.swiper-slide 
+							.s-gallery__inner 
+								.s-gallery__left
+									.s-gallery__img-wrapper 
+										img.s-gallery__img(src="images/gallery/9.jpg")
+								.s-gallery__right
+									.s-gallery__right-top 
+										.s-gallery__img-wrapper 
+											img.s-gallery__img(src="images/gallery/10.jpg")
+										.s-gallery__img-wrapper 
+											img.s-gallery__img(src="images/gallery/11.jpg")
+									.s-gallery__right-bottom
+										.s-gallery__img-wrapper 
+											img.s-gallery__img(src="images/gallery/12.jpg")
+					.gallery-slider__pagination
+				.slider-arrows.gallery-slider-arrows
+					.slider-arrow.slider-arrow--prev.gallery-slider-arrow-prev
+						+icon("arrow-left", "slider-arrow__icon")
+					.slider-arrow.slider-arrow--next.gallery-slider-arrow-next
+						+icon("arrow-right", "slider-arrow__icon")
+		<!-- START SECTION GALLERY -->
+	<!-- END CONTENT STUDLIFE -->
 
 	<!-- START CONTENT HISTORY -->
 	.content.content__history
@@ -1429,12 +1547,13 @@ block content
 		.section.s-for-what-students.section--long 
 			.container 
 				.title.title--mb-long Почему вам следует нанять <br>наших студентов?
-				+titled-image-card("images/titled-image-card/1.jpg", "Учебная программа нацелена на практику")
-					p С первых дней обучения, наши студенты работают над практикой. Курсы обычно занимают у студентов от шести до восьми месяцев, и мы позволяем учащимся двигаться в своем собственном темпе, поскольку большинство наших студентов работают неполный или полный рабочий день вне курсов. Большая часть наших проектных работ основана на практике, позволяя студентам продемонстрировать свое мастерство в своем портфолио. Каждый курс завершается проектом, который демонстрирует их навыки в реальной.
-				+titled-image-card("images/titled-image-card/2.jpg", "Наставники наших учеников - действующие эксперты и ведущие профессионалы своей ниши", true)
-					p Преподаватели каждого курса, являются ведущими профессионалами своей ниши. Они работают с нашими студентами ежедневно в чатах, еженедельно на воркшопах, чтобы оценить прогресс, облегчить знакомство с отраслью и предоставить им ценный контекст о том, как материал, который они изучают, применим в реальной жизни.
-				+titled-image-card("images/titled-image-card/3.jpg", "Наши студенты готовы работать")
-					p Навыки и готовность наших выпускников к работе были оценены с помощью их проектных работ, которые соответствуют стандартам, требуемыми компаниями в 2022 году. Они продемонстрировали приверженность карьерному переходу, успешно освоив новый набор навыков и выполнив строгую программу, требующую дисциплины и настойчивости. Наши выпускники знают, что технологии постоянно меняются, и подходят к обучению и работе с учетом этого ожидания.
+				.s-for-what-students__cards
+					+titled-image-card("images/titled-image-card/1.jpg", "Учебная программа нацелена на практику")
+						p С первых дней обучения, наши студенты работают над практикой. Курсы обычно занимают у студентов от шести до восьми месяцев, и мы позволяем учащимся двигаться в своем собственном темпе, поскольку большинство наших студентов работают неполный или полный рабочий день вне курсов. Большая часть наших проектных работ основана на практике, позволяя студентам продемонстрировать свое мастерство в своем портфолио. Каждый курс завершается проектом, который демонстрирует их навыки в реальной.
+					+titled-image-card("images/titled-image-card/2.jpg", "Наставники наших учеников - действующие эксперты и ведущие профессионалы своей ниши", true)
+						p Преподаватели каждого курса, являются ведущими профессионалами своей ниши. Они работают с нашими студентами ежедневно в чатах, еженедельно на воркшопах, чтобы оценить прогресс, облегчить знакомство с отраслью и предоставить им ценный контекст о том, как материал, который они изучают, применим в реальной жизни.
+					+titled-image-card("images/titled-image-card/3.jpg", "Наши студенты готовы работать")
+						p Навыки и готовность наших выпускников к работе были оценены с помощью их проектных работ, которые соответствуют стандартам, требуемыми компаниями в 2022 году. Они продемонстрировали приверженность карьерному переходу, успешно освоив новый набор навыков и выполнив строгую программу, требующую дисциплины и настойчивости. Наши выпускники знают, что технологии постоянно меняются, и подходят к обучению и работе с учетом этого ожидания.
 		<!-- END SECTION FOR-WHAT-STUDENTS -->
 
 		<!-- START SECTION BANNER -->
@@ -1534,12 +1653,13 @@ block content
 		.section.s-for-what-students.section--long 
 			.container 
 				.title.title--mb-long Почему вам следует нанять <br>наших студентов?
-				+titled-image-card("images/titled-image-card/1.jpg", "Учебная программа нацелена на практику")
-					p С первых дней обучения, наши студенты работают над практикой. Курсы обычно занимают у студентов от шести до восьми месяцев, и мы позволяем учащимся двигаться в своем собственном темпе, поскольку большинство наших студентов работают неполный или полный рабочий день вне курсов. Большая часть наших проектных работ основана на практике, позволяя студентам продемонстрировать свое мастерство в своем портфолио. Каждый курс завершается проектом, который демонстрирует их навыки в реальной.
-				+titled-image-card("images/titled-image-card/2.jpg", "Наставники наших учеников - действующие эксперты и ведущие профессионалы своей ниши", true)
-					p Преподаватели каждого курса, являются ведущими профессионалами своей ниши. Они работают с нашими студентами ежедневно в чатах, еженедельно на воркшопах, чтобы оценить прогресс, облегчить знакомство с отраслью и предоставить им ценный контекст о том, как материал, который они изучают, применим в реальной жизни.
-				+titled-image-card("images/titled-image-card/3.jpg", "Наши студенты готовы работать")
-					p Навыки и готовность наших выпускников к работе были оценены с помощью их проектных работ, которые соответствуют стандартам, требуемыми компаниями в 2022 году. Они продемонстрировали приверженность карьерному переходу, успешно освоив новый набор навыков и выполнив строгую программу, требующую дисциплины и настойчивости. Наши выпускники знают, что технологии постоянно меняются, и подходят к обучению и работе с учетом этого ожидания.
+				.s-for-what-students__cards
+					+titled-image-card("images/titled-image-card/1.jpg", "Учебная программа нацелена на практику")
+						p С первых дней обучения, наши студенты работают над практикой. Курсы обычно занимают у студентов от шести до восьми месяцев, и мы позволяем учащимся двигаться в своем собственном темпе, поскольку большинство наших студентов работают неполный или полный рабочий день вне курсов. Большая часть наших проектных работ основана на практике, позволяя студентам продемонстрировать свое мастерство в своем портфолио. Каждый курс завершается проектом, который демонстрирует их навыки в реальной.
+					+titled-image-card("images/titled-image-card/2.jpg", "Наставники наших учеников - действующие эксперты и ведущие профессионалы своей ниши", true)
+						p Преподаватели каждого курса, являются ведущими профессионалами своей ниши. Они работают с нашими студентами ежедневно в чатах, еженедельно на воркшопах, чтобы оценить прогресс, облегчить знакомство с отраслью и предоставить им ценный контекст о том, как материал, который они изучают, применим в реальной жизни.
+					+titled-image-card("images/titled-image-card/3.jpg", "Наши студенты готовы работать")
+						p Навыки и готовность наших выпускников к работе были оценены с помощью их проектных работ, которые соответствуют стандартам, требуемыми компаниями в 2022 году. Они продемонстрировали приверженность карьерному переходу, успешно освоив новый набор навыков и выполнив строгую программу, требующую дисциплины и настойчивости. Наши выпускники знают, что технологии постоянно меняются, и подходят к обучению и работе с учетом этого ожидания.
 		<!-- END SECTION FOR-WHAT-STUDENTS -->
 
 		<!-- START SECTION BANNER -->
@@ -1567,17 +1687,148 @@ block content
 							.s-contact-us__item 
 								.s-contact-us__item-text Почта:
 								a.s-contact-us__item-link(href="#") datascience.kz@gmail.com
-					form.s-contact-us__form 
+					form.s-contact-us__form
 						.s-contact-us__form-title.title.title--mini ОСТАЛИСЬ ВОПРОСЫ ? 
 						.s-contact-us__form-text 
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
 						input.s-contact-us__form-input(placeholder="Ваше имя*")
-						input.s-contact-us__form-input(placeholder="E-mail*" type="mail")
-						input.s-contact-us__form-input(placeholder="+7 (...)*" type="tel" id="phone-mask")
+						input.s-contact-us__form-input(placeholder="E-mail*")
+						input.s-contact-us__form-input(placeholder="+7 (...)*" type="tel" class="phone-mask")
 						input.s-contact-us__form-input(placeholder="Ваш комментарий")
 						button.s-contact-us__form-btn.btn.btn--primary(type="submit") ОТПРАВИТЬ
 		<!-- END SECTION CONTACT-US -->
 	<!-- END CONTENT QUESTIONS -->
+
+	<!-- START CONTENT ABOUT -->
+	.content.content__about
+
+		<!-- START SECTION ABOUT -->
+		.section.s-about 
+			.container 
+				.title.s-about__title О нас
+				.s-about__inner 
+					.s-about__content
+						.s-about__item
+							p Наша академия поможет освоить профессию Junior Data Scientist c нуля всего за полгода. Тебя ждут вебинары и консультации с ведущими специалистами из всемирно известных компаний как Apple, Facebook, Google и т.д. 
+						.s-about__item
+							p Чтобы ты мог начать карьеру в Data Science уже во время обучения, теоретическая часть курса состоит всего 20% материала, остальные 80% состоят из практики. Всего за 6 месяцев ты сможешь освоить трехлетнюю программу.
+					.s-about__img-wrapper 
+						img.s-about__img(src="images/about.jpg")  
+		<!-- END SECTION ABOUT -->
+
+		<!-- START SECTION OUR-COMPANY -->
+		.section.s-our-company.section--long 
+			.container 
+				.title.title--mb-long Наша компания
+				.s-our-company__cards 
+					+icon-card("book", "Индивидуальный подход к каждому ученику на каждом этапе обучения")
+					+icon-card("medal", "Обучают лучшие преподаватели-практики")
+					+icon-card("building", "Консультации со специалистами из Apple, Facebook, Google и т.д.")
+		<!-- END SECTION OUR-COMPANY -->
+	<!-- END CONTENT ABOUT -->
+
+	<!-- START CONTENT TEACHER -->
+	.content.content__teacher
+		<!-- START SECTION NAV-FS -->
+		.section.s-nav-fs
+			.container 
+				.title.title--mb-long Добро пожаловать <br>в АBLE Оnline Аcademy
+				.s-nav-fs__text.s-nav-fs__text--full 
+					p Наши преподаватели - наша гордость, которые выступают вашими наставниками!<br>Вы обучаетесь у действующих специалистов. 
+				.s-nav-fs__icon-titled-cards 
+					+icon-titled-card("images/icon-titled-card/turn.svg", "Каждый день наши преподаватели:")
+					+icon-titled-card("images/icon-titled-card/student.svg", "Работают в своей сфере")
+					+icon-titled-card("images/icon-titled-card/lamp.svg", "Решают задачи и проблемы")
+					+icon-titled-card("images/icon-titled-card/macbook.svg", "Обучаются и узнают обновления первыми")
+		<!-- END SECTION NAV-FS -->
+
+		<!-- START SECTION MENTORING -->
+		.section.s-mentoring.section--long 
+			.container
+				.s-mentoring__inner 
+					.s-mentoring__img-wrapper 
+						img.s-mentoring__img(src="images/mentoring.jpg")
+					.s-mentoring__content 
+						.s-mentoring__title.title.title--mb-long Действительно ли наставничество имеет значение? 
+						.s-mentoring__text 
+							p Данные не лгут: наставничество дает серьезное преимущество. <br>В независимых исследованиях было доказано, что наличие наставника :
+							p.s-mentoring__text-bullet ускоряет процесс обучения, 
+							p.s-mentoring__text-bullet ускоряет процесс выполнения практики
+							p.s-mentoring__text-bullet уменьшает риски демотивации
+						.s-mentoring__subtitle Статистика, подтверждающая это:
+						.s-mentoring__text
+							p 76% профессионалов считают наставников важными, но только у 37% они есть (Forbes, 2019)
+		<!-- END SECTION MENTORING -->
+
+		<!-- START SECTION TEACHER -->
+		.section.s-teacher.section--long-pb
+			.container 
+				.title.title--mb-long Преподаватель курса
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/1.jpg")
+					.s-teacher__content 
+						.s-teacher__name Азамат Хасенов
+						.s-teacher__descr Автор курса data science
+						.s-teacher__text 
+							p Работал специалистом по искусственному интеллекту в Южной Корее, компания ST UNITAS
+							p Работал дата сайентист в компании Huawei
+							p Сейчас дата сайентист в топовой казахстанской компании BTS Digital
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/5.jpg")
+					.s-teacher__content 
+						.s-teacher__name Малика
+						.s-teacher__descr Ментор/наставник на курсе Data Science
+						.s-teacher__text 
+							p Закончила КазНУ им. аль-Фараби по специальности Математическое и компьютерное моделирование
+							p Научная стажировка в Германии
+							p Преподавала в школе программирования и математики АЛГОРИТМИКА
+							p Работала аналитиком дистанционных продаж в Евразийском банке
+							p Сейчас работает Data Scientist-ом в Wings Partners
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/2.jpg")
+					.s-teacher__content 
+						.s-teacher__name Сакен Кенжегулов
+						.s-teacher__descr Автор курса web-разработка	
+						.s-teacher__text 
+							p Закончил UNIST по специальности информационные технологии
+							p Проходил стажировку в Корее, Швейцарии
+							p Работает в роли разработчика в Google офис Калифорния
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/3.jpg")
+					.s-teacher__content 
+						.s-teacher__name Ерлан Байтуринов
+						.s-teacher__descr Автор курса web-разработка
+						.s-teacher__text 
+							p Закончил СДУ
+							p Работал разработчиком в Olzha Holding
+							p Работает разработчиком в Google офис Дублин, Ирландия
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/6.jpg")
+					.s-teacher__content 
+						.s-teacher__name Диана Мадуан
+						.s-teacher__descr ментор/наставник на курсе web-разработка
+						.s-teacher__text 
+							p Закончила в МУИТ, Алматы по специальности информационные технологии
+							p Сейчас работает в роли Middle Frontend разработчика в Citadel one
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/6.jpg")
+					.s-teacher__content 
+						.s-teacher__name Арман Жаманкулов
+						.s-teacher__descr ментор/наставник на курсе web-разработка
+						.s-teacher__text 
+							p Профессиональный массажист. Прошёл курс по массажу в ЕШКО. 
+							p Специалист по ремонту и модернизации ПК. Прошёл курс в г. Актау.
+							p Работал IT консультантом в Каратальской районной больльнице 1 год.
+							p Прошёл курс по frontend в Able. Html, css, js, ReactJS.
+							p В настоящее время работаю удалённо в Able.
+		<!-- END SECTION TEACHER -->
+	<!-- END CONTENT TEACHER -->
 
 	<!-- START FOOTER -->
 	.footer 
@@ -1594,16 +1845,16 @@ block content
 							//- .footer__col-item Для компаний
 							//- .footer__col-item О нас
 					.footer__col
-						.footer__col-title.footer__col-title--transparent Главная
-						.footer__col-item Студенты
-						.footer__col-item Для компаний
-						.footer__col-item О нас
+						.footer__col-title.footer__col-title--transparent.content-tab(href="#home") Главная
+						.footer__col-item.content-tab(href="#data") Студенты
+						.footer__col-item.content-tab(href="#data") Для компаний
+						.footer__col-item.content-tab(href="#data") О нас
 					.footer__col
 						.footer__col-title Курсы
-						.footer__col-item Data Science
-						.footer__col-item Веб-Разработка
-						.footer__col-item Android-Разработка
-						.footer__col-item Бизнес аналитика
+						.footer__col-item.content-tab(href="#data") Data Science
+						.footer__col-item.content-tab(href="#development") Веб-Разработка
+						.footer__col-item.content-tab(href="#android") Android-Разработка
+						.footer__col-item.content-tab(href="#business") Бизнес аналитика
 					.footer__col
 						.footer__col-title Контакты
 						.footer__col-item datascience.kz@gmail.com
