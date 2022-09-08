@@ -83,9 +83,6 @@ block content
 				.s-courses__title.title.title--mb-long.title--without-after Ознакомьтесь с нашими курсами, ориентированными на практику
 				.s-courses__inner
 					.s-courses__tabs.tabs
-						//- .tabs__current-wrapper
-						//- 	.tabs__current#tabCurrent
-						//- 	+icon("arrow-down", "tabs__current-icon")
 						.tabs__nav#tabsNav
 							button.tabs__nav-btn(type="button" data-tab="#tab_1") Data Science
 							button.tabs__nav-btn(type="button" data-tab="#tab_2") Веб-Разработка
@@ -190,89 +187,101 @@ block content
 													img.tabs-info__item-img(src="images/tabs/2.png")
 											.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
 									.tabs__btn.btn.btn--primary.content-tab(href="#android") ПОДРОБНЕЕ
-						.tabs__nav.tabs__nav--mobile
-							.tabs__nav-wrapper
-								button.tabs__nav-btn#tabsBtnOne(type="button" data-tab="#tab_5") Data Science
-								.tabs__item#tab_5
-									.tabs__text
-										p Вы научитесь:
-										p 1. Использовать Python его для самостоятельного решения задач, над которыми обычно работают несколько специалистов;
-										p 2. Использовать библиотеки Python-а для анализа, очистки, визуализации данных.
-										p 3. Использовать SQL для работы с большими массивами базой данных, создавать инфографику, писать сложные запросы
-										p 4. Использовать классические алгоритмы машинного обучения для решения разновидных задач, оценивать качество вашего решения при помощи общепринятых метрик.
-									.tabs__bottom
-										.tabs-info
-											.tabs-info__top
-												.tabs-info__item
-													.tabs-info__item-title Длительность:
-													.tabs-info__item-text 6 месяцев
-												.tabs-info__item
-													.tabs-info__item-title Стоимость:
-													.tabs-info__item-text от 39 000 ₸ в месяц
-											.tabs-info__bottom
-												.tabs-info__item
-													.tabs-info__item-img-wrapper 
-														img.tabs-info__item-img(src="images/tabs/1.png")
-												.tabs-info__item
-													.tabs-info__item-img-wrapper 
-														img.tabs-info__item-img(src="images/tabs/2.png")
-												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
-										a.tabs__btn.btn.btn--primary.content-tab(href="#data") ПОДРОБНЕЕ
-							.tabs__nav-wrapper
-								button.tabs__nav-btn(type="button" data-tab="#tab_6") Веб-Разработка
-								.tabs__item#tab_6
-									.tabs__text
-										p Вы научитесь:
-										p 1. Выстраивать и стилизовать веб страницу с помощью знаний основных принципов верстки.
-										p 2. Будете делать динамичные веб страницы, с помощью базовых знаний JavaScript
-										p 3. Освоите фреймворки и библиотеки которые облегчат разработку и количество строк кода
-										p 4. Освоите все системы веб (фронтенд, бэкенд, база данных), как они строятся и общаются между собой
-									.tabs__bottom
-										.tabs-info
-											.tabs-info__top
-												.tabs-info__item
-													.tabs-info__item-title Длительность:
-													.tabs-info__item-text 6 месяцев
-												.tabs-info__item
-													.tabs-info__item-title Стоимость:
-													.tabs-info__item-text от 39 000 ₸ в месяц
-											.tabs-info__bottom
-												.tabs-info__item
-													.tabs-info__item-img-wrapper 
-														img.tabs-info__item-img(src="images/tabs/1.png")
-												.tabs-info__item
-													.tabs-info__item-img-wrapper 
-														img.tabs-info__item-img(src="images/tabs/2.png")
-												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
-										.tabs__btn.btn.btn--primary.content-tab(href="#development") ПОДРОБНЕЕ
-							.tabs__nav-wrapper
-								button.tabs__nav-btn(type="button" data-tab="#tab_7") Android-Разработка
-								.tabs__item#tab_7
-									.tabs__text
-										p Вы научитесь:
-										p 1. Использовать языки Java и Kotlin, работать с интегрированной средой разработки Android Studio
-										p 2. Использовать методы построения экранов, разрабатывать пользовательские интерфейсы различной сложности UX/UI
-										p 3. Управлять процессом с помощью GitHub и работать с PlayMarket.
-									.tabs__bottom
-										.tabs-info
-											.tabs-info__top
-												.tabs-info__item
-													.tabs-info__item-title Длительность:
-													.tabs-info__item-text 6 месяцев
-												.tabs-info__item
-													.tabs-info__item-title Стоимость:
-													.tabs-info__item-text от 39 000 ₸ в месяц
-											.tabs-info__bottom
-												.tabs-info__item
-													.tabs-info__item-img-wrapper 
-														img.tabs-info__item-img(src="images/tabs/1.png")
-												.tabs-info__item
-													.tabs-info__item-img-wrapper 
-														img.tabs-info__item-img(src="images/tabs/2.png")
-												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
-										.tabs__btn.btn.btn--primary.content-tab(href="#business") ПОДРОБНЕЕ
-							.tabs__nav-wrapper
-								button.tabs__nav-btn(type="button" data-tab="#tab_8") Бизнес аналитика
+						//- .tabs__nav.tabs__nav--mobile
+						//- 	.tabs__nav-wrapper
+						//- 		.tabs__nav-btn-wrapper
+						//- 			button.tabs__nav-btn#tabsBtnOne(type="button" data-tab="#tab_5") Data Science
+						//- 			.tabs__nav-btn-dropdown__img-wrapper
+						//- 				+icon("arrow-down", "tabs__nav-btn-dropdown__img")
+						//- 		.tabs__item#tab_5
+						//- 			.tabs__text
+						//- 				p Вы научитесь:
+						//- 				p 1. Использовать Python его для самостоятельного решения задач, над которыми обычно работают несколько специалистов;
+						//- 				p 2. Использовать библиотеки Python-а для анализа, очистки, визуализации данных.
+						//- 				p 3. Использовать SQL для работы с большими массивами базой данных, создавать инфографику, писать сложные запросы
+						//- 				p 4. Использовать классические алгоритмы машинного обучения для решения разновидных задач, оценивать качество вашего решения при помощи общепринятых метрик.
+						//- 			.tabs__bottom
+						//- 				.tabs-info
+						//- 					.tabs-info__top
+						//- 						.tabs-info__item
+						//- 							.tabs-info__item-title Длительность:
+						//- 							.tabs-info__item-text 6 месяцев
+						//- 						.tabs-info__item
+						//- 							.tabs-info__item-title Стоимость:
+						//- 							.tabs-info__item-text от 39 000 ₸ в месяц
+						//- 					.tabs-info__bottom
+						//- 						.tabs-info__item
+						//- 							.tabs-info__item-img-wrapper 
+						//- 								img.tabs-info__item-img(src="images/tabs/1.png")
+						//- 						.tabs-info__item
+						//- 							.tabs-info__item-img-wrapper 
+						//- 								img.tabs-info__item-img(src="images/tabs/2.png")
+						//- 						.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
+						//- 				a.tabs__btn.btn.btn--primary.content-tab(href="#data") ПОДРОБНЕЕ
+						//- 	.tabs__nav-wrapper
+						//- 		.tabs__nav-btn-wrapper
+						//- 			button.tabs__nav-btn(type="button" data-tab="#tab_6") Веб-Разработка
+						//- 			.tabs__nav-btn-dropdown__img-wrapper
+						//- 				+icon("arrow-down", "tabs__nav-btn-dropdown__img")
+						//- 		.tabs__item#tab_6
+						//- 			.tabs__text
+						//- 				p Вы научитесь:
+						//- 				p 1. Выстраивать и стилизовать веб страницу с помощью знаний основных принципов верстки.
+						//- 				p 2. Будете делать динамичные веб страницы, с помощью базовых знаний JavaScript
+						//- 				p 3. Освоите фреймворки и библиотеки которые облегчат разработку и количество строк кода
+						//- 				p 4. Освоите все системы веб (фронтенд, бэкенд, база данных), как они строятся и общаются между собой
+						//- 			.tabs__bottom
+						//- 				.tabs-info
+						//- 					.tabs-info__top
+						//- 						.tabs-info__item
+						//- 							.tabs-info__item-title Длительность:
+						//- 							.tabs-info__item-text 6 месяцев
+						//- 						.tabs-info__item
+						//- 							.tabs-info__item-title Стоимость:
+						//- 							.tabs-info__item-text от 39 000 ₸ в месяц
+						//- 					.tabs-info__bottom
+						//- 						.tabs-info__item
+						//- 							.tabs-info__item-img-wrapper 
+						//- 								img.tabs-info__item-img(src="images/tabs/1.png")
+						//- 						.tabs-info__item
+						//- 							.tabs-info__item-img-wrapper 
+						//- 								img.tabs-info__item-img(src="images/tabs/2.png")
+						//- 						.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
+						//- 				.tabs__btn.btn.btn--primary.content-tab(href="#development") ПОДРОБНЕЕ
+						//- 	.tabs__nav-wrapper
+						//- 		.tabs__nav-btn-wrapper
+						//- 			button.tabs__nav-btn(type="button" data-tab="#tab_7") Android-Разработка
+						//- 			.tabs__nav-btn-dropdown__img-wrapper
+						//- 				+icon("arrow-down", "tabs__nav-btn-dropdown__img")
+						//- 		.tabs__item#tab_7
+						//- 			.tabs__text
+						//- 				p Вы научитесь:
+						//- 				p 1. Использовать языки Java и Kotlin, работать с интегрированной средой разработки Android Studio
+						//- 				p 2. Использовать методы построения экранов, разрабатывать пользовательские интерфейсы различной сложности UX/UI
+						//- 				p 3. Управлять процессом с помощью GitHub и работать с PlayMarket.
+						//- 			.tabs__bottom
+						//- 				.tabs-info
+						//- 					.tabs-info__top
+						//- 						.tabs-info__item
+						//- 							.tabs-info__item-title Длительность:
+						//- 							.tabs-info__item-text 6 месяцев
+						//- 						.tabs-info__item
+						//- 							.tabs-info__item-title Стоимость:
+						//- 							.tabs-info__item-text от 39 000 ₸ в месяц
+						//- 					.tabs-info__bottom
+						//- 						.tabs-info__item
+						//- 							.tabs-info__item-img-wrapper 
+						//- 								img.tabs-info__item-img(src="images/tabs/1.png")
+						//- 						.tabs-info__item
+						//- 							.tabs-info__item-img-wrapper 
+						//- 								img.tabs-info__item-img(src="images/tabs/2.png")
+						//- 						.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
+						//- 				.tabs__btn.btn.btn--primary.content-tab(href="#business") ПОДРОБНЕЕ
+						//- 	.tabs__nav-wrapper
+								.tabs__nav-btn-wrapper
+									button.tabs__nav-btn(type="button" data-tab="#tab_8") Бизнес аналитика
+									.tabs__nav-btn-dropdown__img-wrapper
+										+icon("arrow-down", "tabs__nav-btn-dropdown__img")
 								.tabs__item#tab_8
 									.tabs__text
 										p Вы научитесь:

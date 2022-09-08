@@ -99,7 +99,6 @@ import Nav from "./modules/Nav";
 			
 	const tabsBtn = document.querySelectorAll(".tabs__nav-btn")
 	const tabsItem = document.querySelectorAll(".tabs__item")
-
 	tabsBtn.forEach(onTabClick)
 
 	function onTabClick(item) {
@@ -117,9 +116,6 @@ import Nav from "./modules/Nav";
 				currentBtn.classList.add("tabs__nav-btn--active")
 				currentTab.classList.add("tabs__item--active")
 			}
-			if (window.innerWidth < 700) {
-				
-			}
 		})
 	}
 
@@ -136,7 +132,6 @@ import Nav from "./modules/Nav";
 			mask: '+{7}(000)000-00-00'
 		});
 
-		console.log(phoneMask)
 /*
 	--------------------------------------------
 	--------------------------------------------
