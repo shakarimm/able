@@ -1033,6 +1033,35 @@
 	&__title{
 		max-width: 791px;
 	}
+	button{
+		transition: all .3s ease 0s;
+		&::before, &::after{
+			content: '';
+			width: 10px;
+			height: 1.5px;
+			background-color: #000;
+			position: absolute;
+			top: 25px;
+		}
+		&::before{
+			transition: all .3s ease 0s;
+			transform: rotate(40deg);
+			right: 44px;
+		}
+		&::after{
+			transition: all .3s ease 0s;
+			transform: rotate(-40deg);
+			right: 36px;
+		}
+	}
+	.tabs__nav-btn--active{
+		&::before{
+			transform: rotate(-40deg);
+		}
+		&::after{
+			transform: rotate(40deg);
+		}
+	}
 }
 .s-location{
 	background: #4E4E4E;
@@ -1371,6 +1400,9 @@
 }
 .s-contact-us{
 	background: #E5F6FF;
+	form .error1, form .error2, form .error3, form .error4{
+		box-shadow: 0 0 15px red;
+	}
 	&__inner{
 		padding: 150px 50px 32px 50px;
 		display: flex;
@@ -1517,6 +1549,20 @@
 			.s-gallery__img-wrapper{
 				width: 48%;
 			}
+		}
+	}
+}
+.s-review{
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.video{
+		width: 29%;
+		border-radius: 50%;
+		&__preview{
+			width: 100%;
 		}
 	}
 }

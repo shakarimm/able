@@ -270,10 +270,12 @@ gulp.task("page", () => {
 		.pipe(gulp.dest('.'));
 });
 
-gulp.task("build-template", gulp.series("svg-min", "copy-template-css", "compile-html", "concat-html", "copy-images", "build-js", "build-css", "copy-js-libs"));
-gulp.task("default", gulp.series("build-template", "watch"));
-gulp.task("build", gulp.series(
-	async () => { dist = "./build/" },
-	"build-template", "build-hh"
-));
+// gulp.task("build-template", gulp.series("svg-min", "copy-template-css", "compile-html", "concat-html", "copy-images", "build-js", "build-css", "copy-js-libs"));
+// gulp.task("default", gulp.series("build-template", "watch"));
+// gulp.task("build", gulp.series(
+// 	async () => { dist = "./build/" },
+// 	"build-template", "build-hh"
+// ));
 
+gulp.task("build", gulp.series("svg-min", "copy-template-css", "compile-html", "concat-html", "copy-images", "build-js", "build-css", "copy-js-libs"));
+gulp.task("default", gulp.parallel("watch", "build"));

@@ -942,6 +942,15 @@
 			margin-bottom: 20px;
 		}
 	}
+	.s-review{
+		.video{
+			width: 100%;
+			margin-top: 20px;
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+	}
 }
 
 // BREAKPOINT PHONE
