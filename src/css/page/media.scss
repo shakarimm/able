@@ -556,6 +556,11 @@
 		margin-bottom: 20px;
 		&__title{
 			text-align: center;
+			width: 70%;
+		}
+		&__img-wrapper{
+			width: 10%;
+			text-align: center;
 		}
 		&:first-child{
 			width: 100%;
@@ -1318,6 +1323,20 @@
 			&__item{
 				&:last-child{
 					margin-top: 10px;
+				}
+			}
+		}
+	}
+	.icon-titled-card{
+		&__title{
+			margin-left: 12px;
+			font-size: 16px;
+		}
+		&:first-child{
+			.icon-titled-card{
+				&__title{
+					font-size: 16px;
+					margin-left: 12px;
 				}
 			}
 		}

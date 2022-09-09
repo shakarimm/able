@@ -131,10 +131,25 @@ import Nav from "./modules/Nav";
 	--------------------------------------------
 	--------------------------------------------
  */
-	let phoneMask = IMask(
-		document.getElementById('phone-mask'), {
-			mask: '+{7}(000)000-00-00'
-		});
+		
+	let phoneMask = document.getElementById('phone-mask');
+	let phoneMask2 = document.getElementById('phone-mask-two');
+	let phoneMask3 = document.getElementById('phone-mask-three');
+	let phoneMask4 = document.getElementById('phone-mask-four');
+	let maskOptions = {
+		mask: '+{7}(000)000-00-00'
+	};
+	let mask = IMask(phoneMask, maskOptions);
+	let mask2 = IMask(phoneMask2, maskOptions);
+	let mask3 = IMask(phoneMask3, maskOptions);
+	let mask4 = IMask(phoneMask4, maskOptions);
+/*
+	--------------------------------------------
+	--------------------------------------------
+						FORM
+	--------------------------------------------
+	--------------------------------------------
+ */
 
 	document.addEventListener('DOMContentLoaded', function (){
 		const form1 = document.getElementById('form1')

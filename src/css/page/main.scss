@@ -1033,33 +1033,39 @@
 	&__title{
 		max-width: 791px;
 	}
-	button{
-		transition: all .3s ease 0s;
-		&::before, &::after{
-			content: '';
-			width: 10px;
-			height: 1.5px;
-			background-color: #000;
-			position: absolute;
-			top: 25px;
-		}
-		&::before{
-			transition: all .3s ease 0s;
-			transform: rotate(40deg);
-			right: 44px;
-		}
-		&::after{
-			transition: all .3s ease 0s;
-			transform: rotate(-40deg);
-			right: 36px;
-		}
-	}
-	.tabs__nav-btn--active{
-		&::before{
-			transform: rotate(-40deg);
-		}
-		&::after{
-			transform: rotate(40deg);
+	.tabs{
+		&__nav{
+			&--mobile{
+				button{
+					transition: all .3s ease 0s;
+					&::before, &::after{
+						content: '';
+						width: 10px;
+						height: 1.5px;
+						background-color: #000;
+						position: absolute;
+						top: 25px;
+					}
+					&::before{
+						transition: all .3s ease 0s;
+						transform: rotate(40deg);
+						right: 44px;
+					}
+					&::after{
+						transition: all .3s ease 0s;
+						transform: rotate(-40deg);
+						right: 36px;
+					}
+				}
+				.tabs__nav-btn--active{
+					&::before{
+						transform: rotate(-40deg);
+					}
+					&::after{
+						transform: rotate(40deg);
+					}
+				}
+			}
 		}
 	}
 }
@@ -1736,6 +1742,9 @@
 	&__graduate{
 		display: flex;
 		margin-top: 38px;
+		&--center{
+			align-items: center;
+		}
 		&__info{
 			font-size: 20px;
 			margin-left: 17px;
