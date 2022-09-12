@@ -3,7 +3,6 @@ import Countup from './custom_modules/Countup';
 import Video from "./modules/Video";
 import Content from "./modules/Content";
 import Nav from "./modules/Nav";
-// import closest from "./modules/Closest";
 
 /*
 	--------------------------------------------
@@ -151,211 +150,211 @@ import Nav from "./modules/Nav";
 	--------------------------------------------
  */
 
-	document.addEventListener('DOMContentLoaded', function (){
-		const form1 = document.getElementById('form1')
-		const form2 = document.getElementById('form2')
-		const form3 = document.getElementById('form3')
-		const form4 = document.getElementById('form4')
-		form1.addEventListener('submit', formSend1)
-		form2.addEventListener('submit', formSend2)
-		form3.addEventListener('submit', formSend3)
-		form4.addEventListener('submit', formSend4)
+	// document.addEventListener('DOMContentLoaded', function (){
+	// 	const form1 = document.getElementById('form1')
+	// 	const form2 = document.getElementById('form2')
+	// 	const form3 = document.getElementById('form3')
+	// 	const form4 = document.getElementById('form4')
+	// 	form1.addEventListener('submit', formSend1)
+	// 	form2.addEventListener('submit', formSend2)
+	// 	form3.addEventListener('submit', formSend3)
+	// 	form4.addEventListener('submit', formSend4)
 
-		async function formSend1(e){
-			e.preventDefault()
-			let error = formValidate1(form1)
-			let formData = new FormData(form1)
-			if(error === 0){
-				debugger
-				let response = await fetch('sendmail.php', {
-					method: 'POST',
-					body: formData
-				})
-				if (response.ok){
-					let result = await response.json()
-					alert(result.message)
-					form1.reset()
-				}else{
-					alert('Error')
-				}
-			}
-		}
-		async function formSend2(e){
-			e.preventDefault()
-			let error = formValidate2(form2)
-			let formData = new FormData(form2)
-			if(error === 0){
-				debugger
-				let response = await fetch('sendmail.php', {
-					method: 'POST',
-					body: formData
-				})
-				if (response.ok){
-					let result = await response.json()
-					alert(result.message)
-					form2.reset()
-				}else{
-					alert('Error')
-				}
-			}
-		}
-		async function formSend3(e){
-			e.preventDefault()
-			let error = formValidate3(form3)
-			let formData = new FormData(form3)
-			if(error === 0){
-				debugger
-				let response = await fetch('sendmail.php', {
-					method: 'POST',
-					body: formData
-				})
-				if (response.ok){
-					let result = await response.json()
-					alert(result.message)
-					form3.reset()
-				}else{
-					alert('Error')
-				}
-			}
-		}
-		async function formSend4(e){
-			e.preventDefault()
-			let error = formValidate4(form4)
-			let formData = new FormData(form4)
-			if(error === 0){
-				debugger
-				let response = await fetch('sendmail.php', {
-					method: 'POST',
-					body: formData
-				})
-				if (response.ok){
-					let result = await response.json()
-					alert(result.message)
-					form4.reset()
-				}else{
-					alert('Error')
-				}
-			}
-		}
+	// 	async function formSend1(e){
+	// 		e.preventDefault()
+	// 		let error = formValidate1(form1)
+	// 		let formData = new FormData(form1)
+	// 		if(error === 0){
+	// 			debugger
+	// 			let response = await fetch('sendmail.php', {
+	// 				method: 'POST',
+	// 				body: formData
+	// 			})
+	// 			if (response.ok){
+	// 				let result = await response.json()
+	// 				alert(result.message)
+	// 				form1.reset()
+	// 			}else{
+	// 				alert('Error')
+	// 			}
+	// 		}
+	// 	}
+	// 	async function formSend2(e){
+	// 		e.preventDefault()
+	// 		let error = formValidate2(form2)
+	// 		let formData = new FormData(form2)
+	// 		if(error === 0){
+	// 			debugger
+	// 			let response = await fetch('sendmail.php', {
+	// 				method: 'POST',
+	// 				body: formData
+	// 			})
+	// 			if (response.ok){
+	// 				let result = await response.json()
+	// 				alert(result.message)
+	// 				form2.reset()
+	// 			}else{
+	// 				alert('Error')
+	// 			}
+	// 		}
+	// 	}
+	// 	async function formSend3(e){
+	// 		e.preventDefault()
+	// 		let error = formValidate3(form3)
+	// 		let formData = new FormData(form3)
+	// 		if(error === 0){
+	// 			debugger
+	// 			let response = await fetch('sendmail.php', {
+	// 				method: 'POST',
+	// 				body: formData
+	// 			})
+	// 			if (response.ok){
+	// 				let result = await response.json()
+	// 				alert(result.message)
+	// 				form3.reset()
+	// 			}else{
+	// 				alert('Error')
+	// 			}
+	// 		}
+	// 	}
+	// 	async function formSend4(e){
+	// 		e.preventDefault()
+	// 		let error = formValidate4(form4)
+	// 		let formData = new FormData(form4)
+	// 		if(error === 0){
+	// 			debugger
+	// 			let response = await fetch('sendmail.php', {
+	// 				method: 'POST',
+	// 				body: formData
+	// 			})
+	// 			if (response.ok){
+	// 				let result = await response.json()
+	// 				alert(result.message)
+	// 				form4.reset()
+	// 			}else{
+	// 				alert('Error')
+	// 			}
+	// 		}
+	// 	}
 
 
-		function formValidate1(form){
-			let error = 0
-			let formReq = document.querySelectorAll('.req1')
-			for (let i=0; i<formReq.length; i++){
-				const input = formReq[i]
-				formRemoveError1(input)
-				if (input.classList.contains('mail')){
-					if (!emailTest(input)){
-						formAddError1(input)
-						error++
-					}
-				}else{
-					if(input.value === ''){
-						formAddError1(input)
-						error++
-					}
-				}
-			}
-			return error
-		}
-		function formValidate2(form){
-			let error = 0
-			let formReq = document.querySelectorAll('.req2')
-			for (let i=0; i<formReq.length; i++){
-				const input = formReq[i]
-				formRemoveError2(input)
-				if (input.classList.contains('mail')){
-					if (!emailTest(input)){
-						formAddError2(input)
-						error++
-					}
-				}else{
-					if(input.value === ''){
-						formAddError2(input)
-						error++
-					}
-				}
-			}
-			return error
-		}
-		function formValidate3(form){
-			let error = 0
-			let formReq = document.querySelectorAll('.req3')
-			for (let i=0; i<formReq.length; i++){
-				const input = formReq[i]
-				formRemoveError3(input)
-				if (input.classList.contains('mail')){
-					if (!emailTest(input)){
-						formAddError3(input)
-						error++
-					}
-				}else{
-					if(input.value === ''){
-						formAddError3(input)
-						error++
-					}
-				}
-			}
-			return error
-		}
-		function formValidate4(form){
-			let error = 0
-			let formReq = document.querySelectorAll('.req4')
-			for (let i=0; i<formReq.length; i++){
-				const input = formReq[i]
-				formRemoveError4(input)
-				if (input.classList.contains('mail')){
-					if (!emailTest(input)){
-						formAddError4(input)
-						error++
-					}
-				}else{
-					if(input.value === ''){
-						formAddError4(input)
-						error++
-					}
-				}
-			}
-			return error
-		}
-		function formAddError1(input){
-			input.parentElement.classList.add('error1')
-			input.classList.add('error1')
-		}
-		function formRemoveError1(input){
-			input.parentElement.classList.remove('error1')
-			input.classList.remove('error1')
-		}
-		function formAddError2(input){
-			input.parentElement.classList.add('error2')
-			input.classList.add('error2')
-		}
-		function formRemoveError2(input){
-			input.parentElement.classList.remove('error2')
-			input.classList.remove('error2')
-		}
-		function formAddError3(input){
-			input.parentElement.classList.add('error3')
-			input.classList.add('error3')
-		}
-		function formRemoveError3(input){
-			input.parentElement.classList.remove('error3')
-			input.classList.remove('error3')
-		}
-		function formAddError4(input){
-			input.parentElement.classList.add('error4')
-			input.classList.add('error4')
-		}
-		function formRemoveError4(input){
-			input.parentElement.classList.remove('error4')
-			input.classList.remove('error4')
-		}
-		function emailTest(input){
-			let reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
-			return reg.test(input.value)
-		}
-	})
+	// 	function formValidate1(form){
+	// 		let error = 0
+	// 		let formReq = document.querySelectorAll('.req1')
+	// 		for (let i=0; i<formReq.length; i++){
+	// 			const input = formReq[i]
+	// 			formRemoveError1(input)
+	// 			if (input.classList.contains('mail')){
+	// 				if (!emailTest(input)){
+	// 					formAddError1(input)
+	// 					error++
+	// 				}
+	// 			}else{
+	// 				if(input.value === ''){
+	// 					formAddError1(input)
+	// 					error++
+	// 				}
+	// 			}
+	// 		}
+	// 		return error
+	// 	}
+	// 	function formValidate2(form){
+	// 		let error = 0
+	// 		let formReq = document.querySelectorAll('.req2')
+	// 		for (let i=0; i<formReq.length; i++){
+	// 			const input = formReq[i]
+	// 			formRemoveError2(input)
+	// 			if (input.classList.contains('mail')){
+	// 				if (!emailTest(input)){
+	// 					formAddError2(input)
+	// 					error++
+	// 				}
+	// 			}else{
+	// 				if(input.value === ''){
+	// 					formAddError2(input)
+	// 					error++
+	// 				}
+	// 			}
+	// 		}
+	// 		return error
+	// 	}
+	// 	function formValidate3(form){
+	// 		let error = 0
+	// 		let formReq = document.querySelectorAll('.req3')
+	// 		for (let i=0; i<formReq.length; i++){
+	// 			const input = formReq[i]
+	// 			formRemoveError3(input)
+	// 			if (input.classList.contains('mail')){
+	// 				if (!emailTest(input)){
+	// 					formAddError3(input)
+	// 					error++
+	// 				}
+	// 			}else{
+	// 				if(input.value === ''){
+	// 					formAddError3(input)
+	// 					error++
+	// 				}
+	// 			}
+	// 		}
+	// 		return error
+	// 	}
+	// 	function formValidate4(form){
+	// 		let error = 0
+	// 		let formReq = document.querySelectorAll('.req4')
+	// 		for (let i=0; i<formReq.length; i++){
+	// 			const input = formReq[i]
+	// 			formRemoveError4(input)
+	// 			if (input.classList.contains('mail')){
+	// 				if (!emailTest(input)){
+	// 					formAddError4(input)
+	// 					error++
+	// 				}
+	// 			}else{
+	// 				if(input.value === ''){
+	// 					formAddError4(input)
+	// 					error++
+	// 				}
+	// 			}
+	// 		}
+	// 		return error
+	// 	}
+	// 	function formAddError1(input){
+	// 		input.parentElement.classList.add('error1')
+	// 		input.classList.add('error1')
+	// 	}
+	// 	function formRemoveError1(input){
+	// 		input.parentElement.classList.remove('error1')
+	// 		input.classList.remove('error1')
+	// 	}
+	// 	function formAddError2(input){
+	// 		input.parentElement.classList.add('error2')
+	// 		input.classList.add('error2')
+	// 	}
+	// 	function formRemoveError2(input){
+	// 		input.parentElement.classList.remove('error2')
+	// 		input.classList.remove('error2')
+	// 	}
+	// 	function formAddError3(input){
+	// 		input.parentElement.classList.add('error3')
+	// 		input.classList.add('error3')
+	// 	}
+	// 	function formRemoveError3(input){
+	// 		input.parentElement.classList.remove('error3')
+	// 		input.classList.remove('error3')
+	// 	}
+	// 	function formAddError4(input){
+	// 		input.parentElement.classList.add('error4')
+	// 		input.classList.add('error4')
+	// 	}
+	// 	function formRemoveError4(input){
+	// 		input.parentElement.classList.remove('error4')
+	// 		input.classList.remove('error4')
+	// 	}
+	// 	function emailTest(input){
+	// 		let reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
+	// 		return reg.test(input.value)
+	// 	}
+	// })
 
 /*
 	--------------------------------------------

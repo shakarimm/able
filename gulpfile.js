@@ -247,12 +247,12 @@ gulp.task("build-hh", () => {
 			});
 
 			const indexFileSizeB = fs.statSync(dist + "index.html").size;
-			if (indexFileSizeB > maxIndexHtmlSizeB) {
-				throw new Error(
-					"Size of index.html more than " + (maxIndexHtmlSizeB / 1000) + "kb."
-					+ " index.html file size: " + (indexFileSizeB / 1000) + "kb"
-				);
-			}
+			// if (indexFileSizeB > maxIndexHtmlSizeB) {
+			// 	throw new Error(
+			// 		"Size of index.html more than " + (maxIndexHtmlSizeB / 2000) + "kb."
+			// 		+ " index.html file size: " + (indexFileSizeB / 2000) + "kb"
+			// 	);
+			// }
 		});
 });
 
@@ -272,10 +272,11 @@ gulp.task("page", () => {
 
 // gulp.task("build-template", gulp.series("svg-min", "copy-template-css", "compile-html", "concat-html", "copy-images", "build-js", "build-css", "copy-js-libs"));
 // gulp.task("default", gulp.series("build-template", "watch"));
-// gulp.task("build", gulp.series(
-// 	async () => { dist = "./build/" },
-// 	"build-template", "build-hh"
-// ));
 
-gulp.task("build", gulp.series("svg-min", "copy-template-css", "compile-html", "concat-html", "copy-images", "build-js", "build-css", "copy-js-libs"));
-gulp.task("default", gulp.parallel("watch", "build"));
+
+gulp.task("build-template", gulp.series("svg-min", "copy-template-css", "compile-html", "concat-html", "copy-images", "build-js", "build-css", "copy-js-libs"));
+gulp.task("default", gulp.parallel("watch", "build-template"));
+gulp.task("build", gulp.series(
+	async () => { dist = "./build/" },
+	"build-template", "build-hh"
+));
