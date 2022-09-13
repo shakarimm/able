@@ -66,6 +66,19 @@ import Nav from "./modules/Nav";
 			},
 		});
 	}
+
+	function initVideoSlider() {
+		swiper.init(".video-slider", {
+			loop: false,
+			slidesPerView: 3,
+			autoHeight: true,
+			bulletActiveClass: '.video-slider-pagination-active',
+			pagination: {
+				el: '.video-slider__pagination',
+				clickable: true,
+			},
+		});
+	}
 /*
 	--------------------------------------------
 	--------------------------------------------
@@ -88,6 +101,20 @@ import Nav from "./modules/Nav";
 			}
 			window.addEventListener("scroll", () => {   handleScrollAnimation();});
 
+	const scrollElementsSecond = document.querySelectorAll(".s-stats-second");
+	const elementInViewSecond = (el, dividend = 1) => {  
+		const elementTop = el.getBoundingClientRect().top;  
+		return (    
+			elementTop <=    
+			(window.innerHeight || document.documentElement.clientHeight) / dividend  );};
+			const handleScrollAnimationSecond = () => {  
+				scrollElementsSecond.forEach((el) => {    
+					if (elementInViewSecond(el, 1.25)) {      
+						new Countup(".s-stats-second");
+					}  
+				})
+			}
+			window.addEventListener("scroll", () => {   handleScrollAnimationSecond();});
 	/*
 	--------------------------------------------
 	--------------------------------------------
@@ -373,3 +400,4 @@ import Nav from "./modules/Nav";
 	initCompanySecondSlider()
 	initCompanyThirdSlider()
 	initGallerySlider()
+	initVideoSlider()

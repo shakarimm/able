@@ -1353,14 +1353,26 @@ block content
 			.container 
 				.title.title--mb-long Учеба у нас соправождается
 				.s-program__inner.flex
-					+program-card("<span>01.</span> Офлайн воркошапами")
-						p Каждое воскресенье, на протяжении всего вашего обучения, в Астане и Алматы проходят офлайн воркшопы. На них преподаватель решает практику вместе с вами, отвечает на вопросы вживую и делится практическими знаниями
-					+program-card("<span>02.</span> Онлайн Q&A сессиями")
-						p На протяжении всего обучения преподаватель связывается в установленное время с учениками и отвечает на все возникшие вопросы во время обучения. Дает конструктивные советы и указывает на точки роста 
-					+program-card("<span>03.</span> Нетверкингом")
-						p За 3 года наши студенты образовали сообщество единомышленников. Они общаются с друг-другом ежедневно, совместно решают задачи, и всегда отзывчивы на помощь друг другу
-					+program-card("<span>03.</span> Общим чатом")
-						p Наш чат кипит ежедневно в нем отвечают 24/7 преподаватели, ученики и выпускники
+					.s-program__card-wrapper
+						+program-card("<span>01.</span> Офлайн воркошапами")
+							p Каждое воскресенье, на протяжении всего вашего обучения, в Астане и Алматы проходят офлайн воркшопы. На них преподаватель решает практику вместе с вами, отвечает на вопросы вживую и делится практическими знаниями
+						.s-program__card__img-wrapper 
+							img.s-program__card__img(src="images/program-card/1.jpg")
+					.s-program__card-wrapper
+						+program-card("<span>02.</span> Онлайн Q&A сессиями")
+							p На протяжении всего обучения преподаватель связывается в установленное время с учениками и отвечает на все возникшие вопросы во время обучения. Дает конструктивные советы и указывает на точки роста
+						.s-program__card__img-wrapper 
+							img.s-program__card__img(src="images/program-card/2.jpg")
+					.s-program__card-wrapper
+						+program-card("<span>03.</span> Нетверкингом")
+							p За 3 года наши студенты образовали сообщество единомышленников. Они общаются с друг-другом ежедневно, совместно решают задачи, и всегда отзывчивы на помощь друг другу
+						.s-program__card__img-wrapper 
+							img.s-program__card__img(src="images/program-card/3.jpg")
+					.s-program__card-wrapper
+						+program-card("<span>03.</span> Общим чатом")
+							p Наш чат кипит ежедневно в нем отвечают 24/7 преподаватели, ученики и выпускники
+						.s-program__card__img-wrapper 
+							img.s-program__card__img(src="images/program-card/4.jpg")
 		<!-- END SECTION PROGRAM -->
 
 		<!-- START SECTION GALLERY -->
@@ -1455,10 +1467,27 @@ block content
 		.section.s-review.section--long-pb
 			.container
 				.title.title--mb-long Отзывы студентов 
-				.s-review__inner
-					+video("onYbuQrqiJk", "/images/video-bg-gray.svg")
-					+video("onYbuQrqiJk", "/images/video-bg-gray.svg")
-					+video("onYbuQrqiJk", "/images/video-bg-gray.svg")
+				.swiper-container.video-slider
+					.swiper-wrapper 
+						.swiper-slide 
+							+video("WVJhnRKNNNA", "/images/video/1.jpg")
+						.swiper-slide
+							+video("0Z2gGUHzaMc", "/images/video/2.jpg")
+						.swiper-slide 
+							+video("nyliPU-zIAk", "/images/video/3.jpg")
+						.swiper-slide 
+							+video("aTfp7JwgJW8", "/images/video/4.jpg")
+						.swiper-slide
+							+video("gaDpIafK3So", "/images/video/5.jpg")
+						.swiper-slide 
+							+video("WVJhnRKNNNA", "/images/video/6.jpg")
+						.swiper-slide 
+							.s-review-card
+								.s-review-card__title Присоединяйтесь!
+								.s-review-card__text 
+									p Отправьте заявку на бесплатную консультацию. Мы позвоним и расскажем подробнее о курсе
+								a.s-banner__btn.s-banner__btn--centered.btn.btn--primary(href="https://api.whatsapp.com/send/?phone=77761255952&text&type=phone_number&app_absent=0" target="blanc_") БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+				.video-slider__pagination
 		<!-- START SECTION REVIES -->
 	<!-- END CONTENT HISTORY -->
 
@@ -1732,29 +1761,84 @@ block content
 	<!-- START CONTENT ABOUT -->
 	.content.content__about
 
-		<!-- START SECTION ABOUT -->
-		.section.s-about 
-			.container 
-				.title.s-about__title О нас
-				.s-about__inner 
-					.s-about__content
-						.s-about__item
-							p Наша академия поможет освоить профессию Junior Data Scientist c нуля всего за полгода. Тебя ждут вебинары и консультации с ведущими специалистами из всемирно известных компаний как Apple, Facebook, Google и т.д. 
-						.s-about__item
-							p Чтобы ты мог начать карьеру в Data Science уже во время обучения, теоретическая часть курса состоит всего 20% материала, остальные 80% состоят из практики. Всего за 6 месяцев ты сможешь освоить трехлетнюю программу.
-					.s-about__img-wrapper 
-						img.s-about__img(src="images/about.jpg")  
-		<!-- END SECTION ABOUT -->
+		<!-- START SECTION FOUNDERS -->
+		.section.s-founders.section--long 
+			.container
+				.title.title--mb-long О нас 
+				.s-founders__title.s-founders__title--mobile.title Основатели Академии ABLE 
+			.s-founders__img-wrapper
+				img.s-founders__img(src="images/founders.jpg")
+				.container 
+					.s-founders__title.title.title--white Основатели Академии ABLE 
+		<!-- END SECTION FOUNDERS -->
 
-		<!-- START SECTION OUR-COMPANY -->
-		.section.s-our-company.section--long 
+		<!-- START SECTION OUR-ACADEMY -->
+		.section.s-our-academy 
 			.container 
-				.title.title--mb-long Наша компания
-				.s-our-company__cards 
-					+icon-card("book", "Индивидуальный подход к каждому ученику на каждом этапе обучения")
-					+icon-card("medal", "Обучают лучшие преподаватели-практики")
-					+icon-card("building", "Консультации со специалистами из Apple, Facebook, Google и т.д.")
-		<!-- END SECTION OUR-COMPANY -->
+				.title.title--mb-long Наша Академия
+				.s-our-academy__inner 
+					.s-our-academy__item 
+						.s-our-academy__item-num 1 
+						.s-our-academy__item-text Первая в Казахстане онлайн школа современных IT профессий
+					.s-our-academy__item 
+						.s-our-academy__item-num 2
+						.s-our-academy__item-text Преподаватели лучшие специалисты в своей нише из топовых мировых компаний 
+					.s-our-academy__item 
+						.s-our-academy__item-num 3
+						.s-our-academy__item-text Индивидуальный подход к каждому ученику
+					.s-our-academy__item 
+						.s-our-academy__item-num 4
+						.s-our-academy__item-text Предоставляем по запросу консультации со специалистами из Google, Apple  и Facebook 
+		<!-- END SECTION OUR-ACADEMY -->
+
+		<!-- START SECTION STATS -->
+		.section.s-stats-second.section--medium-pt.section--long-pb 
+			.container 
+				.title.title--mb-long ABLE в цифрах
+				.s-stats__cards 
+					+stat-card("<span class='countup' data-value='500'>0</span>+", "учеников")
+					+stat-card("<span class='countup' data-value='80'>0</span>%", "работающих студентов, после окончания курса")
+					+stat-card("<span class='countup' data-value='4,85'>0</span>", "оценка курса от студентов")
+		<!-- END SECTION STATS -->
+
+		<!-- START SECTION CHOOSE -->
+		.section.s-choose.section--long-pb 
+			.container 
+				.title.title--mb-long Почему выбирают ABLE Online Academy
+				.s-choose__inner 
+					.s-choose__item Практика после каждого задания
+					.s-choose__item Беспроцентная рассрочка
+					.s-choose__item Офлайн встречи каждую неделю
+					.s-choose__item Преподаватели действующие специалисты и лидеры своей ниши
+					.s-choose__item Онлайн поддержка 24/7
+					.s-choose__item 100% Гарантия трудоустройства по окончанию курса
+					.s-choose__item Нетворкинг с сокурсниками и выпускниками академии
+					.s-choose__item Готовые проекты для портфолио
+		<!-- END SECTION CHOOSE -->
+
+		//- <!-- START SECTION ABOUT -->
+		//- .section.s-about 
+		//- 	.container 
+		//- 		.title.s-about__title О нас
+		//- 		.s-about__inner 
+		//- 			.s-about__content
+		//- 				.s-about__item
+		//- 					p Наша академия поможет освоить профессию Junior Data Scientist c нуля всего за полгода. Тебя ждут вебинары и консультации с ведущими специалистами из всемирно известных компаний как Apple, Facebook, Google и т.д. 
+		//- 				.s-about__item
+		//- 					p Чтобы ты мог начать карьеру в Data Science уже во время обучения, теоретическая часть курса состоит всего 20% материала, остальные 80% состоят из практики. Всего за 6 месяцев ты сможешь освоить трехлетнюю программу.
+		//- 			.s-about__img-wrapper 
+		//- 				img.s-about__img(src="images/about.jpg")  
+		//- <!-- END SECTION ABOUT -->
+
+		//- <!-- START SECTION OUR-COMPANY -->
+		//- .section.s-our-company.section--long 
+		//- 	.container 
+		//- 		.title.title--mb-long Наша компания
+		//- 		.s-our-company__cards 
+		//- 			+icon-card("book", "Индивидуальный подход к каждому ученику на каждом этапе обучения")
+		//- 			+icon-card("medal", "Обучают лучшие преподаватели-практики")
+		//- 			+icon-card("building", "Консультации со специалистами из Apple, Facebook, Google и т.д.")
+		//- <!-- END SECTION OUR-COMPANY -->
 	<!-- END CONTENT ABOUT -->
 
 	<!-- START CONTENT TEACHER -->

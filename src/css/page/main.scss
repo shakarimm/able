@@ -433,7 +433,7 @@
 		}
 	}
 }
-.company-slider, .company-slider__second, .company-slider__third, .gallery-slider{
+.company-slider, .company-slider__second, .company-slider__third, .gallery-slider, .video-slider{
 	margin: 0 -5%;
 	&__pagination{
 		text-align: center;
@@ -1145,6 +1145,82 @@
 			display: none;
 		}
 	}
+	.title{
+		text-align: left;
+		padding-top: 50px;
+	}
+}
+.s-our-academy{
+	&__inner{
+		margin-bottom: -32px;
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+		margin-bottom: 32px;
+		&-num{
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 24px;
+			color: #fff;
+			padding: 15px;
+			background: $color_primary;
+			border-radius: 50%;
+			width: 4%;
+			text-align: center;
+		}
+		&-text{
+			width: 66%;
+			padding: 14px 19px;
+			background: #FFFFFF;
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+			margin-left: 53px;
+		}
+	}
+}
+.s-choose{
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: -40px;
+	}
+	&__item{
+		width: 50%;
+		padding-left: 43px;
+		position: relative;
+		margin-bottom: 40px;
+		&::after{
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			background-image: url(/images/price/elem.svg);
+			background-repeat: no-repeat;
+			content: '';
+			width: 27px;
+			height: 27px;
+		}
+	}
+}
+.s-program{
+	&__inner{
+		margin-bottom: -60px;
+	}
+	&__card-wrapper{
+		display: flex;
+		margin-bottom: 60px;
+	}
+	&__card{
+		&__img-wrapper{
+			margin-left: 160px;
+		}
+		&__img{
+			border-radius: 20px;
+		}
+	}
 }
 .s-video{
 	text-align: center;
@@ -1559,16 +1635,36 @@
 	}
 }
 .s-review{
-	&__inner{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
+	&-card{
+		padding: 208px 35px 40px;
+		background: #E5F6FF;
+		border-radius: 20px;
+		text-align: center;
+		&__title{
+			font-weight: 700;
+			font-size: 34px;
+			line-height: 22px;
+			margin-bottom: 32px;
+			color: #000;
+		}
+		&__text{
+			font-size: 20px;
+			line-height: 22px;
+			color: rgba(0, 0, 0, 0.7);
+			margin-bottom: 173px;
+		}
 	}
 	.video{
-		width: 29%;
-		border-radius: 50%;
-		&__preview{
-			width: 100%;
+		&__preview-wrapper{
+			img{
+				border-radius: 0;
+			}
+			&::after{
+				display: none;
+			}
+		}
+		&__play-btn{
+			z-index: auto;
 		}
 	}
 }
@@ -1872,7 +1968,7 @@
 }
 .content__studlife{
 	.program-card{
-		width: 24%;
+		width: 290px;
 		&__text{
 			p{
 				padding-left: 0;
