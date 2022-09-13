@@ -22,9 +22,12 @@ mixin nav-btn
 		.nav-btn__line
 		.nav-btn__line
 
-mixin stat-card(title, text)
+mixin stat-card(title, text, imgSrc=false)
 	.stat-card
-		.stat-card__title!=title 
+		.stat-card__title!=title
+		if imgSrc 
+			.stat-card__img-wrapper 
+				img.stat-card__img(src=imgSrc) 
 		.stat-card__text!=text 
 
 mixin titled-text-card(title, text)

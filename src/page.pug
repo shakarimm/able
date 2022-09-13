@@ -72,9 +72,9 @@ block content
 			.container 
 				.title.title--mb-long ABLE в цифрах
 				.s-stats__cards 
-					+stat-card("<span class='countup' data-value='500'>0</span>+", "учеников")
-					+stat-card("<span class='countup' data-value='80'>0</span>%", "работающих студентов, после окончания курса")
-					+stat-card("<span class='countup' data-value='4,85'>0</span>", "оценка курса от студентов")
+					+stat-card("<span class='countup' data-value='500'>0</span>+", "учеников", false)
+					+stat-card("<span class='countup' data-value='80'>0</span>%", "работающих студентов, после окончания курса", false)
+					+stat-card("<span class='countup' data-value='4,85'>0</span>", "оценка курса от студентов", "images/stars.svg")
 		<!-- END SECTION STATS -->
 
 		<!-- START SECTION COURSES -->
@@ -92,7 +92,7 @@ block content
 							.tabs__item#tab_1
 								.tabs__text
 									p Вы научитесь:
-									p 1. Использовать Python его для самостоятельного решения задач, над которыми обычно работают несколько специалистов
+									p 1. Использовать Python для самостоятельного решения задач, над которыми обычно работают несколько специалистов
 									p 2. Использовать библиотеки Python-а для анализа, очистки, визуализации данных
 									p 3. Использовать SQL для работы с большими массивами базой данных, создавать инфографику, писать сложные запросы
 									p 4. Использовать классические алгоритмы машинного обучения для решения разновидных задач, оценивать качество вашего решения при помощи общепринятых метрик
@@ -153,7 +153,7 @@ block content
 												.tabs-info__item-text 8 месяцев
 											.tabs-info__item
 												.tabs-info__item-title Стоимость:
-												.tabs-info__item-text от 33 000 ₸ в месяц
+												.tabs-info__item-text от 31 000 ₸ в месяц
 										.tabs-info__bottom
 											.tabs-info__item
 												.tabs-info__item-img-wrapper 
@@ -177,7 +177,7 @@ block content
 												.tabs-info__item-text 7 месяцев
 											.tabs-info__item
 												.tabs-info__item-title Стоимость:
-												.tabs-info__item-text от 41 000 ₸ в месяц
+												.tabs-info__item-text от 35 000 ₸ в месяц
 										.tabs-info__bottom
 											.tabs-info__item
 												.tabs-info__item-img-wrapper 
@@ -185,7 +185,7 @@ block content
 											.tabs-info__item
 												.tabs-info__item-img-wrapper 
 													img.tabs-info__item-img(src="images/tabs/2.png")
-											.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
+											.tabs-info__item <span>РАССРОЧКА</span> от 20 500 ₸ в месяц
 									.tabs__btn.btn.btn--primary.content-tab(href="#android") ПОДРОБНЕЕ
 						.tabs__nav.tabs__nav--mobile
 							.tabs__nav-wrapper
@@ -261,7 +261,7 @@ block content
 													.tabs-info__item-text 8 месяцев
 												.tabs-info__item
 													.tabs-info__item-title Стоимость:
-													.tabs-info__item-text от 39 000 ₸ в месяц
+													.tabs-info__item-text от 31 000 ₸ в месяц
 											.tabs-info__bottom
 												.tabs-info__item
 													.tabs-info__item-img-wrapper 
@@ -269,7 +269,7 @@ block content
 												.tabs-info__item
 													.tabs-info__item-img-wrapper 
 														img.tabs-info__item-img(src="images/tabs/2.png")
-												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
+												.tabs-info__item <span>РАССРОЧКА</span> от 20 500 ₸ в месяц
 										.tabs__btn.btn.btn--primary.content-tab(href="#business") ПОДРОБНЕЕ
 							.tabs__nav-wrapper
 								.tabs__nav-btn-wrapper
@@ -285,10 +285,10 @@ block content
 											.tabs-info__top
 												.tabs-info__item
 													.tabs-info__item-title Длительность:
-													.tabs-info__item-text 6 месяцев
+													.tabs-info__item-text 7 месяцев
 												.tabs-info__item
 													.tabs-info__item-title Стоимость:
-													.tabs-info__item-text от 39 000 ₸ в месяц
+													.tabs-info__item-text от 35 000 ₸ в месяц
 											.tabs-info__bottom
 												.tabs-info__item
 													.tabs-info__item-img-wrapper 
@@ -296,7 +296,7 @@ block content
 												.tabs-info__item
 													.tabs-info__item-img-wrapper 
 														img.tabs-info__item-img(src="images/tabs/2.png")
-												.tabs-info__item <span>РАССРОЧКА</span> от 19 500 ₸ в месяц
+												.tabs-info__item <span>РАССРОЧКА</span> от 20 500 ₸ в месяц
 										.tabs__btn.btn.btn--primary.content-tab(href="#android") ПОДРОБНЕЕ
 					.s-courses__help
 						.s-courses__help-text 
@@ -832,7 +832,7 @@ block content
 							p Стань профессионалом, который определяет потребности бизнеса с помощью данных и находит решения
 						.s-fs__btn.btn.btn--primary ХОЧУ НА КУРС
 						.s-fs__price
-							.s-fs__price-nums от <span class="gray">27 000</span> <span class="blue">20 500 ₸</span> в месяц
+							.s-fs__price-nums от <span class="gray">33 000</span> <span class="blue">20 500 ₸</span> в месяц
 							.s-fs__price-text при оплате в рассрочку на 12 месяцев
 					.s-fs__img-wrapper 
 						img.s-fs__img(src="images/fs/3.jpg")
@@ -1051,7 +1051,7 @@ block content
 							p Научись создавать приложения для самой востребованной операционной системы андроид.
 						.s-fs__btn.btn.btn--primary ХОЧУ НА КУРС
 						.s-fs__price
-							.s-fs__price-nums от <span class="gray">31 500</span> <span class="blue">22 000 ₸</span> в месяц
+							.s-fs__price-nums от <span class="gray">31 500</span> <span class="blue">20 500 ₸</span> в месяц
 							.s-fs__price-text при оплате в рассрочку на 12 месяцев
 					.s-fs__img-wrapper 
 						img.s-fs__img(src="images/fs/4.jpg")
@@ -1796,9 +1796,9 @@ block content
 			.container 
 				.title.title--mb-long ABLE в цифрах
 				.s-stats__cards 
-					+stat-card("<span class='countup' data-value='500'>0</span>+", "учеников")
-					+stat-card("<span class='countup' data-value='80'>0</span>%", "работающих студентов, после окончания курса")
-					+stat-card("<span class='countup' data-value='4,85'>0</span>", "оценка курса от студентов")
+					+stat-card("<span class='countup' data-value='500'>0</span>+", "учеников", false)
+					+stat-card("<span class='countup' data-value='80'>0</span>%", "работающих студентов, после окончания курса", false)
+					+stat-card("<span class='countup' data-value='4,85'>0</span>", "оценка курса от студентов", "images/stars.svg")
 		<!-- END SECTION STATS -->
 
 		<!-- START SECTION CHOOSE -->
