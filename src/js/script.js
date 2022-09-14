@@ -73,10 +73,17 @@ import Nav from "./modules/Nav";
 			slidesPerView: 3,
 			autoHeight: true,
 			bulletActiveClass: '.video-slider-pagination-active',
+			spaceBetween: 32,
 			pagination: {
 				el: '.video-slider__pagination',
 				clickable: true,
 			},
+			breakpoints: {
+				699: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+				}
+			} 
 		});
 	}
 /*

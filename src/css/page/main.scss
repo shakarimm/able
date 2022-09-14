@@ -225,7 +225,7 @@
 // ENTITIES
 @include video-module;
 @include content-module;
-@include nav-module-btn($color_primary);
+@include nav-module-btn(#1C3388);
 .header{
 	padding: 21px 0;
 	background: #FFFFFF;
@@ -262,7 +262,7 @@
 				.nav__item-menu{
 					opacity: 1;
 					transition: all .4s;
-					max-height: 200px;
+					max-height: 500px;
 					pointer-events: auto;
 				}
 			}
@@ -722,6 +722,11 @@
 				display: none;
 			}
 		}
+		&--dark{
+			&::after{
+				background-image: url(/images/price/elem-2.svg);
+			}
+		}
 	}
 	&__nums{
 		display: flex;
@@ -997,6 +1002,12 @@
 			color: #1C3388;
 			background: rgba(126, 126, 126, 0.2);
 			border-radius: 5px;
+			cursor: pointer;
+			transition: all .4s;
+			&:hover, &:focus{
+				color: lighten($color: #1c3388, $amount: 20);
+				background: lighten($color: rgba(126, 126, 126, 0.2), $amount: 20);
+			}
 			&+&{
 				margin-left: 12px;
 			}
@@ -1672,6 +1683,12 @@
 		}
 	}
 }
+.s-task{
+	&__text{
+		font-size: 20px;
+		line-height: 1.5;
+	}
+}
 // SECTIONS-COURSES
 .s-fs{
 	padding-top: 157px;
@@ -1936,6 +1953,11 @@
 		width: 24%;
 	}
 }
+.content__data{
+	.program-card{
+		width: 24%;
+	}
+}
 .content__android{
 	.s-slogan__subtitle{
 		margin-bottom: 0;
@@ -1979,6 +2001,21 @@
 				&::after{
 					display: none;
 				}
+			}
+		}
+	}
+}
+.content__about{
+	.titled-text-card{
+		width: 32%;
+		&:nth-child(2){
+			background: #E5F6FF;
+		}
+		&__title{
+			text-align: left;
+			&::after{
+				left: 0;
+				transform: translateX(0);
 			}
 		}
 	}

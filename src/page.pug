@@ -15,7 +15,7 @@ block content
 								.nav__item-garant Гарантия работы
 							.nav__item-menu__wrapper
 								a.nav__item-sub.content-tab(href="#development") Веб-разработка
-								//- .nav__item-garant Гарантия работы
+								.nav__item-garant Гарантия работы
 							.nav__item-menu__wrapper
 								a.nav__item-sub.content-tab(href="#business") Бизнес аналитика
 								.nav__item-garant Гарантия работы
@@ -32,7 +32,7 @@ block content
 						.nav__item-menu
 							a.nav__item-sub.content-tab(href="#history") Истории студентов
 							a.nav__item-sub.content-tab(href="#hiring") Нанять наших студентов
-							a.nav__item-sub.content-tab(href="#studlife") Студенчаская жизнь
+							a.nav__item-sub.content-tab(href="#studlife") Студенческая жизнь
 					.nav__item.nav__item--parent Для компаний
 						.nav__item-menu
 							a.nav__item-sub.content-tab(href="#corpo") Корпоративное обучение
@@ -56,10 +56,10 @@ block content
 						.s-first-screen__directions
 							.s-first-screen__directions-title Наши направления:
 							.s-first-screen__directions-items
-								.s-first-screen__directions-item Data Science
-								.s-first-screen__directions-item Бизнес Аналитика
-								.s-first-screen__directions-item Веб-разработка
-								.s-first-screen__directions-item Android-разработка
+								.s-first-screen__directions-item.content-tab(href="#data") Data Science
+								.s-first-screen__directions-item.content-tab(href="#business") Бизнес Аналитика
+								.s-first-screen__directions-item.content-tab(href="#development") Веб-разработка
+								.s-first-screen__directions-item.content-tab(href="#android") Android-разработка
 						.s-first-screen__text 
 							p Нужна помощь в подборе правильного курса для вас? Пройди тест и пойми, что тебе подходит
 						a.s-first-screen__btn.btn.btn--blue(href="https://docs.google.com/forms/d/1GmGuYvS70Zs6sZ3Opq2mzkibZcDgG3k7jdYdPX-VnAY/viewform?ts=6317af5b&edit_requested=true" target="blanc_") ПРОЙТИ ТЕСТ
@@ -94,7 +94,7 @@ block content
 									p Вы научитесь:
 									p 1. Использовать Python для самостоятельного решения задач, над которыми обычно работают несколько специалистов
 									p 2. Использовать библиотеки Python-а для анализа, очистки, визуализации данных
-									p 3. Использовать SQL для работы с большими массивами базой данных, создавать инфографику, писать сложные запросы
+									p 3. Использовать SQL для работы с большими массивами базой данных, писать сложные запросы
 									p 4. Использовать классические алгоритмы машинного обучения для решения разновидных задач, оценивать качество вашего решения при помощи общепринятых метрик
 								.tabs__bottom
 									.tabs-info
@@ -196,7 +196,7 @@ block content
 										p Вы научитесь:
 										p 1. Использовать Python для самостоятельного решения задач, над которыми обычно работают несколько специалистов
 										p 2. Использовать библиотеки Python-а для анализа, очистки, визуализации данных
-										p 3. Использовать SQL для работы с большими массивами базой данных, создавать инфографику, писать сложные запросы
+										p 3. Использовать SQL для работы с большими массивами базой данных, писать сложные запросы
 										p 4. Использовать классические алгоритмы машинного обучения для решения разновидных задач, оценивать качество вашего решения при помощи общепринятых метрик
 									.tabs__bottom
 										.tabs-info
@@ -400,7 +400,7 @@ block content
 			.container 
 				.s-fs__inner 
 					.s-fs__content
-						.s-fs__title Освой профессию <span><br>Data Science</span> <br>за 6 месяцев 
+						.s-fs__title Освой профессию <span><br>Data Science</span> <br>за 6-8 месяцев 
 						.s-fs__text.s-fs__text--data 
 							p Получите готовые к работе навыки в анализе данных и машинного обучения
 						.s-fs__btn.btn.btn--primary ХОЧУ НА КУРС
@@ -467,6 +467,13 @@ block content
 						p Разбиение данных
 						p Основные типы задач (классификация, регрессия)
 						p Алгоритмы (Линейная регрессия, Дерево принятия решений, и т.д.)
+					+program-card("<span>04.</span> SQL")
+						p Функции
+						p Джойны
+						p Подзапросы
+						p Триггеры
+						p Практика
+						p SQL интервью
 		<!-- END SECTION PROGRAM -->
 
 		<!-- START SECTION TEACHER -->
@@ -488,7 +495,7 @@ block content
 					.s-teacher__img-wrapper 
 						img.s-teacher__img(src="images/teachers/8.jpg")
 					.s-teacher__content 
-						.s-teacher__name Малика
+						.s-teacher__name Малика Адилова
 						.s-teacher__descr Ментор/наставник на курсе Data Science
 						.s-teacher__text 
 							p Закончила КазНУ им. аль-Фараби по специальности Математическое и компьютерное моделирование
@@ -564,6 +571,7 @@ block content
 								.s-price-card__item Выделенный студенческий консультант и техническая поддержка во время обучения
 								.s-price-card__item 8 проектов в портфолио 
 								.s-price-card__item Гарантия трудоустройства после окончания курса
+								.s-price-card__item Скидка для первых 10 учеников 
 							.s-price-card__nums 
 								.s-price-card__last-price.s-price-card__last-price--blue 330 000 ₸
 								.s-price-card__new-price 235 000 ₸
@@ -619,7 +627,7 @@ block content
 		<!-- START SECTION SLOGAN -->
 		.section.s-slogan 
 			.container 
-				.s-slogan__title.title.title--primary.title--centered.title--without-after Освой JavaScript, PHP и создавай сайты,
+				.s-slogan__title.title.title--primary.title--centered.title--without-after Освой JavaScript и создавай сайты,
 				.s-slogan__subtitle.title.title--mb-long.title--centered.title--medium которыми пользуются миллионы человек ежедневно. 
 				.s-slogan__text 
 					p Заказчики найдутся уже во время обучения! 
@@ -642,7 +650,7 @@ block content
 				.title.title--mb-long Для кого курс
 				.s-audience__inner.flex
 					+titled-text-card("Новичкам", "Научитесь верстать лендинги и небольшие сайты. Если хотите сменить работу или ищите дополнительный заработок, то это идеальный курс для новичков. К концу курса уже сможете окупить его стоимость")
-					+titled-text-card("Веб-разработчикам с небольшим опытом", "Улучшив имеющиеся навыки в написании кода на JavaScript и PHP, вы станете востребованным специалистом")
+					+titled-text-card("Веб-разработчикам с небольшим опытом", "Улучшив имеющиеся навыки в написании кода на JavaScript, вы станете востребованным специалистом")
 					+titled-text-card("Профессионалам", "Закрепите знания, начнете работать с зарубежными проектами и преодолеете страх выйти на фриланс")
 		<!-- END SECTION AUDIENCE -->
 
@@ -715,9 +723,8 @@ block content
 						.s-teacher__name Арман Жаманкулов
 						.s-teacher__descr ментор/наставник на курсе web-разработка
 						.s-teacher__text 
-							p Профессиональный массажист. Прошёл курс по массажу в ЕШКО 
 							p Специалист по ремонту и модернизации ПК. Прошёл курс в г. Актау
-							p Работал IT консультантом в Каратальской районной больльнице 1 год
+							p Работал IT консультантом в Каратальской районной больнице 1 год
 							p Прошёл курс по frontend в ABLE. Html, css, js, ReactJS
 							p В настоящее время работаю удалённо в ABLE
 		<!-- END SECTION TEACHER -->
@@ -786,6 +793,7 @@ block content
 								.s-price-card__item Выделенный студенческий консультант и техническая поддержка во время обучения
 								.s-price-card__item 8 проектов в портфолио 
 								.s-price-card__item Гарантия трудоустройства после окончания курса
+								.s-price-card__item Скидка для первых 10 учеников 
 							.s-price-card__nums 
 								.s-price-card__last-price.s-price-card__last-price--blue 330 000 ₸
 								.s-price-card__new-price 235 000 ₸
@@ -895,7 +903,7 @@ block content
 						p Варианты визуализации
 						p Анализ данных в Power BI
 						p Power BI Service
-					+program-card("<span>03.</span> SQL")
+					+program-card("<span>04.</span> SQL")
 						p Функции
 						p Джойны
 						p Подзапросы
@@ -911,6 +919,16 @@ block content
 			.container.container--teachers
 				.s-teacher__inner 
 					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/5.jpg")
+					.s-teacher__content 
+						.s-teacher__name Акжан Ракыш
+						.s-teacher__descr Автор курса бизнес аналитика
+						.s-teacher__text 
+							p Проходил стажировку в США и Германии.
+							p Работал IT-специалистом в компании ST Unitas, Южная Корея.
+							p Data Scientist в Huawei
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
 						img.s-teacher__img(src="images/teachers/1.jpg")
 					.s-teacher__content 
 						.s-teacher__name Азамат Хасенов
@@ -920,16 +938,6 @@ block content
 							p 2 года проработал в Южной Корее специалистом в области искусственного интеллекта
 							p Работал в компании Huawei
 							p В настоящее время специалист по Data Science в BTS Digital
-				.s-teacher__inner 
-					.s-teacher__img-wrapper 
-						img.s-teacher__img(src="images/teachers/5.jpg")
-					.s-teacher__content 
-						.s-teacher__name Акжан Ракыш
-						.s-teacher__descr Автор курса бизнес аналитика
-						.s-teacher__text 
-							p Проходил стажировку в США и Германии.
-							p Работал IT-специалистом в компании ST Unitas, Южная Корея.
-							p Data Scientist в Huawei
 				.s-teacher__inner 
 					.s-teacher__img-wrapper 
 						img.s-teacher__img(src="images/teachers/8.jpg")
@@ -1005,6 +1013,7 @@ block content
 								.s-price-card__item Выделенный студенческий консультант и техническая поддержка во время обучения
 								.s-price-card__item 8 проектов в портфолио 
 								.s-price-card__item Гарантия трудоустройства после окончания курса
+								.s-price-card__item Скидка для первых 10 учеников 
 							.s-price-card__nums 
 								.s-price-card__last-price.s-price-card__last-price--blue 320 000 ₸
 								.s-price-card__new-price 245 000 ₸
@@ -1134,7 +1143,8 @@ block content
 						.s-teacher__name Толеген Акылбеков
 						.s-teacher__descr Автор курса андроид разработка
 						.s-teacher__text 
-							p разработчик в международной компании EPAM
+							p Работал разработчиком в международной компании EPAM
+							p На данный момент Team Lead в американской компании Balanced 
 				.s-teacher__inner 
 					.s-teacher__img-wrapper 
 						img.s-teacher__img(src="images/teachers/8.jpg")
@@ -1144,7 +1154,7 @@ block content
 						.s-teacher__text 
 							p Закончил Костанайский государственный университет имени А. Байтурсынова
 							p Начал карьеру в роли Android разработчика в FirstBit
-							p Сейчас работает в META офис Лондон в роли Senior разработчика
+							p Сейчас работает в META(ex-Facebook) в Лондоне в роли Senior разработчика
 		<!-- END SECTION TEACHER -->
 
 		<!-- START SECTION QUOTE -->
@@ -1157,7 +1167,7 @@ block content
 						p Спасибо Онлайн Академии Эйбл и Диане за обучение и за то, что помогли устроиться в Новозеландскую компанию веб-разработчиком
 					.s-quote__graduate.s-quote__graduate--center
 						.s-quote__graduate__img-wrapper 
-							img.s-quote__graduate__img(src="images/graduate-4.png")
+							img.s-quote__graduate__img(src="images/graduate-5.png")
 						.s-quote__graduate__info
 							p Шакарим Мухамедиев, <br>Выпускник курса андроид-разработка
 		<!-- END SECTION QUOTE -->
@@ -1210,6 +1220,7 @@ block content
 								.s-price-card__item Выделенный студенческий консультант и техническая поддержка во время обучения
 								.s-price-card__item 8 проектов в портфолио 
 								.s-price-card__item Гарантия трудоустройства после окончания курса
+								.s-price-card__item Скидка для первых 10 учеников 
 							.s-price-card__nums 
 								.s-price-card__last-price.s-price-card__last-price--blue 320 000 ₸
 								.s-price-card__new-price 245 000 ₸
@@ -1341,7 +1352,7 @@ block content
 		<!-- START SECTION NAV-FS -->
 		.section.s-nav-fs
 			.container 
-				.title.title--mb-long Студенчаская жизнь
+				.title.title--mb-long Студенческая жизнь
 				.s-nav-fs__text.s-nav-fs__text--studlife 
 					p Помимо онлайн обучения на платформе вы всегда можете рассчитывать на поддержку преподавателя и самих учеников.
 				.s-nav-fs__img-wrapper
@@ -1369,7 +1380,7 @@ block content
 						.s-program__card__img-wrapper 
 							img.s-program__card__img(src="images/program-card/3.jpg")
 					.s-program__card-wrapper
-						+program-card("<span>03.</span> Общим чатом")
+						+program-card("<span>04.</span> Общим чатом")
 							p Наш чат кипит ежедневно в нем отвечают 24/7 преподаватели, ученики и выпускники
 						.s-program__card__img-wrapper 
 							img.s-program__card__img(src="images/program-card/4.jpg")
@@ -1441,10 +1452,10 @@ block content
 				.s-nav-fs__text 
 					p Наши студенты- наша сила! Мы гордимся, что они смогли изменить свою жизнь в лучшую сторону, и благодарим что их выбор пал на нашу академию! 
 				.s-nav-fs__cards 
-					+history-card('images/history-card/1.jpg', 'Александр, 35 лет', 'Работал по специальности химиком на Казахстанском предприятии. <br>Прошел обучение по курсу Data Science в нашей академии.', 'Устроился на работу почти сразу после прохождения обучения в Kaspi Bank на должность Data Scientist. На данный момент Александр работает в Южной Корее по специальности Data Science.')
+					+history-card('images/history-card/1.jpg', 'Александр, 35 лет', 'Работал по специальности химиком на Казахстанском предприятии. <br>Прошел обучение по курсу Data Science в нашей академии.', 'Устроился на работу почти сразу после прохождения обучения в Kaspi Bank на должность Data Scientist.')
 					+history-card('images/history-card/2.jpg', 'Жаглас, 24 года', 'Учился по специальности Автоматизация и управление в г. Шымкент. Не мог найти хорошо оплачиваемую работу по специальности. Прошел обучение по курсу Data Science в нашей академии.', 'Через 4-5 месяцев в период обучения вышел на стажировку в Казактелеком, после стажировки Жалгас начал работать в Хоум Кредит банке на должности Data Science, работает по настоящее время. Также Жалгас учит наших студентов на курсе по Data Science и учится на магистратуре.')
 					+history-card('images/history-card/3.jpg', 'Малика, 27 лет', 'Работала преподавателем в детском образовательном центре. Прошла обучение по курсу Data Science в нашей академии.', 'После окончания обучения устроилась в Евразийский Банк аналитиком данных. Сейчас работает в компании Wing Partners – специалист по Data Science.')
-					+history-card('images/history-card/4.jpg', 'Наталья, 33 года', 'По профессии энергетик, была на декрете.', 'После обучения трудоустроилась в Колеса.kz, среди 3000 претендентов на должность прошли только 13 человек, Наталья была одной из успешно прошедших конкурс.')
+					+history-card('images/history-card/4.jpg', 'Наталья, 33 года', 'По профессии энергетик, была на декрете.', 'После обучения прошла стажировку в Колеса.kz, среди 3000 претендентов на должность прошли только 13 человек, Наталья была одной из успешно прошедших конкурс.')
 					+history-card('images/history-card/5.png', 'Асет, 25 лет', 'По профессии инженер-химик, работал на производстве в компании Фуд мастер.', 'После обучения получил приглашение в Kaspi.kz, Aviata, АО НИТ. Он выбрал АО НИТ, в данное время работает в BTS digital.')
 					+history-card('images/history-card/6.jpg', 'Газиза, 25 лет', 'Работала по специальности инженером в г. Актау, решила сменить профессию на высокооплачиваемую. <br>Прошла обучение по курсу веб-разработка в нашей академии', 'По окончанию наших курсов получила приглашение на работу  в компанию в ТОО Grand Era, г. Алматы . По сей день работает в этой компании веб-разработчиком.')
 					+history-card('images/history-card/7.jpg', 'Олжас, 37 лет', 'Работал в г. Алматы специалистом по 3D графике Прошел курс по Веб-разработке в нашей академии с нуля', 'Получил приглашение на работе в Новую Зеландию г. Окланд. Работает как фулстак разработчик , React , Nest js.')
@@ -1459,7 +1470,7 @@ block content
 						.s-result__text 
 							p Наш курс поможет начать успешную карьеру в сфере IT с помощью структурированной программы обучения и практики подкрепляющей знания
 					.s-result__stats
-						+result-card('70%', 'студентов нашли работодателя еще во время обучения')
+						+result-card('80%', 'работающих студентов, после окончания курса')
 						+result-card('95%', 'выпускников ушли с основной работы и поменяли сферу деятельности')
 		<!-- END SECTION RESULT -->
 
@@ -1591,7 +1602,7 @@ block content
 						.s-contact-us__title.title.title--mb-long Наймите наших студентов
 						.s-contact-us__text 
 							p Наши студенты достигают результатов, меняющие их жизнь
-					form.s-contact-us__form(name='form' action='js/sendmail.php' method='POST')
+					form.s-contact-us__form(name='form' action='sendmail.php' method='POST')
 						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
 						.s-contact-us__form-text 
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
@@ -1635,7 +1646,7 @@ block content
 						.s-contact-us__title.title.title--mb-long Корпоративное обучение
 						.s-contact-us__text 
 							p Подготовьте свою команду к будущему. Мы обучаем востребованным цифровым навыкам в соответствии с потребностями рынка. Программы Able будут двигать ваш бизнес вперед.
-					form.s-contact-us__form(id='form2' action='#' method='POST')
+					form.s-contact-us__form(id='form2' action='sendmail.php' method='POST')
 						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
 						.s-contact-us__form-text
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
@@ -1643,7 +1654,7 @@ block content
 						input.s-contact-us__form-input.req2.mail(placeholder="E-mail*" type="mail" name='mail')
 						input.s-contact-us__form-input.req2(placeholder="+7 (...)*" type="tel" id="phone-mask-two" name='number')
 						input.s-contact-us__form-input.req2(placeholder="Ваш комментарий" name='text' id='formMessage')
-						button.s-contact-us__form-btn.btn.btn--primary(type="submit") ОТПРАВИТЬ
+						input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
 		<!-- END SECTION CONTACT-US -->
 
 		<!-- START SECTION COMPANIES -->
@@ -1697,7 +1708,7 @@ block content
 
 						.s-contact-us__text 
 							p Мы выпускаем высококвалифицированных специалистов со свежими знаниями, которые готовы заполнить ваши потребности.
-					form.s-contact-us__form(id='form3' action='#' method='POST')
+					form.s-contact-us__form(id='form3' action='sendmail.php' method='POST')
 						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
 						.s-contact-us__form-text
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
@@ -1705,7 +1716,7 @@ block content
 						input.s-contact-us__form-input.req3.mail(placeholder="E-mail*" type="mail" name='mail')
 						input.s-contact-us__form-input.req3(placeholder="+7 (...)*" type="tel" id="phone-mask-three" name='number')
 						input.s-contact-us__form-input.req3(placeholder="Ваш комментарий" name='text' id='formMessage')
-						button.s-contact-us__form-btn.btn.btn--primary(type="submit") ОТПРАВИТЬ
+						input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
 		<!-- END SECTION CONTACT-US -->
 
 		<!-- START SECTION FOR-WHAT-STUDENTS -->
@@ -1746,7 +1757,7 @@ block content
 							.s-contact-us__item 
 								.s-contact-us__item-text Почта:
 								a.s-contact-us__item-link(href="#") datascience.kz@gmail.com
-					form.s-contact-us__form(id='form4' action='#' method='POST')
+					form.s-contact-us__form(id='form4' action='sendmail.php' method='POST')
 						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
 						.s-contact-us__form-text
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
@@ -1754,7 +1765,7 @@ block content
 						input.s-contact-us__form-input.req4.mail(placeholder="E-mail*" type="mail" name='mail')
 						input.s-contact-us__form-input.req4(placeholder="+7 (...)*" type="tel" id="phone-mask-four" name='number')
 						input.s-contact-us__form-input.req4(placeholder="Ваш комментарий" name='text' id='formMessage')
-						button.s-contact-us__form-btn.btn.btn--primary(type="submit") ОТПРАВИТЬ
+						input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
 		<!-- END SECTION CONTACT-US -->
 	<!-- END CONTENT QUESTIONS -->
 
@@ -1772,24 +1783,23 @@ block content
 					.s-founders__title.title.title--white Основатели Академии ABLE 
 		<!-- END SECTION FOUNDERS -->
 
-		<!-- START SECTION OUR-ACADEMY -->
-		.section.s-our-academy 
+		<!-- START SECTION TASK -->
+		.section.s-task 
 			.container 
-				.title.title--mb-long Наша Академия
-				.s-our-academy__inner 
-					.s-our-academy__item 
-						.s-our-academy__item-num 1 
-						.s-our-academy__item-text Первая в Казахстане онлайн школа современных IT профессий
-					.s-our-academy__item 
-						.s-our-academy__item-num 2
-						.s-our-academy__item-text Преподаватели лучшие специалисты в своей нише из топовых мировых компаний 
-					.s-our-academy__item 
-						.s-our-academy__item-num 3
-						.s-our-academy__item-text Индивидуальный подход к каждому ученику
-					.s-our-academy__item 
-						.s-our-academy__item-num 4
-						.s-our-academy__item-text Предоставляем по запросу консультации со специалистами из Google, Apple  и Facebook 
-		<!-- END SECTION OUR-ACADEMY -->
+				.title.title--mb-long Задача ABLE Online Academy
+				.s-task__text 
+					p ABLE ставит перед собой задачу обучить и трудоустроить 1000 человек до 2025 года. <br>ABLE Online Academy  — это онлайн академия современных IT-профессий. Наши выпускники выходят квалифицированными специалистами, готовыми к работе в крупных компаниях. 
+		<!-- END SECTION TASK -->
+
+		<!-- START SECTION VALUES -->
+		.section.s-values.section--long-pt 
+			.container 
+				.title.title--mb-long Наши ценности
+				.s-values__inner.flex 
+					+titled-text-card("Наша миссия", "Мы строим мир в котором каждый может получить высококачественные знания и с нуля освоить восребованную профессию. Успех и достижение целей наших учеников является приоритетом для нас.")
+					+titled-text-card("Мы всегда учимся", "Преподаватели Able как и наши ученики находятся в постоянном процессе обучения. Каждый работает в своей сфере и улучшается каждый день.")
+					+titled-text-card("Мы открыты, честны и конструктивны", "На честности строится наша академия и коммуникация с учениками. Преподаватели всегда честны в своих намерениях и для нас качество превыше количества. Также мы предлагаем своевременную конструктивную обратную связь для того чтобы вы достигли успеха.")
+		<!-- START SECTION VALUES -->
 
 		<!-- START SECTION STATS -->
 		.section.s-stats-second.section--medium-pt.section--long-pb 
@@ -1806,7 +1816,7 @@ block content
 			.container 
 				.title.title--mb-long Почему выбирают ABLE Online Academy
 				.s-choose__inner 
-					.s-choose__item Практика после каждого задания
+					.s-choose__item Практические задания после каждого урока
 					.s-choose__item Беспроцентная рассрочка
 					.s-choose__item Офлайн встречи каждую неделю
 					.s-choose__item Преподаватели действующие специалисты и лидеры своей ниши
@@ -1925,9 +1935,8 @@ block content
 						.s-teacher__name Арман Жаманкулов
 						.s-teacher__descr Ментор/наставник на курсе Web-разработка
 						.s-teacher__text 
-							p Профессиональный массажист. Прошёл курс по массажу в ЕШКО 
 							p Специалист по ремонту и модернизации ПК. Прошёл курс в г. Актау
-							p Работал IT консультантом в Каратальской районной больльнице 1 год
+							p Работал IT консультантом в Каратальской районной больнице 1 год
 							p Прошёл курс по frontend в Able. Html, css, js, ReactJS
 							p В настоящее время работаю удалённо в Able
 				.s-teacher__inner 
@@ -1946,7 +1955,8 @@ block content
 						.s-teacher__name Толеген Акылбеков
 						.s-teacher__descr Автор курса андроид разработка
 						.s-teacher__text 
-							p разработчик в международной компании EPAM
+							p Работал разработчиком в международной компании EPAM
+							p На данный момент Team Lead в американской компании Balanced 
 				.s-teacher__inner 
 					.s-teacher__img-wrapper 
 						img.s-teacher__img(src="images/teachers/8.jpg")
@@ -1956,7 +1966,7 @@ block content
 						.s-teacher__text 
 							p Закончил Костанайский государственный университет имени А. Байтурсынова
 							p Начал карьеру в роли Android разработчика в FirstBit
-							p Сейчас работает в META офис Лондон в роли Senior разработчика
+							p Сейчас работает в META(ex-Facebook) в Лондоне в роли Senior разработчика
 				.s-teacher__inner 
 					.s-teacher__img-wrapper 
 						img.s-teacher__img(src="images/teachers/5.jpg")
@@ -1981,7 +1991,7 @@ block content
 					.s-teacher__img-wrapper 
 						img.s-teacher__img(src="images/teachers/8.jpg")
 					.s-teacher__content 
-						.s-teacher__name Малика
+						.s-teacher__name Малика Адилова
 						.s-teacher__descr Ментор/наставник на курсе Data Science
 						.s-teacher__text 
 							p Закончила КазНУ им. аль-Фараби по специальности Математическое и компьютерное моделирование
@@ -2003,14 +2013,11 @@ block content
 							.footer__col-item Курсы
 							.footer__col-item Навигация
 							.footer__col-item Преподаватели
-							//- .footer__col-item Студенты
-							//- .footer__col-item Для компаний
-							//- .footer__col-item О нас
 					.footer__col
 						.footer__col-title.footer__col-title--transparent.content-tab(href="#home") Главная
-						.footer__col-item.content-tab(href="#data") Студенты
-						.footer__col-item.content-tab(href="#data") Для компаний
-						.footer__col-item.content-tab(href="#data") О нас
+						.footer__col-item.content-tab(href="#history") Студенты
+						.footer__col-item.content-tab(href="#questions") Для компаний
+						.footer__col-item.content-tab(href="#about") О нас
 					.footer__col
 						.footer__col-title Курсы
 						.footer__col-item.content-tab(href="#data") Data Science
@@ -2025,13 +2032,13 @@ block content
 					.footer__col
 						.footer__col-title Социальные сети
 						.footer__social-inner 
-							a.footer__social-item(href="#")
-								img.footer__social-item-img(src="images/social/facebook.svg")
-							a.footer__social-item(href="#")
+							a.footer__social-item(href="https://www.youtube.com/channel/UCEvolJIq9EmKS45wZlcAmcA" target="blank_")
+								img.footer__social-item-img(src="images/social/youtube.svg")
+							a.footer__social-item(href="https://www.instagram.com/able_online_academy/" target="blank_")
 								img.footer__social-item-img(src="images/social/instagram.svg")
-							a.footer__social-item(href="#")
-								img.footer__social-item-img(src="images/social/telegram.svg")
-							a.footer__social-item(href="#")
+							//- a.footer__social-item(href="#")
+							//- 	img.footer__social-item-img(src="images/social/telegram.svg")
+							a.footer__social-item(href="https://api.whatsapp.com/send/?phone=77761255952&text&type=phone_number&app_absent=0" target="blank_")
 								img.footer__social-item-img(src="images/social/whatsapp.svg")
 			.footer__bottom
 				.footer__bottom-left © ABLE Online Academy
