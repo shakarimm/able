@@ -433,7 +433,7 @@
 		}
 	}
 }
-.company-slider, .company-slider__second, .company-slider__third, .gallery-slider, .video-slider{
+.company-slider, .company-slider__second, .company-slider__third, .gallery-slider, .video-slider, .teacher-slider1, .teacher-slider2, .teacher-slider3, .teacher-slider4{
 	margin: 0 -5%;
 	&__pagination{
 		text-align: center;
@@ -464,6 +464,15 @@
 			opacity: 0.4;
 			top: 0;
 			left: 0;
+		}
+		a{
+			cursor: pointer;
+			display: block;
+			color: inherit;
+			transition: all .4s;
+			&:hover{
+				color: darken($color: #fff, $amount: 20);
+			}
 		}
 	}
 	&__top{

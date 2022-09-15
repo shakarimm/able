@@ -67,6 +67,74 @@ import Nav from "./modules/Nav";
 		});
 	}
 
+	function initTeacherSlider1() {
+		swiper.init(".teacher-slider1", {
+			loop: true,
+			slidesPerView: 1,
+			autoHeight: true,
+			bulletActiveClass: '.teacher-slider1-pagination-active',
+			navigation: {
+				prevEl: ".teacher-slider1-arrow-prev",
+				nextEl: ".teacher-slider1-arrow-next",
+			},
+			pagination: {
+				el: '.teacher-slider1__pagination',
+				clickable: true,
+			},
+		});
+	}
+
+	function initTeacherSlider2() {
+		swiper.init(".teacher-slider2", {
+			loop: true,
+			slidesPerView: 1,
+			autoHeight: true,
+			bulletActiveClass: '.teacher-slider2-pagination-active',
+			navigation: {
+				prevEl: ".teacher-slider2-arrow-prev",
+				nextEl: ".teacher-slider2-arrow-next",
+			},
+			pagination: {
+				el: '.teacher-slider2__pagination',
+				clickable: true,
+			},
+		});
+	}
+
+	function initTeacherSlider3() {
+		swiper.init(".teacher-slider3", {
+			loop: true,
+			slidesPerView: 1,
+			autoHeight: true,
+			bulletActiveClass: '.teacher-slider3-pagination-active',
+			navigation: {
+				prevEl: ".teacher-slider3-arrow-prev",
+				nextEl: ".teacher-slider3-arrow-next",
+			},
+			pagination: {
+				el: '.teacher-slider3__pagination',
+				clickable: true,
+			},
+		});
+	}
+
+	function initTeacherSlider4() {
+		swiper.init(".teacher-slider4", {
+			loop: true,
+			slidesPerView: 1,
+			autoHeight: true,
+			bulletActiveClass: '.teacher-slider4-pagination-active',
+			navigation: {
+				prevEl: ".teacher-slider4-arrow-prev",
+				nextEl: ".teacher-slider4-arrow-next",
+			},
+			pagination: {
+				el: '.teacher-slider4__pagination',
+				clickable: true,
+			},
+		});
+	}
+
 	function initVideoSlider() {
 		swiper.init(".video-slider", {
 			loop: false,
@@ -157,30 +225,10 @@ import Nav from "./modules/Nav";
 
 	document.querySelector(".tabs__nav-btn").click()
 
-	/*
-	--------------------------------------------
-	--------------------------------------------
-						INPUT MASK
-	--------------------------------------------
-	--------------------------------------------
- */
-		
-	// let phoneMask = document.getElementById('phone-mask');
-	// let phoneMask2 = document.getElementById('phone-mask-two');
-	// let phoneMask3 = document.getElementById('phone-mask-three');
-	// let phoneMask4 = document.getElementById('phone-mask-four');
-	// let maskOptions = {
-	// 	mask: '+{7}(000)000-00-00'
-	// };
-	// let mask = IMask(phoneMask, maskOptions);
-	// let mask2 = IMask(phoneMask2, maskOptions);
-	// let mask3 = IMask(phoneMask3, maskOptions);
-	// let mask4 = IMask(phoneMask4, maskOptions);
-
 /*
 	--------------------------------------------
 	--------------------------------------------
-						FORM
+						INPUT MASK and FORM
 	--------------------------------------------
 	--------------------------------------------
  */
@@ -395,3 +443,7 @@ import Nav from "./modules/Nav";
 	initCompanyThirdSlider()
 	initGallerySlider()
 	initVideoSlider()
+	initTeacherSlider1()
+	initTeacherSlider2()
+	initTeacherSlider3()
+	initTeacherSlider4()

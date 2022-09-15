@@ -394,7 +394,7 @@
 			left: 35px;
 		}
 	}
-	.company-slider, .company-slider__second, .company-slider__third, .gallery-slider, .video-slider{
+	.company-slider, .company-slider__second, .company-slider__third, .gallery-slider, .video-slider, .teacher-slider1, .teacher-slider2, .teacher-slider3, .teacher-slider4{
 		&__pagination{
 			margin-top: 40px;
 		}
@@ -1181,7 +1181,7 @@
 			font-size: 4em;
 		}
 	}
-	.company-slider, .company-slider__second, .company-slider__third, .gallery-slider, .video-slider{
+	.company-slider, .company-slider__second, .company-slider__third, .gallery-slider, .video-slider, .teacher-slider1, .teacher-slider2, .teacher-slider3, .teacher-slider4{
 		&__pagination{
 			margin-top: 25px;
 			.swiper-pagination-bullet{
@@ -1510,4 +1510,25 @@
 			}
 		}
 	}
+	.teacher-slider1, .teacher-slider2, .teacher-slider3, .teacher-slider4{
+		.s-teacher{
+			&__img-wrapper{
+				text-align: center;
+			}
+			&__content{
+				text-align: center;
+			}
+			&__descr{
+				margin-bottom: 0;
+			}
+			&__text{
+				p+p{
+					margin-top: 9px;
+				}
+				&::after{
+					display: none;
+				}
+			}
+		}
+	}  
 }
