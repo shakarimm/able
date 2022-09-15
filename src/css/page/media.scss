@@ -1115,6 +1115,9 @@
 	}
 	.s-first-screen{
 		padding-top: 110px;
+		&__inner{
+			flex-wrap: wrap;
+		}
 		&__title{
 			font-size: 32px;
 			line-height: 52px;
@@ -1127,6 +1130,11 @@
 			&-item{
 				width: 70%;
 			}
+		}
+		&__img-wrapper{
+			display: block;
+			width: 100%;
+			margin-top: 20px;
 		}
 	}
 	.s-courses{
@@ -1211,12 +1219,13 @@
 		}
 	}
 	.s-slogan{
+		padding: 16px;
 		&__title{
-			font-size: 24px !important;
+			font-size: 22px !important;
 		}
 		&__subtitle{
 			font-size: 17px !important;
-			margin-bottom: 18px !important;
+			margin-bottom: 8px !important;
 		}
 		&__text{
 			font-size: 17px;
