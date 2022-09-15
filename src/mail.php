@@ -32,15 +32,15 @@ try {
 
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'mukhamediyev71636@gmail.com'; // Логин на почте
-  $mail->Password   = 'wxdhtsnwkqovvowl'; // Пароль на почте
+  $mail->Username   = 'ableonlineacademy@gmail.com'; // Логин на почте
+  $mail->Password   = 'xtkselougyzeciez'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('mukhamediyev71636@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('ableonlineacademy@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('mukhamediyev71636@gmail.com');
+  $mail->addAddress('ableonlineacademy@gmail.com');
 
   // Отправка сообщения
   $mail->isHTML(true);
