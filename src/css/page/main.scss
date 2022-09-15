@@ -491,6 +491,12 @@
 		}
 		&-item{
 			cursor: pointer;
+			display: block;
+			color: inherit;
+			transition: all .4s;
+			&:hover{
+				color: darken($color: #fff, $amount: 20);
+			}
 		}
 		// &-items{
 		// 	display: flex;
