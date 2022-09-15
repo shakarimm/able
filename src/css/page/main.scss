@@ -513,6 +513,10 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+.form__label{
+	display: flex;
+	flex-direction: column-reverse;
+}
 // CARDS
 .stat-card{
 	width: 30%;

@@ -1614,15 +1614,29 @@ block content
 						.s-contact-us__title.title.title--mb-long Наймите наших студентов
 						.s-contact-us__text 
 							p Наши студенты достигают результатов, меняющие их жизнь
-					form.s-contact-us__form(name='form' action='sendmail.php' method='POST')
+					//- form.s-contact-us__form(name='form' action='#' method='POST')
+					//- 	.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
+					//- 	.s-contact-us__form-text 
+					//- 		p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
+					//- 	input.s-contact-us__form-input(placeholder="Ваше имя*" name='имя')
+					//- 	input.s-contact-us__form-input(placeholder="E-mail*" type="mail" name='почта')
+					//- 	input.s-contact-us__form-input(placeholder="+7 (...)*" type="tel" id="phone-mask" name='телефон')
+					//- 	input.s-contact-us__form-input(placeholder="Ваш комментарий" name='комментарий' id='formMessage')
+					//- 	input.s-contact-us__form-btn.btn.btn--primary(type="submit" value="ОТПРАВИТЬ")
+					form.s-contact-us__form.form1(action='#' method='POST')
 						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
 						.s-contact-us__form-text 
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
-						input.s-contact-us__form-input.req1(placeholder="Ваше имя*" name='name')
-						input.s-contact-us__form-input.req1.mail(placeholder="E-mail*" type="mail" name='email')
-						input.s-contact-us__form-input.req1(placeholder="+7 (...)*" type="tel" id="phone-mask" name='phone')
-						input.s-contact-us__form-input.req1(placeholder="Ваш комментарий" name='message' id='formMessage')
-						input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
+						label.form__label
+							input.input.input-name.s-contact-us__form-input(type='text' data-validate-field='name' name='Имя' placeholder='Ваше имя*')
+						label.form__label
+							input.input.input-mail.s-contact-us__form-input(type='email' data-validate-field='email' name='Email' placeholder='E-mail*')
+						label.form__label
+							input.input.input-tel.s-contact-us__form-input(type='tel' data-validate-field='tel' id="phone-mask" name='Телефон' placeholder='+7 (...)*')
+						label.form__label
+							input.s-contact-us__form-input(name='Сообщение' cols='30' rows='10' placeholder='Ваш комментарий')
+						button.button.s-contact-us__form-btn.btn.btn--primary ОТПРАВИТЬ
+
 		<!-- END SECTION CONTACT-US -->
 
 		<!-- START SECTION FOR-WHAT-STUDENTS -->
@@ -1658,15 +1672,28 @@ block content
 						.s-contact-us__title.title.title--mb-long Корпоративное обучение
 						.s-contact-us__text 
 							p Подготовьте свою команду к будущему. Мы обучаем востребованным цифровым навыкам в соответствии с потребностями рынка. Программы Able будут двигать ваш бизнес вперед.
-					form.s-contact-us__form(id='form2' action='sendmail.php' method='POST')
+					//- form.s-contact-us__form(action='#' method='POST')
+					//- 	.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
+					//- 	.s-contact-us__form-text
+					//- 		p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
+					//- 	input.s-contact-us__form-input(placeholder="Ваше имя*" name='name')
+					//- 	input.s-contact-us__form-input(placeholder="E-mail*" type="mail" name='mail')
+					//- 	input.s-contact-us__form-input(placeholder="+7 (...)*" type="tel" id="phone-mask-two" name='number')
+					//- 	input.s-contact-us__form-input(placeholder="Ваш комментарий" name='text' id='formMessage')
+					//- 	input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
+					form.s-contact-us__form.form2(action='#' method='POST')
 						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
-						.s-contact-us__form-text
+						.s-contact-us__form-text 
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
-						input.s-contact-us__form-input.req2(placeholder="Ваше имя*" name='name')
-						input.s-contact-us__form-input.req2.mail(placeholder="E-mail*" type="mail" name='mail')
-						input.s-contact-us__form-input.req2(placeholder="+7 (...)*" type="tel" id="phone-mask-two" name='number')
-						input.s-contact-us__form-input.req2(placeholder="Ваш комментарий" name='text' id='formMessage')
-						input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
+						label.form__label
+							input.input.input-name.s-contact-us__form-input(type='text' data-validate-field='name' name='Имя' placeholder='Ваше имя*')
+						label.form__label
+							input.input.input-mail.s-contact-us__form-input(type='email' data-validate-field='email' name='Email' placeholder='E-mail*')
+						label.form__label
+							input.input.input-tel.s-contact-us__form-input(type='tel' data-validate-field='tel' id="phone-mask" name='Телефон' placeholder='+7 (...)*')
+						label.form__label
+							input.s-contact-us__form-input(name='Сообщение' cols='30' rows='10' placeholder='Ваш комментарий')
+						button.button.s-contact-us__form-btn.btn.btn--primary ОТПРАВИТЬ
 		<!-- END SECTION CONTACT-US -->
 
 		<!-- START SECTION COMPANIES -->
@@ -1720,15 +1747,28 @@ block content
 
 						.s-contact-us__text 
 							p Мы выпускаем высококвалифицированных специалистов со свежими знаниями, которые готовы заполнить ваши потребности.
-					form.s-contact-us__form(id='form3' action='sendmail.php' method='POST')
+					//- form.s-contact-us__form(action='#' method='POST')
+					//- 	.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
+					//- 	.s-contact-us__form-text
+					//- 		p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
+					//- 	input.s-contact-us__form-input(placeholder="Ваше имя*" name='name')
+					//- 	input.s-contact-us__form-input(placeholder="E-mail*" type="mail" name='mail')
+					//- 	input.s-contact-us__form-input(placeholder="+7 (...)*" type="tel" id="phone-mask-three" name='number')
+					//- 	input.s-contact-us__form-input(placeholder="Ваш комментарий" name='text')
+					//- 	input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
+					form.s-contact-us__form.form3(action='#' method='POST')
 						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
-						.s-contact-us__form-text
+						.s-contact-us__form-text 
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
-						input.s-contact-us__form-input.req3(placeholder="Ваше имя*" name='name')
-						input.s-contact-us__form-input.req3.mail(placeholder="E-mail*" type="mail" name='mail')
-						input.s-contact-us__form-input.req3(placeholder="+7 (...)*" type="tel" id="phone-mask-three" name='number')
-						input.s-contact-us__form-input.req3(placeholder="Ваш комментарий" name='text' id='formMessage')
-						input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
+						label.form__label
+							input.input.input-name.s-contact-us__form-input(type='text' data-validate-field='name' name='Имя' placeholder='Ваше имя*')
+						label.form__label
+							input.input.input-mail.s-contact-us__form-input(type='email' data-validate-field='email' name='Email' placeholder='E-mail*')
+						label.form__label
+							input.input.input-tel.s-contact-us__form-input(type='tel' data-validate-field='tel' id="phone-mask" name='Телефон' placeholder='+7 (...)*')
+						label.form__label
+							input.s-contact-us__form-input(name='Сообщение' cols='30' rows='10' placeholder='Ваш комментарий')
+						button.button.s-contact-us__form-btn.btn.btn--primary ОТПРАВИТЬ
 		<!-- END SECTION CONTACT-US -->
 
 		<!-- START SECTION FOR-WHAT-STUDENTS -->
@@ -1769,15 +1809,28 @@ block content
 							.s-contact-us__item 
 								.s-contact-us__item-text Почта:
 								a.s-contact-us__item-link(href="#") datascience.kz@gmail.com
-					form.s-contact-us__form(id='form4' action='sendmail.php' method='POST')
+					//- form.s-contact-us__form(action='#' method='POST')
+					//- 	.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
+					//- 	.s-contact-us__form-text
+					//- 		p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
+					//- 	input.s-contact-us__form-input.req4(placeholder="Ваше имя*" name='name')
+					//- 	input.s-contact-us__form-input.req4.mail(placeholder="E-mail*" type="mail" name='mail')
+					//- 	input.s-contact-us__form-input.req4(placeholder="+7 (...)*" type="tel" id="phone-mask-four" name='number')
+					//- 	input.s-contact-us__form-input.req4(placeholder="Ваш комментарий" name='text')
+					//- 	input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
+					form.s-contact-us__form.form4(action='#' method='POST')
 						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
-						.s-contact-us__form-text
+						.s-contact-us__form-text 
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
-						input.s-contact-us__form-input.req4(placeholder="Ваше имя*" name='name')
-						input.s-contact-us__form-input.req4.mail(placeholder="E-mail*" type="mail" name='mail')
-						input.s-contact-us__form-input.req4(placeholder="+7 (...)*" type="tel" id="phone-mask-four" name='number')
-						input.s-contact-us__form-input.req4(placeholder="Ваш комментарий" name='text' id='formMessage')
-						input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
+						label.form__label
+							input.input.input-name.s-contact-us__form-input(type='text' data-validate-field='name' name='Имя' placeholder='Ваше имя*')
+						label.form__label
+							input.input.input-mail.s-contact-us__form-input(type='email' data-validate-field='email' name='Email' placeholder='E-mail*')
+						label.form__label
+							input.input.input-tel.s-contact-us__form-input(type='tel' data-validate-field='tel' id="phone-mask" name='Телефон' placeholder='+7 (...)*')
+						label.form__label
+							input.s-contact-us__form-input(name='Сообщение' cols='30' rows='10' placeholder='Ваш комментарий')
+						button.button.s-contact-us__form-btn.btn.btn--primary ОТПРАВИТЬ
 		<!-- END SECTION CONTACT-US -->
 	<!-- END CONTENT QUESTIONS -->
 

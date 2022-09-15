@@ -165,17 +165,18 @@ import Nav from "./modules/Nav";
 	--------------------------------------------
  */
 		
-	let phoneMask = document.getElementById('phone-mask');
-	let phoneMask2 = document.getElementById('phone-mask-two');
-	let phoneMask3 = document.getElementById('phone-mask-three');
-	let phoneMask4 = document.getElementById('phone-mask-four');
-	let maskOptions = {
-		mask: '+{7}(000)000-00-00'
-	};
-	let mask = IMask(phoneMask, maskOptions);
-	let mask2 = IMask(phoneMask2, maskOptions);
-	let mask3 = IMask(phoneMask3, maskOptions);
-	let mask4 = IMask(phoneMask4, maskOptions);
+	// let phoneMask = document.getElementById('phone-mask');
+	// let phoneMask2 = document.getElementById('phone-mask-two');
+	// let phoneMask3 = document.getElementById('phone-mask-three');
+	// let phoneMask4 = document.getElementById('phone-mask-four');
+	// let maskOptions = {
+	// 	mask: '+{7}(000)000-00-00'
+	// };
+	// let mask = IMask(phoneMask, maskOptions);
+	// let mask2 = IMask(phoneMask2, maskOptions);
+	// let mask3 = IMask(phoneMask3, maskOptions);
+	// let mask4 = IMask(phoneMask4, maskOptions);
+
 /*
 	--------------------------------------------
 	--------------------------------------------
@@ -184,211 +185,197 @@ import Nav from "./modules/Nav";
 	--------------------------------------------
  */
 
-	// document.addEventListener('DOMContentLoaded', function (){
-	// 	const form1 = document.getElementById('form1')
-	// 	const form2 = document.getElementById('form2')
-	// 	const form3 = document.getElementById('form3')
-	// 	const form4 = document.getElementById('form4')
-	// 	form1.addEventListener('submit', formSend1)
-	// 	form2.addEventListener('submit', formSend2)
-	// 	form3.addEventListener('submit', formSend3)
-	// 	form4.addEventListener('submit', formSend4)
+	const form1 = document.querySelector(".form1");
+	const telSelector1 = form1.querySelector('input[type="tel"]')
+	const inputMask1 = new Inputmask('+7 (999) 999-99-99')
+	inputMask1.mask(telSelector1);
 
-	// 	async function formSend1(e){
-	// 		e.preventDefault()
-	// 		let error = formValidate1(form1)
-	// 		let formData = new FormData(form1)
-	// 		if(error === 0){
-	// 			debugger
-	// 			let response = await fetch('sendmail.php', {
-	// 				method: 'POST',
-	// 				body: formData
-	// 			})
-	// 			if (response.ok){
-	// 				let result = await response.json()
-	// 				alert(result.message)
-	// 				form1.reset()
-	// 			}else{
-	// 				alert('Error')
-	// 			}
-	// 		}
-	// 	}
-	// 	async function formSend2(e){
-	// 		e.preventDefault()
-	// 		let error = formValidate2(form2)
-	// 		let formData = new FormData(form2)
-	// 		if(error === 0){
-	// 			debugger
-	// 			let response = await fetch('sendmail.php', {
-	// 				method: 'POST',
-	// 				body: formData
-	// 			})
-	// 			if (response.ok){
-	// 				let result = await response.json()
-	// 				alert(result.message)
-	// 				form2.reset()
-	// 			}else{
-	// 				alert('Error')
-	// 			}
-	// 		}
-	// 	}
-	// 	async function formSend3(e){
-	// 		e.preventDefault()
-	// 		let error = formValidate3(form3)
-	// 		let formData = new FormData(form3)
-	// 		if(error === 0){
-	// 			debugger
-	// 			let response = await fetch('sendmail.php', {
-	// 				method: 'POST',
-	// 				body: formData
-	// 			})
-	// 			if (response.ok){
-	// 				let result = await response.json()
-	// 				alert(result.message)
-	// 				form3.reset()
-	// 			}else{
-	// 				alert('Error')
-	// 			}
-	// 		}
-	// 	}
-	// 	async function formSend4(e){
-	// 		e.preventDefault()
-	// 		let error = formValidate4(form4)
-	// 		let formData = new FormData(form4)
-	// 		if(error === 0){
-	// 			debugger
-	// 			let response = await fetch('sendmail.php', {
-	// 				method: 'POST',
-	// 				body: formData
-	// 			})
-	// 			if (response.ok){
-	// 				let result = await response.json()
-	// 				alert(result.message)
-	// 				form4.reset()
-	// 			}else{
-	// 				alert('Error')
-	// 			}
-	// 		}
-	// 	}
+	const form2 = document.querySelector(".form2");
+	const telSelector2 = form2.querySelector('input[type="tel"]')
+	const inputMask2 = new Inputmask('+7 (999) 999-99-99')
+	inputMask2.mask(telSelector2);
 
+	const form3 = document.querySelector(".form3");
+	const telSelector3 = form3.querySelector('input[type="tel"]')
+	const inputMask3 = new Inputmask('+7 (999) 999-99-99')
+	inputMask3.mask(telSelector3);
 
-	// 	function formValidate1(form){
-	// 		let error = 0
-	// 		let formReq = document.querySelectorAll('.req1')
-	// 		for (let i=0; i<formReq.length; i++){
-	// 			const input = formReq[i]
-	// 			formRemoveError1(input)
-	// 			if (input.classList.contains('mail')){
-	// 				if (!emailTest(input)){
-	// 					formAddError1(input)
-	// 					error++
-	// 				}
-	// 			}else{
-	// 				if(input.value === ''){
-	// 					formAddError1(input)
-	// 					error++
-	// 				}
-	// 			}
-	// 		}
-	// 		return error
-	// 	}
-	// 	function formValidate2(form){
-	// 		let error = 0
-	// 		let formReq = document.querySelectorAll('.req2')
-	// 		for (let i=0; i<formReq.length; i++){
-	// 			const input = formReq[i]
-	// 			formRemoveError2(input)
-	// 			if (input.classList.contains('mail')){
-	// 				if (!emailTest(input)){
-	// 					formAddError2(input)
-	// 					error++
-	// 				}
-	// 			}else{
-	// 				if(input.value === ''){
-	// 					formAddError2(input)
-	// 					error++
-	// 				}
-	// 			}
-	// 		}
-	// 		return error
-	// 	}
-	// 	function formValidate3(form){
-	// 		let error = 0
-	// 		let formReq = document.querySelectorAll('.req3')
-	// 		for (let i=0; i<formReq.length; i++){
-	// 			const input = formReq[i]
-	// 			formRemoveError3(input)
-	// 			if (input.classList.contains('mail')){
-	// 				if (!emailTest(input)){
-	// 					formAddError3(input)
-	// 					error++
-	// 				}
-	// 			}else{
-	// 				if(input.value === ''){
-	// 					formAddError3(input)
-	// 					error++
-	// 				}
-	// 			}
-	// 		}
-	// 		return error
-	// 	}
-	// 	function formValidate4(form){
-	// 		let error = 0
-	// 		let formReq = document.querySelectorAll('.req4')
-	// 		for (let i=0; i<formReq.length; i++){
-	// 			const input = formReq[i]
-	// 			formRemoveError4(input)
-	// 			if (input.classList.contains('mail')){
-	// 				if (!emailTest(input)){
-	// 					formAddError4(input)
-	// 					error++
-	// 				}
-	// 			}else{
-	// 				if(input.value === ''){
-	// 					formAddError4(input)
-	// 					error++
-	// 				}
-	// 			}
-	// 		}
-	// 		return error
-	// 	}
-	// 	function formAddError1(input){
-	// 		input.parentElement.classList.add('error1')
-	// 		input.classList.add('error1')
-	// 	}
-	// 	function formRemoveError1(input){
-	// 		input.parentElement.classList.remove('error1')
-	// 		input.classList.remove('error1')
-	// 	}
-	// 	function formAddError2(input){
-	// 		input.parentElement.classList.add('error2')
-	// 		input.classList.add('error2')
-	// 	}
-	// 	function formRemoveError2(input){
-	// 		input.parentElement.classList.remove('error2')
-	// 		input.classList.remove('error2')
-	// 	}
-	// 	function formAddError3(input){
-	// 		input.parentElement.classList.add('error3')
-	// 		input.classList.add('error3')
-	// 	}
-	// 	function formRemoveError3(input){
-	// 		input.parentElement.classList.remove('error3')
-	// 		input.classList.remove('error3')
-	// 	}
-	// 	function formAddError4(input){
-	// 		input.parentElement.classList.add('error4')
-	// 		input.classList.add('error4')
-	// 	}
-	// 	function formRemoveError4(input){
-	// 		input.parentElement.classList.remove('error4')
-	// 		input.classList.remove('error4')
-	// 	}
-	// 	function emailTest(input){
-	// 		let reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
-	// 		return reg.test(input.value)
-	// 	}
-	// })
+	const form4 = document.querySelector(".form4");
+	const telSelector4 = form4.querySelector('input[type="tel"]')
+	const inputMask4 = new Inputmask('+7 (999) 999-99-99')
+	inputMask4.mask(telSelector4);
+
+	new window.JustValidate('.form1', {
+		rules: {
+			tel: {
+				required: true,
+				function: () => {
+					const phone = telSelector1.inputmask.unmaskedvalue();
+					return Number(phone) && phone.length === 10;
+				}
+			}
+		}, 
+		messages: {
+			name: {
+				required: 'Введите имя'
+			},
+			email: {
+				email: 'Введите корректный email',
+				required: 'Введите email'
+			},
+			tel: {
+				required: 'Введите телефон'
+			}
+		},
+		submitHandler: function(thisForm) {
+			let formData = new FormData(thisForm);
+
+			let xhr = new XMLHttpRequest();
+
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState === 4) {
+					if (xhr.status === 200) {
+						alert("Отправлено")
+						console.log('Отправлено');
+					}
+				}
+			}
+	
+			xhr.open('POST', 'mail.php', true);
+			xhr.send(formData);
+	
+			thisForm.reset();
+		}
+	})
+
+	new window.JustValidate('.form2', {
+		rules: {
+			tel: {
+				required: true,
+				function: () => {
+					const phone = telSelector2.inputmask.unmaskedvalue();
+					return Number(phone) && phone.length === 10;
+				}
+			}
+		}, 
+		messages: {
+			name: {
+				required: 'Введите имя'
+			},
+			email: {
+				email: 'Введите корректный email',
+				required: 'Введите email'
+			},
+			tel: {
+				required: 'Введите телефон'
+			}
+		},
+		submitHandler: function(thisForm) {
+			let formData = new FormData(thisForm);
+
+			let xhr = new XMLHttpRequest();
+
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState === 4) {
+					if (xhr.status === 200) {
+						alert("Отправлено")
+						console.log('Отправлено');
+					}
+				}
+			}
+	
+			xhr.open('POST', 'mail.php', true);
+			xhr.send(formData);
+	
+			thisForm.reset();
+		}
+	})
+
+	new window.JustValidate('.form3', {
+		rules: {
+			tel: {
+				required: true,
+				function: () => {
+					const phone = telSelector3.inputmask.unmaskedvalue();
+					return Number(phone) && phone.length === 10;
+				}
+			}
+		}, 
+		messages: {
+			name: {
+				required: 'Введите имя'
+			},
+			email: {
+				email: 'Введите корректный email',
+				required: 'Введите email'
+			},
+			tel: {
+				required: 'Введите телефон'
+			}
+		},
+		submitHandler: function(thisForm) {
+			let formData = new FormData(thisForm);
+
+			let xhr = new XMLHttpRequest();
+
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState === 4) {
+					if (xhr.status === 200) {
+						alert("Отправлено")
+						console.log('Отправлено');
+					}
+				}
+			}
+	
+			xhr.open('POST', 'mail.php', true);
+			xhr.send(formData);
+	
+			thisForm.reset();
+		}
+	})
+
+	new window.JustValidate('.form4', {
+		rules: {
+			tel: {
+				required: true,
+				function: () => {
+					const phone = telSelector4.inputmask.unmaskedvalue();
+					return Number(phone) && phone.length === 10;
+				}
+			}
+		}, 
+		messages: {
+			name: {
+				required: 'Введите имя'
+			},
+			email: {
+				email: 'Введите корректный email',
+				required: 'Введите email'
+			},
+			tel: {
+				required: 'Введите телефон'
+			}
+		},
+		submitHandler: function(thisForm) {
+			let formData = new FormData(thisForm);
+
+			let xhr = new XMLHttpRequest();
+
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState === 4) {
+					if (xhr.status === 200) {
+						alert("Отправлено")
+						console.log('Отправлено');
+					}
+				}
+			}
+	
+			xhr.open('POST', 'mail.php', true);
+			xhr.send(formData);
+	
+			thisForm.reset();
+		}
+	})
 
 /*
 	--------------------------------------------
