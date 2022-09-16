@@ -289,7 +289,7 @@ import Nav from "./modules/Nav";
 				}
 			}
 	
-			xhr.open('POST', 'mail.php', true);
+			xhr.open('POST', 'https://formsubmit.co/shakarim-m@mail.ru', true);
 			xhr.send(formData);
 	
 			thisForm.reset();

@@ -15,7 +15,7 @@ block content
 								.nav__item-garant Гарантия работы
 							.nav__item-menu__wrapper
 								a.nav__item-sub.content-tab(href="#development") Веб-разработка
-								.nav__item-garant Гарантия работы
+								.nav__item-garant Помощь в трудоустройстве
 							.nav__item-menu__wrapper
 								a.nav__item-sub.content-tab(href="#business") Бизнес аналитика
 								.nav__item-garant Гарантия работы
@@ -826,7 +826,7 @@ block content
 								.s-price-card__item Еженедельные прямые эфиры с преподавателем
 								.s-price-card__item Выделенный студенческий консультант и техническая поддержка во время обучения
 								.s-price-card__item 8 проектов в портфолио 
-								.s-price-card__item Гарантия трудоустройства после окончания курса
+								.s-price-card__item Помощь в трудоустройстве
 								.s-price-card__item Скидка для первых 10 учеников 
 							.s-price-card__nums 
 								.s-price-card__last-price.s-price-card__last-price--blue 330 000 ₸
@@ -1668,10 +1668,12 @@ block content
 					//- 	input.s-contact-us__form-input(placeholder="+7 (...)*" type="tel" id="phone-mask" name='телефон')
 					//- 	input.s-contact-us__form-input(placeholder="Ваш комментарий" name='комментарий' id='formMessage')
 					//- 	input.s-contact-us__form-btn.btn.btn--primary(type="submit" value="ОТПРАВИТЬ")
-					form.s-contact-us__form.form1(action='#' method='POST')
+					form.s-contact-us__form.form1(action='https://formsubmit.co/datascience.kz@gmail.com' method='POST')
 						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
 						.s-contact-us__form-text 
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
+						label.form__label
+							input(type="hidden" name="_captcha" value="false")
 						label.form__label
 							input.input.input-name.s-contact-us__form-input(type='text' data-validate-field='name' name='Имя' placeholder='Ваше имя*')
 						label.form__label
@@ -1680,7 +1682,7 @@ block content
 							input.input.input-tel.s-contact-us__form-input(type='tel' data-validate-field='tel' id="phone-mask" name='Телефон' placeholder='+7 (...)*')
 						label.form__label
 							input.s-contact-us__form-input(name='Сообщение' cols='30' rows='10' placeholder='Ваш комментарий')
-						button.button.s-contact-us__form-btn.btn.btn--primary ОТПРАВИТЬ
+						button.button.s-contact-us__form-btn.btn.btn--primary(type='submit') ОТПРАВИТЬ
 
 		<!-- END SECTION CONTACT-US -->
 
@@ -1726,10 +1728,12 @@ block content
 					//- 	input.s-contact-us__form-input(placeholder="+7 (...)*" type="tel" id="phone-mask-two" name='number')
 					//- 	input.s-contact-us__form-input(placeholder="Ваш комментарий" name='text' id='formMessage')
 					//- 	input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
-					form.s-contact-us__form.form2(action='#' method='POST')
+					form.s-contact-us__form.form2(action='https://formsubmit.co/datascience.kz@gmail.com' method='POST')
 						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
 						.s-contact-us__form-text 
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
+						label.form__label
+							input(type="hidden" name="_captcha" value="false")
 						label.form__label
 							input.input.input-name.s-contact-us__form-input(type='text' data-validate-field='name' name='Имя' placeholder='Ваше имя*')
 						label.form__label
@@ -1801,10 +1805,12 @@ block content
 					//- 	input.s-contact-us__form-input(placeholder="+7 (...)*" type="tel" id="phone-mask-three" name='number')
 					//- 	input.s-contact-us__form-input(placeholder="Ваш комментарий" name='text')
 					//- 	input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
-					form.s-contact-us__form.form3(action='#' method='POST')
+					form.s-contact-us__form.form3(action='datascience.kz@gmail.com' method='POST')
 						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
 						.s-contact-us__form-text 
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
+						label.form__label
+							input(type="hidden" name="_captcha" value="false")
 						label.form__label
 							input.input.input-name.s-contact-us__form-input(type='text' data-validate-field='name' name='Имя' placeholder='Ваше имя*')
 						label.form__label
@@ -1863,10 +1869,12 @@ block content
 					//- 	input.s-contact-us__form-input.req4(placeholder="+7 (...)*" type="tel" id="phone-mask-four" name='number')
 					//- 	input.s-contact-us__form-input.req4(placeholder="Ваш комментарий" name='text')
 					//- 	input.s-contact-us__form-btn.btn.btn--primary(type="submit" name="submit" value="ОТПРАВИТЬ")
-					form.s-contact-us__form.form4(action='#' method='POST')
+					form.s-contact-us__form.form4(action='https://formsubmit.co/datascience.kz@gmail.com' method='POST')
 						.s-contact-us__form-title.title.title--mini СВЯЖИТЕСЬ С НАМИ
 						.s-contact-us__form-text 
 							p Заполните форму ниже, и мы свяжемся с вами с ближайшее время.
+						label.form__label
+							input(type="hidden" name="_captcha" value="false")
 						label.form__label
 							input.input.input-name.s-contact-us__form-input(type='text' data-validate-field='name' name='Имя' placeholder='Ваше имя*')
 						label.form__label
@@ -1959,210 +1967,211 @@ block content
 		//- 			+icon-card("medal", "Обучают лучшие преподаватели-практики")
 		//- 			+icon-card("building", "Консультации со специалистами из Apple, Facebook, Google и т.д.")
 		//- <!-- END SECTION OUR-COMPANY -->
-		//- <!-- END CONTENT ABOUT -->
+	<!-- END CONTENT ABOUT -->
 
-		<!-- START CONTENT TEACHER -->
-		.content.content__teacher
-			<!-- START SECTION NAV-FS -->
-			.section.s-nav-fs
-				.container 
-					.title.title--mb-long Добро пожаловать <br>в АBLE Оnline Аcademy
-					.s-nav-fs__text.s-nav-fs__text--full 
-						p Наши преподаватели - наша гордость, которые выступают вашими наставниками!<br>Вы обучаетесь у действующих специалистов. 
-					.s-nav-fs__icon-titled-cards 
-						+icon-titled-card("images/icon-titled-card/turn.svg", "Каждый день наши преподаватели:")
-						+icon-titled-card("images/icon-titled-card/student.svg", "Работают в своей сфере")
-						+icon-titled-card("images/icon-titled-card/lamp.svg", "Решают задачи и проблемы")
-						+icon-titled-card("images/icon-titled-card/macbook.svg", "Обучаются и узнают обновления первыми")
-			<!-- END SECTION NAV-FS -->
-
-			<!-- START SECTION MENTORING -->
-			.section.s-mentoring.section--long 
-				.container
-					.s-mentoring__inner 
-						.s-mentoring__img-wrapper 
-							img.s-mentoring__img(src="images/mentoring.jpg")
-						.s-mentoring__content 
-							.s-mentoring__title.title.title--mb-long Действительно ли наставничество имеет значение? 
-							.s-mentoring__text 
-								p Данные не лгут: наставничество дает серьезное преимущество. <br>В независимых исследованиях было доказано, что наличие наставника :
-								p.s-mentoring__text-bullet ускоряет процесс обучения, 
-								p.s-mentoring__text-bullet ускоряет процесс выполнения практики
-								p.s-mentoring__text-bullet уменьшает риски демотивации
-							.s-mentoring__subtitle Статистика, подтверждающая это:
-							.s-mentoring__text
-								p 76% профессионалов считают наставников важными, но только у 37% они есть (Forbes, 2019)
-			<!-- END SECTION MENTORING -->
-
-			<!-- START SECTION TEACHER -->
-			.section.s-teacher.section--long-pb
-				.container 
-					.title.title--mb-long Наши преподаватели 
-					.s-teacher__inner 
-						.s-teacher__img-wrapper 
-							img.s-teacher__img(src="images/teachers/1.jpg")
-						.s-teacher__content 
-							.s-teacher__name Азамат Хасенов
-							.s-teacher__descr Автор курса Data Science
-							.s-teacher__text 
-								p Стажировался в США и Германии
-								p 2 года проработал в Южной Корее специалистом в области искусственного интеллекта
-								p Работал в компании Huawei
-								p В настоящее время специалист по Data Science в BTS Digital
-					.s-teacher__inner 
-						.s-teacher__img-wrapper 
-							img.s-teacher__img(src="images/teachers/2.jpg")
-						.s-teacher__content 
-							.s-teacher__name Сакен Кенжегулов
-							.s-teacher__descr Автор курса Web-разработка	
-							.s-teacher__text 
-								p Закончил UNIST по специальности информационные технологии
-								p Проходил стажировку в Корее, Швейцарии
-								p Работает в роли разработчика в Google офис Калифорния
-					.s-teacher__inner 
-						.s-teacher__img-wrapper 
-							img.s-teacher__img(src="images/teachers/3.jpg")
-						.s-teacher__content 
-							.s-teacher__name Ерлан Байтуринов
-							.s-teacher__descr Автор курса Web-разработка
-							.s-teacher__text 
-								p Закончил СДУ
-								p Работал разработчиком в Olzha Holding
-								p Работает разработчиком в Google офис Дублин, Ирландия
-					.s-teacher__inner 
-						.s-teacher__img-wrapper 
-							img.s-teacher__img(src="images/teachers/6.jpg")
-						.s-teacher__content 
-							.s-teacher__name Диана Мадуан
-							.s-teacher__descr Ментор/наставник на курсе Web-разработка
-							.s-teacher__text 
-								p Закончила в МУИТ, Алматы по специальности информационные технологии
-								p Сейчас работает в роли Middle Frontend разработчика в Citadel one
-					.s-teacher__inner 
-						.s-teacher__img-wrapper 
-							img.s-teacher__img(src="images/teachers/13.jpg")
-						.s-teacher__content 
-							.s-teacher__name Арман Жаманкулов
-							.s-teacher__descr Ментор/наставник на курсе Web-разработка
-							.s-teacher__text 
-								p Специалист по ремонту и модернизации ПК. Прошёл курс в г. Актау
-								p Работал IT консультантом в Каратальской районной больнице 1 год
-								p Прошёл курс по frontend в Able. Html, css, js, ReactJS
-								p В настоящее время работаю удалённо в Able
-					.s-teacher__inner 
-						.s-teacher__img-wrapper 
-							img.s-teacher__img(src="images/teachers/4.jpg")
-						.s-teacher__content 
-							.s-teacher__name Бауыржан Нургалиев
-							.s-teacher__descr Автор курса андроид разработка
-							.s-teacher__text 
-								p 6 лет в android-разработке
-								p Сеньор разработчик в международной компании EPAM
-					.s-teacher__inner 
-						.s-teacher__img-wrapper 
-							img.s-teacher__img(src="images/teachers/7.jpg")
-						.s-teacher__content 
-							.s-teacher__name Толеген Акылбеков
-							.s-teacher__descr Автор курса андроид разработка
-							.s-teacher__text 
-								p Работал разработчиком в международной компании EPAM
-								p На данный момент Team Lead в американской компании Balanced 
-					.s-teacher__inner 
-						.s-teacher__img-wrapper 
-							img.s-teacher__img(src="images/teachers/12.jpg")
-						.s-teacher__content 
-							.s-teacher__name Илья Лим
-							.s-teacher__descr Автор курса андроид разработка
-							.s-teacher__text 
-								p Закончил Костанайский государственный университет имени А. Байтурсынова
-								p Начал карьеру в роли Android разработчика в FirstBit
-								p Сейчас работает в META(ex-Facebook) в Лондоне в роли Senior разработчика
-					.s-teacher__inner 
-						.s-teacher__img-wrapper 
-							img.s-teacher__img(src="images/teachers/5.jpg")
-						.s-teacher__content 
-							.s-teacher__name Акжан Ракыш
-							.s-teacher__descr Автор курса бизнес аналитика
-							.s-teacher__text 
-								p Сертифицированный Google аналитик
-								p Сертифицированный Microsoft аналитик
-								p Старший дата аналитик в KPMG
-								p Закончил магистратуру по специальности бизнес аналитика в Queen Mary University of London
-					.s-teacher__inner 
-						.s-teacher__img-wrapper 
-							img.s-teacher__img(src="images/teachers/11.jpg")
-						.s-teacher__content 
-							.s-teacher__name Ислам Дербисалин
-							.s-teacher__descr Ментор/наставник на курсе бизнес аналитика
-							.s-teacher__text 
-								p Закончил Евразийский национальный университет  имени Л.Н. Гумилева по специальности Международные отношения
-								p BI Developer в АО «НК «QazaqGaz»
-								p Главный менеджер Аналитического центра в АО «Қазтеміртранс»
-					.s-teacher__inner 
-						.s-teacher__img-wrapper 
-							img.s-teacher__img(src="images/teachers/10.jpg")
-						.s-teacher__content 
-							.s-teacher__name Жалгас Жиенбеков
-							.s-teacher__descr Ментор/наставник на курсе Data Science
-							.s-teacher__text 
-								p Закончил по специальности Автоматизация и управление в г. Шымкент
-								p Стажировался в Казактелеком
-								p Сейчас работает банке Хоум Кредит
-								p Совмещает с магистратурой в КБТУ по специальности Data Science
-					.s-teacher__inner 
-						.s-teacher__img-wrapper 
-							img.s-teacher__img(src="images/teachers/9.jpg")
-						.s-teacher__content 
-							.s-teacher__name Малика Адилова
-							.s-teacher__descr Ментор/наставник на курсе Data Science
-							.s-teacher__text 
-								p Закончила КазНУ им. аль-Фараби по специальности Математическое и компьютерное моделирование
-								p Научная стажировка в Германии
-								p Преподавала в школе программирования и математики АЛГОРИТМИКА
-								p Работала аналитиком дистанционных продаж в Евразийском банке
-								p Сейчас работает Data Scientist-ом в Wings Partners
-			<!-- END SECTION TEACHER -->
-		<!-- END CONTENT TEACHER -->
-
-		<!-- START FOOTER -->
-		.footer 
+	<!-- START CONTENT TEACHER -->
+	.content.content__teacher
+		<!-- START SECTION NAV-FS -->
+		.section.s-nav-fs
 			.container 
-				.footer__top
-					.footer__top-right
-						.footer__col
-							.footer__col-title Главная
-							.footer__col-items 
-								.footer__col-item Курсы
-								.footer__col-item Навигация
-								.footer__col-item Преподаватели
-						.footer__col
-							.footer__col-title.footer__col-title--transparent.content-tab(href="#home") Главная
-							.footer__col-item.content-tab(href="#history") Студенты
-							.footer__col-item.content-tab(href="#questions") Для компаний
-							.footer__col-item.content-tab(href="#about") О нас
-						.footer__col
-							.footer__col-title Курсы
-							.footer__col-item.content-tab(href="#data") Data Science
-							.footer__col-item.content-tab(href="#development") Веб-Разработка
-							.footer__col-item.content-tab(href="#android") Android-Разработка
-							.footer__col-item.content-tab(href="#business") Бизнес аналитика
-						.footer__col
-							.footer__col-title Контакты
-							a.footer__col-item(href="mailto: datascience.kz@gmail.com") datascience.kz@gmail.com
-							a.footer__col-item(href="tel: +77761255952") +7 776 125 59 52
-					.footer__top-left
-						.footer__col
-							.footer__col-title Социальные сети
-							.footer__social-inner 
-								a.footer__social-item(href="https://www.youtube.com/channel/UCEvolJIq9EmKS45wZlcAmcA" target="blank_")
-									img.footer__social-item-img(src="images/social/youtube.svg")
-								a.footer__social-item(href="https://www.instagram.com/able_online_academy/" target="blank_")
-									img.footer__social-item-img(src="images/social/instagram.svg")
-								//- a.footer__social-item(href="#")
-								//- 	img.footer__social-item-img(src="images/social/telegram.svg")
-								a.footer__social-item(href="https://api.whatsapp.com/send/?phone=77761255952&text&type=phone_number&app_absent=0" target="blank_")
-									img.footer__social-item-img(src="images/social/whatsapp.svg")
-				.footer__bottom
-					.footer__bottom-left © ABLE Online Academy
-					a.footer__bottom-right(href="https://www.intensivable.kz/offer" target="blank_") Политика конфиденциальности
-		<!-- END FOOTER -->	
+				.title.title--mb-long Добро пожаловать <br>в АBLE Оnline Аcademy
+				.s-nav-fs__text.s-nav-fs__text--full 
+					p Наши преподаватели - наша гордость, которые выступают вашими наставниками!<br>Вы обучаетесь у действующих специалистов. 
+				.s-nav-fs__icon-titled-cards 
+					+icon-titled-card("images/icon-titled-card/turn.svg", "Каждый день наши преподаватели:")
+					+icon-titled-card("images/icon-titled-card/student.svg", "Работают в своей сфере")
+					+icon-titled-card("images/icon-titled-card/lamp.svg", "Решают задачи и проблемы")
+					+icon-titled-card("images/icon-titled-card/macbook.svg", "Обучаются и узнают обновления первыми")
+		<!-- END SECTION NAV-FS -->
+
+		<!-- START SECTION MENTORING -->
+		.section.s-mentoring.section--long 
+			.container
+				.s-mentoring__inner 
+					.s-mentoring__img-wrapper 
+						img.s-mentoring__img(src="images/mentoring.jpg")
+					.s-mentoring__content 
+						.s-mentoring__title.title.title--mb-long Действительно ли наставничество имеет значение? 
+						.s-mentoring__text 
+							p Данные не лгут: наставничество дает серьезное преимущество. <br>В независимых исследованиях было доказано, что наличие наставника :
+							p.s-mentoring__text-bullet ускоряет процесс обучения, 
+							p.s-mentoring__text-bullet ускоряет процесс выполнения практики
+							p.s-mentoring__text-bullet уменьшает риски демотивации
+						.s-mentoring__subtitle Статистика, подтверждающая это:
+						.s-mentoring__text
+							p 76% профессионалов считают наставников важными, но только у 37% они есть (Forbes, 2019)
+		<!-- END SECTION MENTORING -->
+
+		<!-- START SECTION TEACHER -->
+		.section.s-teacher.section--long-pb
+			.container 
+				.title.title--mb-long Наши преподаватели 
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/1.jpg")
+					.s-teacher__content 
+						.s-teacher__name Азамат Хасенов
+						.s-teacher__descr Автор курса Data Science
+						.s-teacher__text 
+							p Стажировался в США и Германии
+							p 2 года проработал в Южной Корее специалистом в области искусственного интеллекта
+							p Работал в компании Huawei
+							p В настоящее время специалист по Data Science в BTS Digital
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/2.jpg")
+					.s-teacher__content 
+						.s-teacher__name Сакен Кенжегулов
+						.s-teacher__descr Автор курса Web-разработка	
+						.s-teacher__text 
+							p Закончил UNIST по специальности информационные технологии
+							p Проходил стажировку в Корее, Швейцарии
+							p Работает в роли разработчика в Google офис Калифорния
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/3.jpg")
+					.s-teacher__content 
+						.s-teacher__name Ерлан Байтуринов
+						.s-teacher__descr Автор курса Web-разработка
+						.s-teacher__text 
+							p Закончил СДУ
+							p Работал разработчиком в Olzha Holding
+							p Работает разработчиком в Google офис Дублин, Ирландия
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/6.jpg")
+					.s-teacher__content 
+						.s-teacher__name Диана Мадуан
+						.s-teacher__descr Ментор/наставник на курсе Web-разработка
+						.s-teacher__text 
+							p Закончила в МУИТ, Алматы по специальности информационные технологии
+							p Сейчас работает в роли Middle Frontend разработчика в Citadel one
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/13.jpg")
+					.s-teacher__content 
+						.s-teacher__name Арман Жаманкулов
+						.s-teacher__descr Ментор/наставник на курсе Web-разработка
+						.s-teacher__text 
+							p Специалист по ремонту и модернизации ПК. Прошёл курс в г. Актау
+							p Работал IT консультантом в Каратальской районной больнице 1 год
+							p Прошёл курс по frontend в Able. Html, css, js, ReactJS
+							p В настоящее время работаю удалённо в Able
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/4.jpg")
+					.s-teacher__content 
+						.s-teacher__name Бауыржан Нургалиев
+						.s-teacher__descr Автор курса андроид разработка
+						.s-teacher__text 
+							p 6 лет в android-разработке
+							p Сеньор разработчик в международной компании EPAM
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/7.jpg")
+					.s-teacher__content 
+						.s-teacher__name Толеген Акылбеков
+						.s-teacher__descr Автор курса андроид разработка
+						.s-teacher__text 
+							p Работал разработчиком в международной компании EPAM
+							p На данный момент Team Lead в американской компании Balanced 
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/12.jpg")
+					.s-teacher__content 
+						.s-teacher__name Илья Лим
+						.s-teacher__descr Автор курса андроид разработка
+						.s-teacher__text 
+							p Закончил Костанайский государственный университет имени А. Байтурсынова
+							p Начал карьеру в роли Android разработчика в FirstBit
+							p Сейчас работает в META(ex-Facebook) в Лондоне в роли Senior разработчика
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/5.jpg")
+					.s-teacher__content 
+						.s-teacher__name Акжан Ракыш
+						.s-teacher__descr Автор курса бизнес аналитика
+						.s-teacher__text 
+							p Сертифицированный Google аналитик
+							p Сертифицированный Microsoft аналитик
+							p Старший дата аналитик в KPMG
+							p Закончил магистратуру по специальности бизнес аналитика в Queen Mary University of London
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/11.jpg")
+					.s-teacher__content 
+						.s-teacher__name Ислам Дербисалин
+						.s-teacher__descr Ментор/наставник на курсе бизнес аналитика
+						.s-teacher__text 
+							p Закончил Евразийский национальный университет  имени Л.Н. Гумилева по специальности Международные отношения
+							p BI Developer в АО «НК «QazaqGaz»
+							p Главный менеджер Аналитического центра в АО «Қазтеміртранс»
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/10.jpg")
+					.s-teacher__content 
+						.s-teacher__name Жалгас Жиенбеков
+						.s-teacher__descr Ментор/наставник на курсе Data Science
+						.s-teacher__text 
+							p Закончил по специальности Автоматизация и управление в г. Шымкент
+							p Стажировался в Казактелеком
+							p Сейчас работает банке Хоум Кредит
+							p Совмещает с магистратурой в КБТУ по специальности Data Science
+				.s-teacher__inner 
+					.s-teacher__img-wrapper 
+						img.s-teacher__img(src="images/teachers/9.jpg")
+					.s-teacher__content 
+						.s-teacher__name Малика Адилова
+						.s-teacher__descr Ментор/наставник на курсе Data Science
+						.s-teacher__text 
+							p Закончила КазНУ им. аль-Фараби по специальности Математическое и компьютерное моделирование
+							p Научная стажировка в Германии
+							p Преподавала в школе программирования и математики АЛГОРИТМИКА
+							p Работала аналитиком дистанционных продаж в Евразийском банке
+							p Сейчас работает Data Scientist-ом в Wings Partners
+		<!-- END SECTION TEACHER -->
+	<!-- END CONTENT TEACHER -->
+
+	<!-- START FOOTER -->
+	.footer 
+		.container 
+			.footer__top
+				.footer__top-right
+					.footer__col
+						.footer__col-title Главная
+						.footer__col-items 
+							.footer__col-item Курсы
+							.footer__col-item Навигация
+							.footer__col-item Преподаватели
+					.footer__col
+						.footer__col-title.footer__col-title--transparent.content-tab(href="#home") Главная
+						.footer__col-item.content-tab(href="#history") Студенты
+						.footer__col-item.content-tab(href="#questions") Для компаний
+						.footer__col-item.content-tab(href="#about") О нас
+					.footer__col
+						.footer__col-title Курсы
+						.footer__col-item.content-tab(href="#data") Data Science
+						.footer__col-item.content-tab(href="#development") Веб-Разработка
+						.footer__col-item.content-tab(href="#android") Android-Разработка
+						.footer__col-item.content-tab(href="#business") Бизнес аналитика
+					.footer__col
+						.footer__col-title Контакты
+						a.footer__col-item(href="mailto: datascience.kz@gmail.com") datascience.kz@gmail.com
+						a.footer__col-item(href="tel: +77761255952") +7 776 125 59 52
+				.footer__top-left
+					.footer__col
+						.footer__col-title Социальные сети
+						.footer__social-inner 
+							a.footer__social-item(href="https://www.youtube.com/channel/UCEvolJIq9EmKS45wZlcAmcA" target="blank_")
+								img.footer__social-item-img(src="images/social/youtube.svg")
+							a.footer__social-item(href="https://www.instagram.com/able_online_academy/" target="blank_")
+								img.footer__social-item-img(src="images/social/instagram.svg")
+							//- a.footer__social-item(href="#")
+							//- 	img.footer__social-item-img(src="images/social/telegram.svg")
+							a.footer__social-item(href="https://api.whatsapp.com/send/?phone=77761255952&text&type=phone_number&app_absent=0" target="blank_")
+								img.footer__social-item-img(src="images/social/whatsapp.svg")
+			.footer__bottom
+				.footer__bottom-left © ABLE Online Academy
+				a.foote__bottom-center(href="https://www.intensivable.kz/offer" target="blank_") Публичная оферта
+				a.footer__bottom-right(href="https://www.intensivable.kz/privacypolicy" target="blank_") Политика конфиденциальности
+	<!-- END FOOTER -->	
