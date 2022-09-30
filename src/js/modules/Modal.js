@@ -10,11 +10,11 @@ onAfterHide: Function
 */
 function Modal(modalSelector, options) {
 	let classes = {
-		pageWrapper: 'tmpl-hh__wrapper',
-		modal: 'tmpl-hh__modal',
-		modalShow: 'tmpl-hh__modal--show',
-		window: 'tmpl-hh__modal__window',
-		closeBtn: 'tmpl-hh__modal__close-btn',
+		pageWrapper: 'wrapper',
+		modal: 'modal',
+		modalShow: 'modal--show',
+		window: 'modal__window',
+		closeBtn: 'modal__close-btn',
 	};
 	let modal;
 	let onInit = function (){},

@@ -288,6 +288,12 @@
 			}
 		}
 	}
+	.modal{
+		&__window{
+			padding: 6% 2%;
+			width: 60%;
+		}
+	}
 }
 
 // BREAKPOINT TABLET
@@ -699,6 +705,7 @@
 			}
 		}
 	}
+	
 }
 
 // BREAKPOINT SM TABLET
@@ -1062,6 +1069,12 @@
 	.s-choose{
 		&__item{
 			width: 100%;
+		}
+	}
+	.modal{
+		&__window{
+			padding: 10% 4%;
+			width: 70%;
 		}
 	}
 }

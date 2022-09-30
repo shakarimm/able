@@ -3,6 +3,7 @@ import Countup from './custom_modules/Countup';
 import Video from "./modules/Video";
 import Content from "./modules/Content";
 import Nav from "./modules/Nav";
+import Modal from "./modules/Modal";
 
 /*
 	--------------------------------------------
@@ -425,6 +426,147 @@ import Nav from "./modules/Nav";
 		}
 	})
 
+
+	window.addEventListener('load', function(){
+		let loc = document.getElementById("74518063311cbf90d5a");
+		loc.value = window.location.href;
+		let ref = document.getElementById("74518063311cbf90d5aref");
+		ref.value = document.referrer;
+		
+		let statUrl = "https://ableacademy.getcourse.ru/stat/counter?ref=" + encodeURIComponent(document.referrer)
+		 + "&loc=" + encodeURIComponent(document.location.href);
+		document.getElementById('gccounterImgContainer').innerHTML
+		 = "<img width=1 height=1 style='display:none' id='gccounterImg' src='" + statUrl + "'/>";
+	 });
+
+	//  let formWrapper = document.getElementById("formWrapper");
+	//  let fsBtn = document.getElementById("fsBtn");
+	//  let wrapper = document.getElementById("wrapper")
+
+	//  fsBtn.addEventListener("click", ()=> {
+	// 	formWrapper.classList.add("s-fs__form-wrapper--active")
+	// 	wrapper.classList.add("wrapper--active")
+	//  })
+/*
+	--------------------------------------------
+	--------------------------------------------
+						MODAL
+	--------------------------------------------
+	--------------------------------------------
+ */
+	function listenTestModalBtnClick() {
+		document.getElementById('fsBtn').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+
+	function listenTestModalBtnClickOne() {
+		document.getElementById('fsBtnOne').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+
+	function listenTestModalBtnClickTwo() {
+		document.getElementById('fsBtnTwo').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+
+	function listenTestModalBtnClickThree() {
+		document.getElementById('fsBtnThree').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+/*
+	--------------------------------------------
+	--------------------------------------------
+						MODAL
+	--------------------------------------------
+	--------------------------------------------
+ */
+	function listenTestModalBtnClickss() {
+		document.getElementById('ssBtn').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+
+	function listenTestModalBtnClickssOne() {
+		document.getElementById('ssBtnOne').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+
+	function listenTestModalBtnClickssTwo() {
+		document.getElementById('ssBtnTwo').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+
+	function listenTestModalBtnClickssThree() {
+		document.getElementById('ssBtnThree').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+/*
+	--------------------------------------------
+	--------------------------------------------
+						MODAL
+	--------------------------------------------
+	--------------------------------------------
+ */
+	function listenTestModalBtnClickts() {
+		document.getElementById('tsBtn').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+
+	function listenTestModalBtnClicktsOne() {
+		document.getElementById('tsBtnOne').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+
+	function listenTestModalBtnClicktsTwo() {
+		document.getElementById('tsBtnTwo').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+
+	function listenTestModalBtnClicktsThree() {
+		document.getElementById('tsBtnThree').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+	/*
+	--------------------------------------------
+	--------------------------------------------
+						MODAL
+	--------------------------------------------
+	--------------------------------------------
+ */
+	function listenTestModalBtnClickbs() {
+		document.getElementById('bsBtn').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+
+	function listenTestModalBtnClickbsOne() {
+		document.getElementById('bsBtnOne').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+
+	function listenTestModalBtnClickbsTwo() {
+		document.getElementById('bsBtnTwo').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
+
+	function listenTestModalBtnClickbsThree() {
+		document.getElementById('bsBtnThree').addEventListener('click', function () {
+			testModal.show();
+		});
+	}
 /*
 	--------------------------------------------
 	--------------------------------------------
@@ -437,6 +579,47 @@ import Nav from "./modules/Nav";
 	new Video();
 	new Content();
 	new Nav();
+	const testModal = new Modal('#test-modal');
+
+	listenTestModalBtnClick();
+	listenTestModalBtnClickOne();
+	listenTestModalBtnClickTwo();
+	listenTestModalBtnClickThree();
+/*
+	--------------------------------------------
+	--------------------------------------------
+						MODAL
+	--------------------------------------------
+	--------------------------------------------
+ */
+	listenTestModalBtnClickss();
+	listenTestModalBtnClickssOne();
+	listenTestModalBtnClickssTwo();
+	listenTestModalBtnClickssThree();
+
+/*
+	--------------------------------------------
+	--------------------------------------------
+						MODAL
+	--------------------------------------------
+	--------------------------------------------
+ */
+	listenTestModalBtnClickts();
+	listenTestModalBtnClicktsOne();
+	listenTestModalBtnClicktsTwo();
+	listenTestModalBtnClicktsThree();
+
+/*
+	--------------------------------------------
+	--------------------------------------------
+						MODAL
+	--------------------------------------------
+	--------------------------------------------
+ */
+	listenTestModalBtnClickbs();
+	listenTestModalBtnClickbsOne();
+	listenTestModalBtnClickbsTwo();
+	listenTestModalBtnClickbsThree();
 
 	initCompanySlider()
 	initCompanySecondSlider()
